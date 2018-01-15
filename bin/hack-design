@@ -1,0 +1,5 @@
+#!/usr/bin/env ruby
+
+require './lib/hack_design'
+
+HackDesign::CLI.new.start
