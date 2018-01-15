@@ -1,5 +1,2 @@
-require "hack_design/version"
-
-module HackDesign
-  # Your code goes here...
-end
+require_relative "./hack_design/version"
+require_relative "./hack_design/cli"
