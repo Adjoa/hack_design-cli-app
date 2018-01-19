@@ -7,7 +7,7 @@ class Category
     def initialize(name)
         @name = name
         @lessons = []
-        self.all << self
+        self.class.all << self
     end
 
     def self.all
