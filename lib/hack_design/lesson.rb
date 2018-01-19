@@ -6,7 +6,7 @@ class Lesson
     def initialize(title)
         @title = title
         @exercises = []
-        self.all << self
+        self.class.all << self
     end
 
     def self.all
