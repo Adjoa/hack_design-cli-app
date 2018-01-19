@@ -1,5 +1,5 @@
 class Exercise
-    attr_accessor :url, :title, :description
+    attr_accessor :url, :title, :description, :lesson
 
     def initialize(title)
         @url = url
