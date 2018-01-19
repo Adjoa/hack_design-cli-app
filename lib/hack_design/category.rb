@@ -13,4 +13,9 @@ class Category
     def self.all
         @@all
     end
+
+    def add_lesson(lesson)
+        lessons << lesson
+        lesson.category = self
+    end
 end
