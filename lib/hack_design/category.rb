@@ -1,8 +1,7 @@
 class Category
     @@all = []
 
-    attr_reader :name
-    attr_accessor :lessons
+    attr_accessor :id, :name, :lessons
 
     def initialize(name)
         @name = name
