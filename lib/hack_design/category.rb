@@ -3,7 +3,7 @@ class Category
 
     attr_accessor :id, :name, :lessons
 
-    def initialize(name)
+    def initialize(id, name)
         @name = name
         @lessons = []
         self.class.all << self

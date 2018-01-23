@@ -1,7 +1,7 @@
 class Lesson
     @@all = []
 
-    attr_accessor :category, :title, :number, :instructor, :introduction, :exercises
+    attr_accessor :id, :category, :title, :number, :instructor, :introduction, :exercises
 
     def initialize(title)
         @title = title
