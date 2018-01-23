@@ -14,7 +14,7 @@ class Category
     end
 
     def add_lesson(lesson)
-        lessons << lesson
-        lesson.category = self
+        self.lessons << lesson unless self.lessons.include?(lesson)
+        lesson.category = self unless lesson.category
     end
 end
