@@ -6,7 +6,7 @@ module HackDesign
         end
 
         def main_menu
-            puts "Enter a number to choose a lesson."
+            puts "Enter a number (1-50) to choose a lesson."
             puts "Enter 'q' to quit."
             list_lessons
             puts ""
@@ -25,6 +25,9 @@ module HackDesign
         end
 
         def list_lessons
+          # Lesson.all.each do |lesson|
+          #  puts "#{lesson.id}. #{lesson.title}"
+          # end
         end
     end
 end
