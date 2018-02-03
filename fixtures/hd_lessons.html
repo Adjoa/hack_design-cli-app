@@ -1,0 +1,1512 @@
+<!doctype html>
+<html>
+  <head>
+    <link href="https://hackdesign.org:80/lessons/" rel="canonical" />    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>All Design Lessons - Hack Design</title>
+    <meta name="google-site-verification" content="3St7QluPELiVsbygStx0b1gr8dbwjQ_OfdkZI_ffj-g">
+        <meta content="Learn how to get started in design. Featuring 50+ lessons from top designers." name="description"/>
+
+    <meta property="fb:admins" content="1082730090">
+    <link href="https://unpkg.com/basscss@7.1.1/css/basscss.min.css" rel="stylesheet">
+    <link rel="stylesheet" media="all" href="/assets/application-78044084155daafaf1bb867b9e6adfd53b55a479c9ec74ef9fa73e8e4bdebfad.css" />
+    <script>
+      (function(d) {
+        var config = {
+          kitId: 'kyb5lym',
+          scriptTimeout: 3000,
+          async: true
+        },
+        h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+      })(document);
+    </script>
+    <!-- Hotjar Tracking Code for https://hackdesign.org -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:612701,hjsv:5};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/4.0.1/lazysizes.min.js"></script>
+    <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="/xIEBv53D3a7SxOEaUtdT9/YcIE4gY2nAo5m4UVGdzhoem6V2g5giKXqbPiW0+z/vSewZS5W4Pf04PCtiLMlIQ==" />
+  </head>
+  <body class="lessons index" data-spy="scroll" data-target="#navbar-example" >
+    <!--[if lt IE 8]>
+    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <header class="">
+  <div class="md-flex flex-center container">
+    <div class="flex-none">
+      <a href="/"><img width="200" alt="Hack Design" class="py2" src="/assets/logo-941fdc47b5760af9654de5b6ba12fba1f4073426b16b2ebbb519e13b6c5a9600.svg" /></a>
+    </div>
+    <div class="flex-auto">
+    </div>
+    <div class="flex-none">
+      <nav class="h5 sm-show">
+        <a class="gray mr3" href="/lessons">View all lessons</a>
+        <a class="gray mr3" href="/toolkit">Toolkit</a>
+          <a class="gray mr3" href="/sign_in">Sign In</a>
+      </nav>
+    </div>
+  </div>
+  <nav class="sm-hide h5 border-top border-bottom px2 py1">
+    <a class="gray mr3" href="/lessons">Lessons</a>
+    <a class="gray mr3" href="/toolkit">Toolkit</a>
+      <a class="gray mr3" href="/sign_in">Sign In</a>
+  </nav>
+</header>
+
+    <div id="flash" class="row">
+</div>
+
+
+<div class="sm-hide">
+    <h6 class="h6 caps muted px2 mt1 mb0">Categories</h6>
+    <div class="col-12 overflow-mobile px2 py1 border-bottom mb3">
+          <a class="gray inline-block mr2" href="#welcome">Welcome</a>
+          <a class="gray inline-block mr2" href="#introduction">Introduction</a>
+          <a class="gray inline-block mr2" href="#typography">Typography</a>
+          <a class="gray inline-block mr2" href="#user-experience">User experience</a>
+          <a class="gray inline-block mr2" href="#user-interface">User interface</a>
+          <a class="gray inline-block mr2" href="#graphic-design-principles">Graphic design principles</a>
+          <a class="gray inline-block mr2" href="#mobile">Mobile</a>
+          <a class="gray inline-block mr2" href="#interaction-design">Interaction design</a>
+          <a class="gray inline-block mr2" href="#front-end-design">Front-end design</a>
+          <a class="gray inline-block mr2" href="#product-design">Product design</a>
+          <a class="gray inline-block mr2" href="#advanced-user-interface">Advanced user interface</a>
+          <a class="gray inline-block mr2" href="#advanced-user-experience">Advanced user experience</a>
+          <a class="gray inline-block mr2" href="#context-and-next-steps">Context and next steps</a>
+  </div>
+  </div>
+<article class="py3 container mx-auto">
+  <div class="clearfix mxn2">
+
+    <div class="sm-show js-sticky col col-3 px2" id="navbar-example">
+      <ul class="nav list-style-none m0 p0 prose-link">
+          <li class="nav-item mb1">
+            <a class="gray h5 scroll" href="#welcome">Welcome</a>
+          </li>
+          <li class="nav-item mb1">
+            <a class="gray h5 scroll" href="#introduction">Introduction</a>
+          </li>
+          <li class="nav-item mb1">
+            <a class="gray h5 scroll" href="#typography">Typography</a>
+          </li>
+          <li class="nav-item mb1">
+            <a class="gray h5 scroll" href="#user-experience">User experience</a>
+          </li>
+          <li class="nav-item mb1">
+            <a class="gray h5 scroll" href="#user-interface">User interface</a>
+          </li>
+          <li class="nav-item mb1">
+            <a class="gray h5 scroll" href="#graphic-design-principles">Graphic design principles</a>
+          </li>
+          <li class="nav-item mb1">
+            <a class="gray h5 scroll" href="#mobile">Mobile</a>
+          </li>
+          <li class="nav-item mb1">
+            <a class="gray h5 scroll" href="#interaction-design">Interaction design</a>
+          </li>
+          <li class="nav-item mb1">
+            <a class="gray h5 scroll" href="#front-end-design">Front-end design</a>
+          </li>
+          <li class="nav-item mb1">
+            <a class="gray h5 scroll" href="#product-design">Product design</a>
+          </li>
+          <li class="nav-item mb1">
+            <a class="gray h5 scroll" href="#advanced-user-interface">Advanced user interface</a>
+          </li>
+          <li class="nav-item mb1">
+            <a class="gray h5 scroll" href="#advanced-user-experience">Advanced user experience</a>
+          </li>
+          <li class="nav-item mb1">
+            <a class="gray h5 scroll" href="#context-and-next-steps">Context and next steps</a>
+          </li>
+      </ul>
+    </div>
+
+
+    <div class="col col-12 md-col-9 px2">
+        <div class="overflow-hidden mb4">
+        <h4 class="h5 regular m0 gray crossbars" id="welcome"> Welcome </h4>
+      </div>
+          <div class="flex flex-center mb4">
+            <div class="flex-none mr3">
+              <a href="/lessons/0">
+                <div class="md-show">
+                  <img class="lazyload" data-src="https://hackdesign.imgix.net/lessons/week0.png?ixlib=rails-2.1.4&dpr=2&w=128&fm=jpeg&fit=max&auto=format&alt=A%20hot%20air%20balloon%20on%20a%20sunny%20day&s=80b840d74d680ea9a23c730c671d01dc" width="128" >
+              </div>
+</a>            </div>
+            <div class="flex-auto prose">
+              <h3 class="serif mt0 mb2 semibold"><a class="red" href="/lessons/0">Hello World</a></h3>
+                <p class="med-gray">Welcome to HackDesign! Lesson 0 will prepare you for the lessons you&#39;ll start to receive every week, which will guide you towards design literacy and proficiency. Excited?
+
+This week, it&#39;s just one link. It happens to be the most powerful design resource I am personally aware of, and I&#39;m excited to share it with you...</p>
+                <div class="flex flex-center">
+                  <div class="flex-none mr1">
+                    <p class="m0"><a class="btn btn-outline shadow border-none" href="/lessons/0">Read lesson 0</a></p>
+              </div>
+                  <div class="flex-auto">
+                  </div>
+                  <div class="flex-none mr1">
+                <h5 class="m0 h5 med-gray regular">Wells Riley</h5>
+              </div>
+                  <div class="flex-none">
+                  <img class="lazyload" data-src="https://hackdesign.imgix.net/curators/wellsriley@2x.jpg?ixlib=rails-2.1.4&dpr=2&w=40&h=40&fit=crop&fm=jpeg&auto=format&mask=ellipse&s=e44c12a6f24d0e8f24f9db5f40910cb2" width="40" >
+                </div>
+              </div>
+            </div>
+          </div>
+        <div class="overflow-hidden mb4">
+        <h4 class="h5 regular m0 gray crossbars" id="introduction"> Introduction </h4>
+      </div>
+          <div class="flex flex-center mb4">
+            <div class="flex-none mr3">
+              <a href="/lessons/1">
+                <div class="md-show">
+                  <img class="lazyload" data-src="https://hackdesign.imgix.net/lessons/week1.png?ixlib=rails-2.1.4&dpr=2&w=128&fm=jpeg&fit=max&auto=format&alt=A%20hot%20air%20balloon%20on%20a%20sunny%20day&s=b3bccb3d5aa6de42394a66f6b4cebaed" width="128" >
+              </div>
+</a>            </div>
+            <div class="flex-auto prose">
+              <h3 class="serif mt0 mb2 semibold"><a class="red" href="/lessons/1">What is design? Why is it important?</a></h3>
+                <p class="med-gray">Why design? What purpose does it serve? It&#39;s not purely aesthetic, nor wholly analytical and functional. When considering the design of your projects, you must think about how everything fits together in harmony - some would call this a holistic approach, but it&#39;s really the only practical way to approach design problems, as I see it...</p>
+                <div class="flex flex-center">
+                  <div class="flex-none mr1">
+                    <p class="m0"><a class="btn btn-outline shadow border-none" href="/lessons/1">Read lesson 1</a></p>
+              </div>
+                  <div class="flex-auto">
+                  </div>
+                  <div class="flex-none mr1">
+                <h5 class="m0 h5 med-gray regular">Wells Riley</h5>
+              </div>
+                  <div class="flex-none">
+                  <img class="lazyload" data-src="https://hackdesign.imgix.net/curators/wellsriley@2x.jpg?ixlib=rails-2.1.4&dpr=2&w=40&h=40&fit=crop&fm=jpeg&auto=format&mask=ellipse&s=e44c12a6f24d0e8f24f9db5f40910cb2" width="40" >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-center mb4">
+            <div class="flex-none mr3">
+              <a href="/lessons/2">
+                <div class="md-show">
+                  <img class="lazyload" data-src="https://hackdesign.imgix.net/lessons/week2.png?ixlib=rails-2.1.4&dpr=2&w=128&fm=jpeg&fit=max&auto=format&alt=A%20hot%20air%20balloon%20on%20a%20sunny%20day&s=74382153c329b739ae80872cbff06d5f" width="128" >
+              </div>
+</a>            </div>
+            <div class="flex-auto prose">
+              <h3 class="serif mt0 mb2 semibold"><a class="red" href="/lessons/2">Dive Into Typography</a></h3>
+                <p class="med-gray">In this lesson, we&#39;ll dive right in and learn a few quick – but really important – rules about typography. Before we start the course, let&#39;s define typography quickly. Typography can simply be described as the art of type. It&#39;s everything you can think of – like fonts, sizes, and readability...</p>
+                <div class="flex flex-center">
+                  <div class="flex-none mr1">
+                    <p class="m0"><a class="btn btn-outline shadow border-none" href="/lessons/2">Read lesson 2</a></p>
+              </div>
+                  <div class="flex-auto">
+                  </div>
+                  <div class="flex-none mr1">
+                <h5 class="m0 h5 med-gray regular">Kerem Suer</h5>
+              </div>
+                  <div class="flex-none">
+                  <img class="lazyload" data-src="https://hackdesign.imgix.net/curators/keremsuer@2x.jpg?ixlib=rails-2.1.4&dpr=2&w=40&h=40&fit=crop&fm=jpeg&auto=format&mask=ellipse&s=fe7b2e77ad4cd1d25754439d8a005e78" width="40" >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-center mb4">
+            <div class="flex-none mr3">
+              <a href="/lessons/3">
+                <div class="md-show">
+                  <img class="lazyload" data-src="https://hackdesign.imgix.net/lessons/week3.png?ixlib=rails-2.1.4&dpr=2&w=128&fm=jpeg&fit=max&auto=format&alt=A%20hot%20air%20balloon%20on%20a%20sunny%20day&s=e0455a4d267b726765879f69d61b7cb9" width="128" >
+              </div>
+</a>            </div>
+            <div class="flex-auto prose">
+              <h3 class="serif mt0 mb2 semibold"><a class="red" href="/lessons/3">The Amazing New Mobile Web</a></h3>
+                <p class="med-gray">It&#39;s no surprise that the amount of people browsing the web on a mobile device is speeding past desktop usage with no sign of slowing down. More and more people are getting their hands on a pocket sized device that is connected to the internet every minute. Designing for this split landscape of mobile and desktop to bring the user the best possible experience is an absolute must...</p>
+                <div class="flex flex-center">
+                  <div class="flex-none mr1">
+                    <p class="m0"><a class="btn btn-outline shadow border-none" href="/lessons/3">Read lesson 3</a></p>
+              </div>
+                  <div class="flex-auto">
+                  </div>
+                  <div class="flex-none mr1">
+                <h5 class="m0 h5 med-gray regular">Luke Beard</h5>
+              </div>
+                  <div class="flex-none">
+                  <img class="lazyload" data-src="https://hackdesign.imgix.net/user/avatar/6/9e34ae4c-5eca-483a-8eeb-d9b6e595b5d2.jpeg?ixlib=rails-2.1.4&dpr=2&w=40&h=40&fit=crop&fm=jpeg&auto=format&mask=ellipse&s=51106f1cbd738e00f9355126f860d37e" width="40" >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-center mb4">
+            <div class="flex-none mr3">
+              <a href="/lessons/4">
+                <div class="md-show">
+                  <img class="lazyload" data-src="https://hackdesign.imgix.net/lessons/week4.png?ixlib=rails-2.1.4&dpr=2&w=128&fm=jpeg&fit=max&auto=format&alt=A%20hot%20air%20balloon%20on%20a%20sunny%20day&s=4236bcd8bb35bf2fca9fac63ce1b4fa0" width="128" >
+              </div>
+</a>            </div>
+            <div class="flex-auto prose">
+              <h3 class="serif mt0 mb2 semibold"><a class="red" href="/lessons/4">Know Your Tools</a></h3>
+                <p class="med-gray">The phrase &quot;a poor workman always blames his tools&quot; has always bugged me — poor tools hinder the quality of your work. Great workers blame their tools too! If they&#39;re not performing, they should be blamed. You simply can&#39;t do your best work without amazing tools and the skills to wield them well.
+
+Great tools let us do the impractical and the impossible. They give us super powers...</p>
+                <div class="flex flex-center">
+                  <div class="flex-none mr1">
+                    <p class="m0"><a class="btn btn-outline shadow border-none" href="/lessons/4">Read lesson 4</a></p>
+              </div>
+                  <div class="flex-auto">
+                  </div>
+                  <div class="flex-none mr1">
+                <h5 class="m0 h5 med-gray regular">Marc Edwards</h5>
+              </div>
+                  <div class="flex-none">
+                  <img class="lazyload" data-src="https://hackdesign.imgix.net/curators/marcedwards@2x.jpg?ixlib=rails-2.1.4&dpr=2&w=40&h=40&fit=crop&fm=jpeg&auto=format&mask=ellipse&s=8294556c556375ce08b666ab0959d826" width="40" >
+                </div>
+              </div>
+            </div>
+          </div>
+        <div class="overflow-hidden mb4">
+        <h4 class="h5 regular m0 gray crossbars" id="typography"> Typography </h4>
+      </div>
+          <div class="flex flex-center mb4">
+            <div class="flex-none mr3">
+              <a href="/lessons/5">
+                <div class="md-show">
+                  <img class="lazyload" data-src="https://hackdesign.imgix.net/lessons/week5.png?ixlib=rails-2.1.4&dpr=2&w=128&fm=jpeg&fit=max&auto=format&alt=A%20hot%20air%20balloon%20on%20a%20sunny%20day&s=d718c61078c240720c1b54401bfefedc" width="128" >
+              </div>
+</a>            </div>
+            <div class="flex-auto prose">
+              <h3 class="serif mt0 mb2 semibold"><a class="red" href="/lessons/5">Typography in Product Design</a></h3>
+                <p class="med-gray">A few weeks ago we were introduced to the art of type, and gained a basic understanding of the rules surrounding it. But where does it all fit in? Of what value is typography to the interfaces we interact with on a regular basis?
+
+We put extreme emphasis into the code and pixels pertaining to our products. But both are rendered useless without the content...</p>
+                <div class="flex flex-center">
+                  <div class="flex-none mr1">
+                    <p class="m0"><a class="btn btn-outline shadow border-none" href="/lessons/5">Read lesson 5</a></p>
+              </div>
+                  <div class="flex-auto">
+                  </div>
+                  <div class="flex-none mr1">
+                <h5 class="m0 h5 med-gray regular">Jared Erondu</h5>
+              </div>
+                  <div class="flex-none">
+                  <img class="lazyload" data-src="https://hackdesign.imgix.net/curators/jarederondu@2x.jpg?ixlib=rails-2.1.4&dpr=2&w=40&h=40&fit=crop&fm=jpeg&auto=format&mask=ellipse&s=d3779433ac231f8cf8d5496392d66ffb" width="40" >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-center mb4">
+            <div class="flex-none mr3">
+              <a href="/lessons/6">
+                <div class="md-show">
+                  <img class="lazyload" data-src="https://hackdesign.imgix.net/lessons/week6.png?ixlib=rails-2.1.4&dpr=2&w=128&fm=jpeg&fit=max&auto=format&alt=A%20hot%20air%20balloon%20on%20a%20sunny%20day&s=2e10453f2f9b00435ef788fff7613111" width="128" >
+              </div>
+</a>            </div>
+            <div class="flex-auto prose">
+              <h3 class="serif mt0 mb2 semibold"><a class="red" href="/lessons/6">Exploring the World of Typefaces</a></h3>
+                <p class="med-gray">When we look back at black and white movies, we marvel at the results they could achieve without color. Despite this, we can agree color film was a good invention: you can still shoot in black and white, but color gives an extra dimension and opens up a lot of new avenues for those who want to use it...</p>
+                <div class="flex flex-center">
+                  <div class="flex-none mr1">
+                    <p class="m0"><a class="btn btn-outline shadow border-none" href="/lessons/6">Read lesson 6</a></p>
+              </div>
+                  <div class="flex-auto">
+                  </div>
+                  <div class="flex-none mr1">
+                <h5 class="m0 h5 med-gray regular">Sacha Greif</h5>
+              </div>
+                  <div class="flex-none">
+                  <img class="lazyload" data-src="https://hackdesign.imgix.net/curators/sachagreif@2x.jpg?ixlib=rails-2.1.4&dpr=2&w=40&h=40&fit=crop&fm=jpeg&auto=format&mask=ellipse&s=ce733412d3442841272f8ce328fe95ab" width="40" >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-center mb4">
+            <div class="flex-none mr3">
+              <a href="/lessons/7">
+                <div class="md-show">
+                  <img class="lazyload" data-src="https://hackdesign.imgix.net/lessons/week7.png?ixlib=rails-2.1.4&dpr=2&w=128&fm=jpeg&fit=max&auto=format&alt=A%20hot%20air%20balloon%20on%20a%20sunny%20day&s=398aee008f5690087e6b8c12f67b0eb4" width="128" >
+              </div>
+</a>            </div>
+            <div class="flex-auto prose">
+              <h3 class="serif mt0 mb2 semibold"><a class="red" href="/lessons/7">Responsive Typography In Action</a></h3>
+                <p class="med-gray">Typography has always been at the foundation of design &amp;amp; communication. We&#39;re at an interesting point in time where we&#39;re being given previously unknown amounts of control over our work, but also new &amp;amp; scary challenges as we try to adapt to an ever-changing sea of devices and contexts...</p>
+                <div class="flex flex-center">
+                  <div class="flex-none mr1">
+                    <p class="m0"><a class="btn btn-outline shadow border-none" href="/lessons/7">Read lesson 7</a></p>
+              </div>
+                  <div class="flex-auto">
+                  </div>
+                  <div class="flex-none mr1">
+                <h5 class="m0 h5 med-gray regular">Jon Gold</h5>
+              </div>
+                  <div class="flex-none">
+                  <img class="lazyload" data-src="https://hackdesign.imgix.net/curators/jongold@2x.jpg?ixlib=rails-2.1.4&dpr=2&w=40&h=40&fit=crop&fm=jpeg&auto=format&mask=ellipse&s=433e74accbbba3a0e7b04595d2eff2cd" width="40" >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-center mb4">
+            <div class="flex-none mr3">
+              <a href="/lessons/8">
+                <div class="md-show">
+                  <img class="lazyload" data-src="https://hackdesign.imgix.net/lessons/week8.png?ixlib=rails-2.1.4&dpr=2&w=128&fm=jpeg&fit=max&auto=format&alt=A%20hot%20air%20balloon%20on%20a%20sunny%20day&s=513d2327af116992158ed80afa4c7225" width="128" >
+              </div>
+</a>            </div>
+            <div class="flex-auto prose">
+              <h3 class="serif mt0 mb2 semibold"><a class="red" href="/lessons/8">Typography in Practice, and Where to Go from Here</a></h3>
+                <p class="med-gray">The goal of this last lesson in typography is to provide a wide-angle view of this fascinating field, and highlight resources from some of its best practitioners to direct you as you continue your studies beyond this course...</p>
+                <div class="flex flex-center">
+                  <div class="flex-none mr1">
+                    <p class="m0"><a class="btn btn-outline shadow border-none" href="/lessons/8">Read lesson 8</a></p>
+              </div>
+                  <div class="flex-auto">
+                  </div>
+                  <div class="flex-none mr1">
+                <h5 class="m0 h5 med-gray regular">Moiz Syed</h5>
+              </div>
+                  <div class="flex-none">
+                  <img class="lazyload" data-src="https://hackdesign.imgix.net/curators/moizsyed@2x.jpg?ixlib=rails-2.1.4&dpr=2&w=40&h=40&fit=crop&fm=jpeg&auto=format&mask=ellipse&s=57cdde34e519c9788cc4dcd450d7dd71" width="40" >
+                </div>
+              </div>
+            </div>
+          </div>
+        <div class="overflow-hidden mb4">
+        <h4 class="h5 regular m0 gray crossbars" id="user-experience"> User experience </h4>
+      </div>
+          <div class="flex flex-center mb4">
+            <div class="flex-none mr3">
+              <a href="/lessons/9">
+                <div class="md-show">
+                  <img class="lazyload" data-src="https://hackdesign.imgix.net/lessons/week9.png?ixlib=rails-2.1.4&dpr=2&w=128&fm=jpeg&fit=max&auto=format&alt=A%20hot%20air%20balloon%20on%20a%20sunny%20day&s=1982c6005a486e03eb0ff5f8b23f2e74" width="128" >
+              </div>
+</a>            </div>
+            <div class="flex-auto prose">
+              <h3 class="serif mt0 mb2 semibold"><a class="red" href="/lessons/9">An Introduction to User Experience Design</a></h3>
+                <p class="med-gray">It took our industry a number of years to fully understand how important user experience (UX) is to everything that we build. Now that we can measure and confirm the relationship between good UX and successful websites, UX skills are in high demand: PayScale shows a median wage of about $41k for web designers, $50k for web developers and $77k for user experience designers...</p>
+                <div class="flex flex-center">
+                  <div class="flex-none mr1">
+                    <p class="m0"><a class="btn btn-outline shadow border-none" href="/lessons/9">Read lesson 9</a></p>
+              </div>
+                  <div class="flex-auto">
+                  </div>
+                  <div class="flex-none mr1">
+                <h5 class="m0 h5 med-gray regular">Dan Zambonini</h5>
+              </div>
+                  <div class="flex-none">
+                  <img class="lazyload" data-src="https://hackdesign.imgix.net/curators/danzambonini@2x.jpg?ixlib=rails-2.1.4&dpr=2&w=40&h=40&fit=crop&fm=jpeg&auto=format&mask=ellipse&s=2d30b4aa05b19ded3f50b4f993964e0a" width="40" >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-center mb4">
+            <div class="flex-none mr3">
+              <a href="/lessons/10">
+                <div class="md-show">
+                  <img class="lazyload" data-src="https://hackdesign.imgix.net/lessons/week10.png?ixlib=rails-2.1.4&dpr=2&w=128&fm=jpeg&fit=max&auto=format&alt=A%20hot%20air%20balloon%20on%20a%20sunny%20day&s=7e715fae7dfaad3b2a4766bbd2e3dfd3" width="128" >
+              </div>
+</a>            </div>
+            <div class="flex-auto prose">
+              <h3 class="serif mt0 mb2 semibold"><a class="red" href="/lessons/10">Rapid Prototyping Tools &amp; Best Practices</a></h3>
+                <p class="med-gray">Rapid prototyping can mean the difference between quickly finding your path to a successful product and toiling away at a pipe-dream for months. Putting together a prototype will force you to think through the details and user experience of your product ideas. Once you have a prototype, you&#39;ll be able to show it to people and collect detailed feedback...</p>
+                <div class="flex flex-center">
+                  <div class="flex-none mr1">
+                    <p class="m0"><a class="btn btn-outline shadow border-none" href="/lessons/10">Read lesson 10</a></p>
+              </div>
+                  <div class="flex-auto">
+                  </div>
+                  <div class="flex-none mr1">
+                <h5 class="m0 h5 med-gray regular">Joe Robinson</h5>
+              </div>
+                  <div class="flex-none">
+                  <img class="lazyload" data-src="https://hackdesign.imgix.net/curators/joerobinson@2x.jpg?ixlib=rails-2.1.4&dpr=2&w=40&h=40&fit=crop&fm=jpeg&auto=format&mask=ellipse&s=84fbccf2083fabcd9a5c9e394c1abca4" width="40" >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-center mb4">
+            <div class="flex-none mr3">
+              <a href="/lessons/11">
+                <div class="md-show">
+                  <img class="lazyload" data-src="https://hackdesign.imgix.net/lessons/week11.png?ixlib=rails-2.1.4&dpr=2&w=128&fm=jpeg&fit=max&auto=format&alt=A%20hot%20air%20balloon%20on%20a%20sunny%20day&s=6de734545aa595b6b81b0eaa26c8812e" width="128" >
+              </div>
+</a>            </div>
+            <div class="flex-auto prose">
+              <h3 class="serif mt0 mb2 semibold"><a class="red" href="/lessons/11">Defining &amp; Expanding User Experience</a></h3>
+                <p class="med-gray">Newton&#39;s 3rd Law says, &quot;To every action there is always opposed an equal reaction&quot;. In my opinion this is the best way to describe an experience. Experiences ultimately define our lives. When we are young, we have no experiences thus our artifact is of little knowledge. When we are old, the opposite...</p>
+                <div class="flex flex-center">
+                  <div class="flex-none mr1">
+                    <p class="m0"><a class="btn btn-outline shadow border-none" href="/lessons/11">Read lesson 11</a></p>
+              </div>
+                  <div class="flex-auto">
+                  </div>
+                  <div class="flex-none mr1">
+                <h5 class="m0 h5 med-gray regular">Patrick Algrim</h5>
+              </div>
+                  <div class="flex-none">
+                  <img class="lazyload" data-src="https://hackdesign.imgix.net/curators/patrickalgrim@2x.jpg?ixlib=rails-2.1.4&dpr=2&w=40&h=40&fit=crop&fm=jpeg&auto=format&mask=ellipse&s=9aa8943a9cb4c17568f698039937fa66" width="40" >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-center mb4">
+            <div class="flex-none mr3">
+              <a href="/lessons/12">
+                <div class="md-show">
+                  <img class="lazyload" data-src="https://hackdesign.imgix.net/lessons/week12.png?ixlib=rails-2.1.4&dpr=2&w=128&fm=jpeg&fit=max&auto=format&alt=A%20hot%20air%20balloon%20on%20a%20sunny%20day&s=9bbda1cbc3ccd6c86ce76f5f89eb4fa0" width="128" >
+              </div>
+</a>            </div>
+            <div class="flex-auto prose">
+              <h3 class="serif mt0 mb2 semibold"><a class="red" href="/lessons/12">Understanding the User in User Experience</a></h3>
+                <p class="med-gray">Effective user experience starts with a good understanding of your users. Not only do you want to know who they are, but you want to dive deeper into understanding their motivations, mentality, and behavior. This deep insight into your users will help you keep your product focused on delivering a great experience. But how do we know what our users really want?</p>
+                <div class="flex flex-center">
+                  <div class="flex-none mr1">
+                    <p class="m0"><a class="btn btn-outline shadow border-none" href="/lessons/12">Read lesson 12</a></p>
+              </div>
+                  <div class="flex-auto">
+                  </div>
+                  <div class="flex-none mr1">
+                <h5 class="m0 h5 med-gray regular">Grace Ng</h5>
+              </div>
+                  <div class="flex-none">
+                  <img class="lazyload" data-src="https://hackdesign.imgix.net/curators/graceng@2x.jpg?ixlib=rails-2.1.4&dpr=2&w=40&h=40&fit=crop&fm=jpeg&auto=format&mask=ellipse&s=17040b2911cad54e6bd43856a16adab0" width="40" >
+                </div>
+              </div>
+            </div>
+          </div>
+        <div class="overflow-hidden mb4">
+        <h4 class="h5 regular m0 gray crossbars" id="user-interface"> User interface </h4>
+      </div>
+          <div class="flex flex-center mb4">
+            <div class="flex-none mr3">
+              <a href="/lessons/13">
+                <div class="md-show">
+                  <img class="lazyload" data-src="https://hackdesign.imgix.net/lessons/week13.png?ixlib=rails-2.1.4&dpr=2&w=128&fm=jpeg&fit=max&auto=format&alt=A%20hot%20air%20balloon%20on%20a%20sunny%20day&s=938858d2c3c94dee139ef111a7c4b204" width="128" >
+              </div>
+</a>            </div>
+            <div class="flex-auto prose">
+              <h3 class="serif mt0 mb2 semibold"><a class="red" href="/lessons/13">Vector Interface Design</a></h3>
+                <p class="med-gray">User Interface design plays a very important role as the translator in the communication between the user and the application&#39;s back-end or core functionality. It&#39;s purpose is to make the user feel comfortable interacting with and understanding your product. Most of a UI designer&#39;s job is spent thinking – the rest is executing the vision using the tools which work best for you...</p>
+                <div class="flex flex-center">
+                  <div class="flex-none mr1">
+                    <p class="m0"><a class="btn btn-outline shadow border-none" href="/lessons/13">Read lesson 13</a></p>
+              </div>
+                  <div class="flex-auto">
+                  </div>
+                  <div class="flex-none mr1">
+                <h5 class="m0 h5 med-gray regular">Jeff Broderick</h5>
+              </div>
+                  <div class="flex-none">
+                  <img class="lazyload" data-src="https://hackdesign.imgix.net/curators/jeffbroderick@2x.jpg?ixlib=rails-2.1.4&dpr=2&w=40&h=40&fit=crop&fm=jpeg&auto=format&mask=ellipse&s=86667333f6a8aa8e230daa8b1a8397ef" width="40" >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-center mb4">
+            <div class="flex-none mr3">
+              <a href="/lessons/14">
+                <div class="md-show">
+                  <img class="lazyload" data-src="https://hackdesign.imgix.net/lessons/week14.png?ixlib=rails-2.1.4&dpr=2&w=128&fm=jpeg&fit=max&auto=format&alt=A%20hot%20air%20balloon%20on%20a%20sunny%20day&s=6d2d8ce86cadbfbedb019d4e4520c2cb" width="128" >
+              </div>
+</a>            </div>
+            <div class="flex-auto prose">
+              <h3 class="serif mt0 mb2 semibold"><a class="red" href="/lessons/14">The Medium and Mechanics of Iconography</a></h3>
+                <p class="med-gray">Iconography is arguably the Esperanto of the digital world. Icons cannot replace the written word, yet they serve as cognitive waypoints for areas of interest and/or interaction. Iconography can also be an efficient way to communicate a concept in a small amount of space, which is increasingly important in the era of the shrinking screen...</p>
+                <div class="flex flex-center">
+                  <div class="flex-none mr1">
+                    <p class="m0"><a class="btn btn-outline shadow border-none" href="/lessons/14">Read lesson 14</a></p>
+              </div>
+                  <div class="flex-auto">
+                  </div>
+                  <div class="flex-none mr1">
+                <h5 class="m0 h5 med-gray regular">P.J. Onori</h5>
+              </div>
+                  <div class="flex-none">
+                  <img class="lazyload" data-src="https://hackdesign.imgix.net/curators/pjonori@2x.jpg?ixlib=rails-2.1.4&dpr=2&w=40&h=40&fit=crop&fm=jpeg&auto=format&mask=ellipse&s=c966621d72c315430d97c34213353fd1" width="40" >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-center mb4">
+            <div class="flex-none mr3">
+              <a href="/lessons/15">
+                <div class="md-show">
+                  <img class="lazyload" data-src="https://hackdesign.imgix.net/lessons/week15.png?ixlib=rails-2.1.4&dpr=2&w=128&fm=jpeg&fit=max&auto=format&alt=A%20hot%20air%20balloon%20on%20a%20sunny%20day&s=2412c93ca24acab13a2a42078c0961cb" width="128" >
+              </div>
+</a>            </div>
+            <div class="flex-auto prose">
+              <h3 class="serif mt0 mb2 semibold"><a class="red" href="/lessons/15">Making the content flow: introducing responsive web design</a></h3>
+                <p class="med-gray">Almost three years ago now, Ethan Marcotte introduced responsive web design. So far there were as many lovers as haters and many argued about the difference between responsiveness and native, mobile design. In the era of almost unlimited connectivity and wide variety of devices our designs can no longer be static, 960px wide layouts...</p>
+                <div class="flex flex-center">
+                  <div class="flex-none mr1">
+                    <p class="m0"><a class="btn btn-outline shadow border-none" href="/lessons/15">Read lesson 15</a></p>
+              </div>
+                  <div class="flex-auto">
+                  </div>
+                  <div class="flex-none mr1">
+                <h5 class="m0 h5 med-gray regular">Karolina Szczur</h5>
+              </div>
+                  <div class="flex-none">
+                  <img class="lazyload" data-src="https://hackdesign.imgix.net/curators/karolinaszczur@2x.jpg?ixlib=rails-2.1.4&dpr=2&w=40&h=40&fit=crop&fm=jpeg&auto=format&mask=ellipse&s=d7979f409c41daf77d2545029f11082b" width="40" >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-center mb4">
+            <div class="flex-none mr3">
+              <a href="/lessons/16">
+                <div class="md-show">
+                  <img class="lazyload" data-src="https://hackdesign.imgix.net/lessons/week16.png?ixlib=rails-2.1.4&dpr=2&w=128&fm=jpeg&fit=max&auto=format&alt=A%20hot%20air%20balloon%20on%20a%20sunny%20day&s=7140edee76c54e7fac062c25ae4bdc15" width="128" >
+              </div>
+</a>            </div>
+            <div class="flex-auto prose">
+              <h3 class="serif mt0 mb2 semibold"><a class="red" href="/lessons/16">UI Design with Purpose</a></h3>
+                <p class="med-gray">The purpose of UI design, above all else, is to deliver content and make visual sense of well planned out UX. The often debated battle between flat versus skeuomorphic design poses us a pivotal style decision in how we allow the content to communicate through our designs...</p>
+                <div class="flex flex-center">
+                  <div class="flex-none mr1">
+                    <p class="m0"><a class="btn btn-outline shadow border-none" href="/lessons/16">Read lesson 16</a></p>
+              </div>
+                  <div class="flex-auto">
+                  </div>
+                  <div class="flex-none mr1">
+                <h5 class="m0 h5 med-gray regular">Travis Silverman</h5>
+              </div>
+                  <div class="flex-none">
+                  <img class="lazyload" data-src="https://hackdesign.imgix.net/curators/travissilverman@2x.jpg?ixlib=rails-2.1.4&dpr=2&w=40&h=40&fit=crop&fm=jpeg&auto=format&mask=ellipse&s=f304a231681cf62e7db2d514508df73f" width="40" >
+                </div>
+              </div>
+            </div>
+          </div>
+        <div class="overflow-hidden mb4">
+        <h4 class="h5 regular m0 gray crossbars" id="graphic-design-principles"> Graphic design principles </h4>
+      </div>
+          <div class="flex flex-center mb4">
+            <div class="flex-none mr3">
+              <a href="/lessons/17">
+                <div class="md-show">
+                  <img class="lazyload" data-src="https://hackdesign.imgix.net/lessons/week17.png?ixlib=rails-2.1.4&dpr=2&w=128&fm=jpeg&fit=max&auto=format&alt=A%20hot%20air%20balloon%20on%20a%20sunny%20day&s=d7f36a016161923cac596b2c442c7e96" width="128" >
+              </div>
+</a>            </div>
+            <div class="flex-auto prose">
+              <h3 class="serif mt0 mb2 semibold"><a class="red" href="/lessons/17">Building Color Confidence</a></h3>
+                <p class="med-gray">Color is a powerful form of communication. We are so attracted to color and so repelled by it that even if the coolest design were presented to us, if we didn&#39;t like the color, we wouldn&#39;t like it at all.
+
+The objective of this lesson is to help build color confidence. This means being able to create harmonious and effective color combinations in our designs...</p>
+                <div class="flex flex-center">
+                  <div class="flex-none mr1">
+                    <p class="m0"><a class="btn btn-outline shadow border-none" href="/lessons/17">Read lesson 17</a></p>
+              </div>
+                  <div class="flex-auto">
+                  </div>
+                  <div class="flex-none mr1">
+                <h5 class="m0 h5 med-gray regular">Joanne Chang</h5>
+              </div>
+                  <div class="flex-none">
+                  <img class="lazyload" data-src="https://hackdesign.imgix.net/curators/joannechang@2x.jpg?ixlib=rails-2.1.4&dpr=2&w=40&h=40&fit=crop&fm=jpeg&auto=format&mask=ellipse&s=d0ae4ccfeba5465a8866b1c2c4f988fa" width="40" >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-center mb4">
+            <div class="flex-none mr3">
+              <a href="/lessons/18">
+                <div class="md-show">
+                  <img class="lazyload" data-src="https://hackdesign.imgix.net/lessons/week18.png?ixlib=rails-2.1.4&dpr=2&w=128&fm=jpeg&fit=max&auto=format&alt=A%20hot%20air%20balloon%20on%20a%20sunny%20day&s=2c5850fd6ec8d7266c3ab895e21463ef" width="128" >
+              </div>
+</a>            </div>
+            <div class="flex-auto prose">
+              <h3 class="serif mt0 mb2 semibold"><a class="red" href="/lessons/18">White Space: Designing the Invisible</a></h3>
+                <p class="med-gray">No matter what visual style is hot, no matter what great product you&#39;re using, every piece of good design uses &quot;white space&quot; well...</p>
+                <div class="flex flex-center">
+                  <div class="flex-none mr1">
+                    <p class="m0"><a class="btn btn-outline shadow border-none" href="/lessons/18">Read lesson 18</a></p>
+              </div>
+                  <div class="flex-auto">
+                  </div>
+                  <div class="flex-none mr1">
+                <h5 class="m0 h5 med-gray regular">David Kadavy</h5>
+              </div>
+                  <div class="flex-none">
+                  <img class="lazyload" data-src="https://hackdesign.imgix.net/curators/davidkadavy@2x.jpg?ixlib=rails-2.1.4&dpr=2&w=40&h=40&fit=crop&fm=jpeg&auto=format&mask=ellipse&s=0f25b8c388f25e89d0c81f91fa3f5815" width="40" >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-center mb4">
+            <div class="flex-none mr3">
+              <a href="/lessons/19">
+                <div class="md-show">
+                  <img class="lazyload" data-src="https://hackdesign.imgix.net/lessons/week19.png?ixlib=rails-2.1.4&dpr=2&w=128&fm=jpeg&fit=max&auto=format&alt=A%20hot%20air%20balloon%20on%20a%20sunny%20day&s=d500e272c441767872207b23d05a747f" width="128" >
+              </div>
+</a>            </div>
+            <div class="flex-auto prose">
+              <h3 class="serif mt0 mb2 semibold"><a class="red" href="/lessons/19">Achieving Visual Hierarchy</a></h3>
+                <p class="med-gray">One of the key principles of design is visual hierarchy, which encompasses almost everything you’ve learned on Hack Design so far. Whether you’re dealing with screen or print media, you have content—words and images—that needs to be organized into a layout. Visual hierarchy is the organization and prioritization of content as a means to communicate a message...</p>
+                <div class="flex flex-center">
+                  <div class="flex-none mr1">
+                    <p class="m0"><a class="btn btn-outline shadow border-none" href="/lessons/19">Read lesson 19</a></p>
+              </div>
+                  <div class="flex-auto">
+                  </div>
+                  <div class="flex-none mr1">
+                <h5 class="m0 h5 med-gray regular">Lise Statelman</h5>
+              </div>
+                  <div class="flex-none">
+                  <img class="lazyload" data-src="https://hackdesign.imgix.net/curators/lisestatelman@2x.jpg?ixlib=rails-2.1.4&dpr=2&w=40&h=40&fit=crop&fm=jpeg&auto=format&mask=ellipse&s=a5199b82f48163fb8971bc7d0ff0ed01" width="40" >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-center mb4">
+            <div class="flex-none mr3">
+              <a href="/lessons/20">
+                <div class="md-show">
+                  <img class="lazyload" data-src="https://hackdesign.imgix.net/lessons/week20.png?ixlib=rails-2.1.4&dpr=2&w=128&fm=jpeg&fit=max&auto=format&alt=A%20hot%20air%20balloon%20on%20a%20sunny%20day&s=9b28153a49d34395d727afbeecf56b79" width="128" >
+              </div>
+</a>            </div>
+            <div class="flex-auto prose">
+              <h3 class="serif mt0 mb2 semibold"><a class="red" href="/lessons/20">Deciding What&#39;s Good: Design Principles</a></h3>
+                <p class="med-gray">Design is (by nature) a subjective thing. It&#39;s also a team sport. When making design decisions about look or feel or content, disagreement is common and tensions can emerge. So how do you decide what &quot;good&quot; is for your product?
+
+Good design happens when a good user experience meets a solid brand identity...</p>
+                <div class="flex flex-center">
+                  <div class="flex-none mr1">
+                    <p class="m0"><a class="btn btn-outline shadow border-none" href="/lessons/20">Read lesson 20</a></p>
+              </div>
+                  <div class="flex-auto">
+                  </div>
+                  <div class="flex-none mr1">
+                <h5 class="m0 h5 med-gray regular">Kate Rutter</h5>
+              </div>
+                  <div class="flex-none">
+                  <img class="lazyload" data-src="https://hackdesign.imgix.net/curators/katerutter@2x.jpg?ixlib=rails-2.1.4&dpr=2&w=40&h=40&fit=crop&fm=jpeg&auto=format&mask=ellipse&s=b314525f1764d0d3c6f9b7533c07b5d1" width="40" >
+                </div>
+              </div>
+            </div>
+          </div>
+        <div class="overflow-hidden mb4">
+        <h4 class="h5 regular m0 gray crossbars" id="mobile"> Mobile </h4>
+      </div>
+          <div class="flex flex-center mb4">
+            <div class="flex-none mr3">
+              <a href="/lessons/21">
+                <div class="md-show">
+                  <img class="lazyload" data-src="https://hackdesign.imgix.net/lessons/week21.png?ixlib=rails-2.1.4&dpr=2&w=128&fm=jpeg&fit=max&auto=format&alt=A%20hot%20air%20balloon%20on%20a%20sunny%20day&s=09791473c4da929fad6463c52aedda0e" width="128" >
+              </div>
+</a>            </div>
+            <div class="flex-auto prose">
+              <h3 class="serif mt0 mb2 semibold"><a class="red" href="/lessons/21">Designing your first iPhone App</a></h3>
+                <p class="med-gray">It&#39;s undeniable that mobile devices have become a huge part of modern society. Similar to what the web did, iOS has revolutionized what digital products can be by giving them a home. The huge difference, however, are the two foundations. iOS is much different than the web in that it&#39;s able to provide a native home with a tightly controlled experience for it&#39;s applications...</p>
+                <div class="flex flex-center">
+                  <div class="flex-none mr1">
+                    <p class="m0"><a class="btn btn-outline shadow border-none" href="/lessons/21">Read lesson 21</a></p>
+              </div>
+                  <div class="flex-auto">
+                  </div>
+                  <div class="flex-none mr1">
+                <h5 class="m0 h5 med-gray regular">Brian Benitez</h5>
+              </div>
+                  <div class="flex-none">
+                  <img class="lazyload" data-src="https://hackdesign.imgix.net/curators/brianbenitez@2x.jpg?ixlib=rails-2.1.4&dpr=2&w=40&h=40&fit=crop&fm=jpeg&auto=format&mask=ellipse&s=79f977505873f512239525a9789a0bfb" width="40" >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-center mb4">
+            <div class="flex-none mr3">
+              <a href="/lessons/22">
+                <div class="md-show">
+                  <img class="lazyload" data-src="https://hackdesign.imgix.net/lessons/week22.png?ixlib=rails-2.1.4&dpr=2&w=128&fm=jpeg&fit=max&auto=format&alt=A%20hot%20air%20balloon%20on%20a%20sunny%20day&s=797943074719d7ab3d2ae68a7f117bdf" width="128" >
+              </div>
+</a>            </div>
+            <div class="flex-auto prose">
+              <h3 class="serif mt0 mb2 semibold"><a class="red" href="/lessons/22">Designing for Mobile Web</a></h3>
+                <p class="med-gray">If we&#39;ve entered any particular age or genre in web development, it&#39;s most likely that of accessibility. We can now view web pages on almost any device and, WiFi permitting, from almost anywhere in the world. What&#39;s even cooler is that we finally have the tools to make web pages usable, functional, and beautiful without designing entirely separate apps for the mobile experience...</p>
+                <div class="flex flex-center">
+                  <div class="flex-none mr1">
+                    <p class="m0"><a class="btn btn-outline shadow border-none" href="/lessons/22">Read lesson 22</a></p>
+              </div>
+                  <div class="flex-auto">
+                  </div>
+                  <div class="flex-none mr1">
+                <h5 class="m0 h5 med-gray regular">Julie Ann Horvath</h5>
+              </div>
+                  <div class="flex-none">
+                  <img class="lazyload" data-src="https://hackdesign.imgix.net/curators/julieannhorvath@2x.jpg?ixlib=rails-2.1.4&dpr=2&w=40&h=40&fit=crop&fm=jpeg&auto=format&mask=ellipse&s=34cd67b646a5526105072eace93a8a43" width="40" >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-center mb4">
+            <div class="flex-none mr3">
+              <a href="/lessons/23">
+                <div class="md-show">
+                  <img class="lazyload" data-src="https://hackdesign.imgix.net/lessons/week23.png?ixlib=rails-2.1.4&dpr=2&w=128&fm=jpeg&fit=max&auto=format&alt=A%20hot%20air%20balloon%20on%20a%20sunny%20day&s=18c24497a9f589efb850fd27a99b314a" width="128" >
+              </div>
+</a>            </div>
+            <div class="flex-auto prose">
+              <h3 class="serif mt0 mb2 semibold"><a class="red" href="/lessons/23">Mobile App Analytics Is Not That Special</a></h3>
+                <p class="med-gray">There are a handful of special concepts that are important in mobile analytics, but most of the concepts people use in building out custom web analytics are very transferable to mobile app development.  4 of the 5 items below come from the general analytics or web analytics ecosystem – but I&#39;ll ask you to think about how they apply to your mobile app.</p>
+                <div class="flex flex-center">
+                  <div class="flex-none mr1">
+                    <p class="m0"><a class="btn btn-outline shadow border-none" href="/lessons/23">Read lesson 23</a></p>
+              </div>
+                  <div class="flex-auto">
+                  </div>
+                  <div class="flex-none mr1">
+                <h5 class="m0 h5 med-gray regular">Kyle Wild</h5>
+              </div>
+                  <div class="flex-none">
+                  <img class="lazyload" data-src="https://hackdesign.imgix.net/curators/kylewild@2x.jpg?ixlib=rails-2.1.4&dpr=2&w=40&h=40&fit=crop&fm=jpeg&auto=format&mask=ellipse&s=db2dfb136b9326934bc8c8f345cf2d45" width="40" >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-center mb4">
+            <div class="flex-none mr3">
+              <a href="/lessons/24">
+                <div class="md-show">
+                  <img class="lazyload" data-src="https://hackdesign.imgix.net/lessons/week24.png?ixlib=rails-2.1.4&dpr=2&w=128&fm=jpeg&fit=max&auto=format&alt=A%20hot%20air%20balloon%20on%20a%20sunny%20day&s=5b74cf066c6e9931ad08a650b01ced62" width="128" >
+              </div>
+</a>            </div>
+            <div class="flex-auto prose">
+              <h3 class="serif mt0 mb2 semibold"><a class="red" href="/lessons/24">Using Icons in Interfaces</a></h3>
+                <p class="med-gray">With the proliferation of mobile devices, icons play an increasingly important role in interface design. Icons can help aid in scannability, save space at smaller screen sizes, and afford clear, tappable targets. That said, icons can cause user confusion and frustration when used poorly...</p>
+                <div class="flex flex-center">
+                  <div class="flex-none mr1">
+                    <p class="m0"><a class="btn btn-outline shadow border-none" href="/lessons/24">Read lesson 24</a></p>
+              </div>
+                  <div class="flex-auto">
+                  </div>
+                  <div class="flex-none mr1">
+                <h5 class="m0 h5 med-gray regular">Brent Jackson</h5>
+              </div>
+                  <div class="flex-none">
+                  <img class="lazyload" data-src="https://hackdesign.imgix.net/curators/brentjackson@2x.jpg?ixlib=rails-2.1.4&dpr=2&w=40&h=40&fit=crop&fm=jpeg&auto=format&mask=ellipse&s=dc2ffec1e407903702c861da9eac1fc4" width="40" >
+                </div>
+              </div>
+            </div>
+          </div>
+        <div class="overflow-hidden mb4">
+        <h4 class="h5 regular m0 gray crossbars" id="interaction-design"> Interaction design </h4>
+      </div>
+          <div class="flex flex-center mb4">
+            <div class="flex-none mr3">
+              <a href="/lessons/25">
+                <div class="md-show">
+                  <img class="lazyload" data-src="https://hackdesign.imgix.net/lessons/week25.png?ixlib=rails-2.1.4&dpr=2&w=128&fm=jpeg&fit=max&auto=format&alt=A%20hot%20air%20balloon%20on%20a%20sunny%20day&s=088c83f1e0a127fda8bc132009cab107" width="128" >
+              </div>
+</a>            </div>
+            <div class="flex-auto prose">
+              <h3 class="serif mt0 mb2 semibold"><a class="red" href="/lessons/25">Power to the People – Mastering Human-Centered Design</a></h3>
+                <p class="med-gray">The importance of user-centered design is well-established. This blunt statement from Dieter Rams says it all: &quot;In my eyes, indifference towards people and the lives they lead is the only sin a designer can commit.&quot; But it&#39;s a significant challenge to translate high-level, human-centered concerns into the actual clicks and taps of a software product...</p>
+                <div class="flex flex-center">
+                  <div class="flex-none mr1">
+                    <p class="m0"><a class="btn btn-outline shadow border-none" href="/lessons/25">Read lesson 25</a></p>
+              </div>
+                  <div class="flex-auto">
+                  </div>
+                  <div class="flex-none mr1">
+                <h5 class="m0 h5 med-gray regular">Chad Mazzola</h5>
+              </div>
+                  <div class="flex-none">
+                  <img class="lazyload" data-src="https://hackdesign.imgix.net/curators/chadmazzola@2x.jpg?ixlib=rails-2.1.4&dpr=2&w=40&h=40&fit=crop&fm=jpeg&auto=format&mask=ellipse&s=7f90489ce85ec9d491e434e611c88297" width="40" >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-center mb4">
+            <div class="flex-none mr3">
+              <a href="/lessons/26">
+                <div class="md-show">
+                  <img class="lazyload" data-src="https://hackdesign.imgix.net/lessons/week26.png?ixlib=rails-2.1.4&dpr=2&w=128&fm=jpeg&fit=max&auto=format&alt=A%20hot%20air%20balloon%20on%20a%20sunny%20day&s=9f29247e410be805e6f36e6a990bd9e2" width="128" >
+              </div>
+</a>            </div>
+            <div class="flex-auto prose">
+              <h3 class="serif mt0 mb2 semibold"><a class="red" href="/lessons/26">Content Strategy for Interfaces</a></h3>
+                <p class="med-gray">The design of your idea – its simplicity, usability and ability to hook and delight people – is the reason your product could succeed when others fail. But design isn’t just about color swatches, logos or the placement of buttons and labels. It’s about creating an environment that tells people the story of your product and shows them how to use it...</p>
+                <div class="flex flex-center">
+                  <div class="flex-none mr1">
+                    <p class="m0"><a class="btn btn-outline shadow border-none" href="/lessons/26">Read lesson 26</a></p>
+              </div>
+                  <div class="flex-auto">
+                  </div>
+                  <div class="flex-none mr1">
+                <h5 class="m0 h5 med-gray regular">Amy Thibodeau</h5>
+              </div>
+                  <div class="flex-none">
+                  <img class="lazyload" data-src="https://hackdesign.imgix.net/curators/amythibodeau@2x.jpg?ixlib=rails-2.1.4&dpr=2&w=40&h=40&fit=crop&fm=jpeg&auto=format&mask=ellipse&s=91fe1ada098c02911dcbefc697a95643" width="40" >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-center mb4">
+            <div class="flex-none mr3">
+              <a href="/lessons/27">
+                <div class="md-show">
+                  <img class="lazyload" data-src="https://hackdesign.imgix.net/lessons/week27.png?ixlib=rails-2.1.4&dpr=2&w=128&fm=jpeg&fit=max&auto=format&alt=A%20hot%20air%20balloon%20on%20a%20sunny%20day&s=01b06da68caede905236116b2a5d2a89" width="128" >
+              </div>
+</a>            </div>
+            <div class="flex-auto prose">
+              <h3 class="serif mt0 mb2 semibold"><a class="red" href="/lessons/27">Creative problem solving and everyday design</a></h3>
+                <p class="med-gray">Design is about an open and inspired way of working. It&#39;s about solving problems, and that&#39;s applicable to anyone, whether you&#39;re a CEO, graphic designer, middle school teacher, or MBA student. Abstracted from it&#39;s traditional graphic or industrial roots, design is now being applied to a wide variety of new spaces and pushing the bar of what many industries can achieve...</p>
+                <div class="flex flex-center">
+                  <div class="flex-none mr1">
+                    <p class="m0"><a class="btn btn-outline shadow border-none" href="/lessons/27">Read lesson 27</a></p>
+              </div>
+                  <div class="flex-auto">
+                  </div>
+                  <div class="flex-none mr1">
+                <h5 class="m0 h5 med-gray regular">Andy Hagerman</h5>
+              </div>
+                  <div class="flex-none">
+                  <img class="lazyload" data-src="https://hackdesign.imgix.net/curators/andyhagerman@2x.jpg?ixlib=rails-2.1.4&dpr=2&w=40&h=40&fit=crop&fm=jpeg&auto=format&mask=ellipse&s=509427412608ee203c5eb355433b3b11" width="40" >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-center mb4">
+            <div class="flex-none mr3">
+              <a href="/lessons/28">
+                <div class="md-show">
+                  <img class="lazyload" data-src="https://hackdesign.imgix.net/lessons/week28.png?ixlib=rails-2.1.4&dpr=2&w=128&fm=jpeg&fit=max&auto=format&alt=A%20hot%20air%20balloon%20on%20a%20sunny%20day&s=d523a2c44a8c1b4222383a0faae1652e" width="128" >
+              </div>
+</a>            </div>
+            <div class="flex-auto prose">
+              <h3 class="serif mt0 mb2 semibold"><a class="red" href="/lessons/28">Effective Behavior Design</a></h3>
+                <p class="med-gray">Part of designing a user experience is convincing the user to behave a certain way in order to reach a specific outcome. For example, right now I&#39;m asking you to read articles, watch a video, and fill out a form to become better skilled at design.
+
+Behavior design gives us an organized and specific model to define and foster behavior change...</p>
+                <div class="flex flex-center">
+                  <div class="flex-none mr1">
+                    <p class="m0"><a class="btn btn-outline shadow border-none" href="/lessons/28">Read lesson 28</a></p>
+              </div>
+                  <div class="flex-auto">
+                  </div>
+                  <div class="flex-none mr1">
+                <h5 class="m0 h5 med-gray regular">Alex Baldwin</h5>
+              </div>
+                  <div class="flex-none">
+                  <img class="lazyload" data-src="https://hackdesign.imgix.net/user/avatar/4/file.jpeg?ixlib=rails-2.1.4&dpr=2&w=40&h=40&fit=crop&fm=jpeg&auto=format&mask=ellipse&s=b216b55fe23ce3402c5c3f9ac54cd7b3" width="40" >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-center mb4">
+            <div class="flex-none mr3">
+              <a href="/lessons/29">
+                <div class="md-show">
+                  <img class="lazyload" data-src="https://hackdesign.imgix.net/lessons/week29.png?ixlib=rails-2.1.4&dpr=2&w=128&fm=jpeg&fit=max&auto=format&alt=A%20hot%20air%20balloon%20on%20a%20sunny%20day&s=4437e00007d85d080ecd1ae47720f677" width="128" >
+              </div>
+</a>            </div>
+            <div class="flex-auto prose">
+              <h3 class="serif mt0 mb2 semibold"><a class="red" href="/lessons/29">Cultivating Compassion</a></h3>
+                <p class="med-gray">Being a great designer isn’t just about devising the best possible solution; it’s about making sure we’re solving the right problem. To do so, we need to hone our listening skills and deepen our capacity for empathy — both for our users and our colleagues. This requires being present, open-minded, caring, patient and accepting...</p>
+                <div class="flex flex-center">
+                  <div class="flex-none mr1">
+                    <p class="m0"><a class="btn btn-outline shadow border-none" href="/lessons/29">Read lesson 29</a></p>
+              </div>
+                  <div class="flex-auto">
+                  </div>
+                  <div class="flex-none mr1">
+                <h5 class="m0 h5 med-gray regular">Whitney Hess</h5>
+              </div>
+                  <div class="flex-none">
+                  <img class="lazyload" data-src="https://hackdesign.imgix.net/curators/whitneyhess@2x.jpg?ixlib=rails-2.1.4&dpr=2&w=40&h=40&fit=crop&fm=jpeg&auto=format&mask=ellipse&s=933106b6ab748451fefa8ced0247f8ec" width="40" >
+                </div>
+              </div>
+            </div>
+          </div>
+        <div class="overflow-hidden mb4">
+        <h4 class="h5 regular m0 gray crossbars" id="front-end-design"> Front-end design </h4>
+      </div>
+          <div class="flex flex-center mb4">
+            <div class="flex-none mr3">
+              <a href="/lessons/30">
+                <div class="md-show">
+                  <img class="lazyload" data-src="https://hackdesign.imgix.net/lessons/week30.png?ixlib=rails-2.1.4&dpr=2&w=128&fm=jpeg&fit=max&auto=format&alt=A%20hot%20air%20balloon%20on%20a%20sunny%20day&s=d4545cd0fb16a9daeb734683f671fa68" width="128" >
+              </div>
+</a>            </div>
+            <div class="flex-auto prose">
+              <h3 class="serif mt0 mb2 semibold"><a class="red" href="/lessons/30">Designing with Code</a></h3>
+                <p class="med-gray">Some designers are terrified of touching code and others simply prefer other tools...</p>
+                <div class="flex flex-center">
+                  <div class="flex-none mr1">
+                    <p class="m0"><a class="btn btn-outline shadow border-none" href="/lessons/30">Read lesson 30</a></p>
+              </div>
+                  <div class="flex-auto">
+                  </div>
+                  <div class="flex-none mr1">
+                <h5 class="m0 h5 med-gray regular">Chris Lee</h5>
+              </div>
+                  <div class="flex-none">
+                  <img class="lazyload" data-src="https://hackdesign.imgix.net/curators/chrislee@2x.jpg?ixlib=rails-2.1.4&dpr=2&w=40&h=40&fit=crop&fm=jpeg&auto=format&mask=ellipse&s=d015b192ace0e34d628809e7adc7b20a" width="40" >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-center mb4">
+            <div class="flex-none mr3">
+              <a href="/lessons/31">
+                <div class="md-show">
+                  <img class="lazyload" data-src="https://hackdesign.imgix.net/lessons/week31.png?ixlib=rails-2.1.4&dpr=2&w=128&fm=jpeg&fit=max&auto=format&alt=A%20hot%20air%20balloon%20on%20a%20sunny%20day&s=cf2d7311d1ecbd8aba4ca5ba1ea803c2" width="128" >
+              </div>
+</a>            </div>
+            <div class="flex-auto prose">
+              <h3 class="serif mt0 mb2 semibold"><a class="red" href="/lessons/31">It&#39;s All Just Systems Design</a></h3>
+                <p class="med-gray">As someone who designs and codes, I find new similarities between visual design and programming every day. At Segment.io I work on all of our visual design, but also on our Javascript library and components. I&#39;ve found the same principles to apply to both fields, and I think it&#39;s crucial for more programmer and designers to realize that...</p>
+                <div class="flex flex-center">
+                  <div class="flex-none mr1">
+                    <p class="m0"><a class="btn btn-outline shadow border-none" href="/lessons/31">Read lesson 31</a></p>
+              </div>
+                  <div class="flex-auto">
+                  </div>
+                  <div class="flex-none mr1">
+                <h5 class="m0 h5 med-gray regular">Ian Storm Taylor</h5>
+              </div>
+                  <div class="flex-none">
+                  <img class="lazyload" data-src="https://hackdesign.imgix.net/curators/ianstormtaylor@2x.jpg?ixlib=rails-2.1.4&dpr=2&w=40&h=40&fit=crop&fm=jpeg&auto=format&mask=ellipse&s=1c89b7bde971f9be5e55f46d49f573c6" width="40" >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-center mb4">
+            <div class="flex-none mr3">
+              <a href="/lessons/32">
+                <div class="md-show">
+                  <img class="lazyload" data-src="https://hackdesign.imgix.net/lessons/week32.png?ixlib=rails-2.1.4&dpr=2&w=128&fm=jpeg&fit=max&auto=format&alt=A%20hot%20air%20balloon%20on%20a%20sunny%20day&s=118f42a704067ceba28e4e1bb1e0e8e4" width="128" >
+              </div>
+</a>            </div>
+            <div class="flex-auto prose">
+              <h3 class="serif mt0 mb2 semibold"><a class="red" href="/lessons/32">Designing with Grids</a></h3>
+                <p class="med-gray">The human brain has a penchant for identifying patterns, decoding them, then recoding them for later reuse. Not only does this cycle make it easier for us to understand the world around us, but it helps us constantly improve the tools we use to interact with it. Perhaps one of the most salient manifestions of this in the design world are grids...</p>
+                <div class="flex flex-center">
+                  <div class="flex-none mr1">
+                    <p class="m0"><a class="btn btn-outline shadow border-none" href="/lessons/32">Read lesson 32</a></p>
+              </div>
+                  <div class="flex-auto">
+                  </div>
+                  <div class="flex-none mr1">
+                <h5 class="m0 h5 med-gray regular">Reda Lemeden</h5>
+              </div>
+                  <div class="flex-none">
+                  <img class="lazyload" data-src="https://hackdesign.imgix.net/curators/redalemeden@2x.jpg?ixlib=rails-2.1.4&dpr=2&w=40&h=40&fit=crop&fm=jpeg&auto=format&mask=ellipse&s=c15007a3c0281d8533ab210196ba2d80" width="40" >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-center mb4">
+            <div class="flex-none mr3">
+              <a href="/lessons/33">
+                <div class="md-show">
+                  <img class="lazyload" data-src="https://hackdesign.imgix.net/lessons/week33.png?ixlib=rails-2.1.4&dpr=2&w=128&fm=jpeg&fit=max&auto=format&alt=A%20hot%20air%20balloon%20on%20a%20sunny%20day&s=305b0321377aebe37b38f0463e50aa3a" width="128" >
+              </div>
+</a>            </div>
+            <div class="flex-auto prose">
+              <h3 class="serif mt0 mb2 semibold"><a class="red" href="/lessons/33">Summer Vacation!</a></h3>
+                <p class="med-gray">We hope you&#39;ve been enjoying Hack Design so far! As we prepare to finish up the second half of the year, take this week to go back and complete any lessons you haven&#39;t finished yet.
+
+If you&#39;re all caught up, go you! Try hacking on a project this week and design something you couldn&#39;t possibly have made eight months ago...</p>
+                <div class="flex flex-center">
+                  <div class="flex-none mr1">
+                    <p class="m0"><a class="btn btn-outline shadow border-none" href="/lessons/33">Read lesson 33</a></p>
+              </div>
+                  <div class="flex-auto">
+                  </div>
+                  <div class="flex-none mr1">
+                <h5 class="m0 h5 med-gray regular">Wells Riley</h5>
+              </div>
+                  <div class="flex-none">
+                  <img class="lazyload" data-src="https://hackdesign.imgix.net/curators/wellsriley@2x.jpg?ixlib=rails-2.1.4&dpr=2&w=40&h=40&fit=crop&fm=jpeg&auto=format&mask=ellipse&s=e44c12a6f24d0e8f24f9db5f40910cb2" width="40" >
+                </div>
+              </div>
+            </div>
+          </div>
+        <div class="overflow-hidden mb4">
+        <h4 class="h5 regular m0 gray crossbars" id="product-design"> Product design </h4>
+      </div>
+          <div class="flex flex-center mb4">
+            <div class="flex-none mr3">
+              <a href="/lessons/34">
+                <div class="md-show">
+                  <img class="lazyload" data-src="https://hackdesign.imgix.net/lessons/week34.png?ixlib=rails-2.1.4&dpr=2&w=128&fm=jpeg&fit=max&auto=format&alt=A%20hot%20air%20balloon%20on%20a%20sunny%20day&s=c495bebb3c118df18db645361c287bb1" width="128" >
+              </div>
+</a>            </div>
+            <div class="flex-auto prose">
+              <h3 class="serif mt0 mb2 semibold"><a class="red" href="/lessons/34">Designing Quality Products</a></h3>
+                <p class="med-gray">It&#39;s time to stop churning out software and start creating quality products. Ideas are a dime a dozen. Design and Development tools are advanced. Let&#39;s focus on what really matters.
+
+Great products begin and end with great design. Design should influence all product decisions. Even fundamental business questions like what to build, or how to sell it, should be treated as design decisions...</p>
+                <div class="flex flex-center">
+                  <div class="flex-none mr1">
+                    <p class="m0"><a class="btn btn-outline shadow border-none" href="/lessons/34">Read lesson 34</a></p>
+              </div>
+                  <div class="flex-auto">
+                  </div>
+                  <div class="flex-none mr1">
+                <h5 class="m0 h5 med-gray regular">Nathan Manousos</h5>
+              </div>
+                  <div class="flex-none">
+                  <img class="lazyload" data-src="https://hackdesign.imgix.net/curators/nathanmanousos@2x.jpg?ixlib=rails-2.1.4&dpr=2&w=40&h=40&fit=crop&fm=jpeg&auto=format&mask=ellipse&s=fa99e9d761de4e960efac15bc09fb282" width="40" >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-center mb4">
+            <div class="flex-none mr3">
+              <a href="/lessons/35">
+                <div class="md-show">
+                  <img class="lazyload" data-src="https://hackdesign.imgix.net/lessons/week35.png?ixlib=rails-2.1.4&dpr=2&w=128&fm=jpeg&fit=max&auto=format&alt=A%20hot%20air%20balloon%20on%20a%20sunny%20day&s=b4b1e968131fefed38d0ae6bd08aede3" width="128" >
+              </div>
+</a>            </div>
+            <div class="flex-auto prose">
+              <h3 class="serif mt0 mb2 semibold"><a class="red" href="/lessons/35">The Little Things Matter</a></h3>
+                <p class="med-gray">As the bar for great design keeps getting higher and higher, having a keen attention to detail will help your products stand apart from the crowd. Your app should delight its users, whether that&#39;s through a beautifully executed feature, organic interface design, or even just having a bit of fun...</p>
+                <div class="flex flex-center">
+                  <div class="flex-none mr1">
+                    <p class="m0"><a class="btn btn-outline shadow border-none" href="/lessons/35">Read lesson 35</a></p>
+              </div>
+                  <div class="flex-auto">
+                  </div>
+                  <div class="flex-none mr1">
+                <h5 class="m0 h5 med-gray regular">Kyle Bragger</h5>
+              </div>
+                  <div class="flex-none">
+                  <img class="lazyload" data-src="https://hackdesign.imgix.net/curators/kylebragger@2x.jpg?ixlib=rails-2.1.4&dpr=2&w=40&h=40&fit=crop&fm=jpeg&auto=format&mask=ellipse&s=c784d723db3d947363867ec605308b77" width="40" >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-center mb4">
+            <div class="flex-none mr3">
+              <a href="/lessons/36">
+                <div class="md-show">
+                  <img class="lazyload" data-src="https://hackdesign.imgix.net/lessons/week36.png?ixlib=rails-2.1.4&dpr=2&w=128&fm=jpeg&fit=max&auto=format&alt=A%20hot%20air%20balloon%20on%20a%20sunny%20day&s=b487407548bf9b4dc70506904fd565a1" width="128" >
+              </div>
+</a>            </div>
+            <div class="flex-auto prose">
+              <h3 class="serif mt0 mb2 semibold"><a class="red" href="/lessons/36">Designing Habit-Forming Products</a></h3>
+                <p class="med-gray">How do companies design experiences to repeatedly engage users? Designing for habits builds upon the principles of consumer psychology to create new routines.
+
+I&#39;ve spent the past 2 years researching how products create habits and I&#39;ve included a few articles to pique your interest. As you&#39;ll soon learn, the world is becoming a more persuasive, and potentially addictive place...</p>
+                <div class="flex flex-center">
+                  <div class="flex-none mr1">
+                    <p class="m0"><a class="btn btn-outline shadow border-none" href="/lessons/36">Read lesson 36</a></p>
+              </div>
+                  <div class="flex-auto">
+                  </div>
+                  <div class="flex-none mr1">
+                <h5 class="m0 h5 med-gray regular">Nir Eyal</h5>
+              </div>
+                  <div class="flex-none">
+                  <img class="lazyload" data-src="https://hackdesign.imgix.net/curators/nireyal@2x.jpg?ixlib=rails-2.1.4&dpr=2&w=40&h=40&fit=crop&fm=jpeg&auto=format&mask=ellipse&s=4b2e8fb1cd31181fdc0e45da8e99afeb" width="40" >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-center mb4">
+            <div class="flex-none mr3">
+              <a href="/lessons/37">
+                <div class="md-show">
+                  <img class="lazyload" data-src="https://hackdesign.imgix.net/lessons/week37.png?ixlib=rails-2.1.4&dpr=2&w=128&fm=jpeg&fit=max&auto=format&alt=A%20hot%20air%20balloon%20on%20a%20sunny%20day&s=9773802cef11ac4ecb0ba9b82ecf66d2" width="128" >
+              </div>
+</a>            </div>
+            <div class="flex-auto prose">
+              <h3 class="serif mt0 mb2 semibold"><a class="red" href="/lessons/37">A Holistic Guide to Product Design</a></h3>
+                <p class="med-gray">Product Design is the process of identifying a market opportunity, clearly defining the problem and then developing a robust solution to take to market.  An effective Product Designer (in the software space) possesses multidisciplinary skills across business, user research, interaction design and visual design.  Previous lessons focused in depth on some of the aforementioned disciplines...</p>
+                <div class="flex flex-center">
+                  <div class="flex-none mr1">
+                    <p class="m0"><a class="btn btn-outline shadow border-none" href="/lessons/37">Read lesson 37</a></p>
+              </div>
+                  <div class="flex-auto">
+                  </div>
+                  <div class="flex-none mr1">
+                <h5 class="m0 h5 med-gray regular">Joseph Huang</h5>
+              </div>
+                  <div class="flex-none">
+                  <img class="lazyload" data-src="https://hackdesign.imgix.net/curators/josephhuang@2x.jpg?ixlib=rails-2.1.4&dpr=2&w=40&h=40&fit=crop&fm=jpeg&auto=format&mask=ellipse&s=f82bcb908bb20205294cca595fd3ea11" width="40" >
+                </div>
+              </div>
+            </div>
+          </div>
+        <div class="overflow-hidden mb4">
+        <h4 class="h5 regular m0 gray crossbars" id="advanced-user-interface"> Advanced user interface </h4>
+      </div>
+          <div class="flex flex-center mb4">
+            <div class="flex-none mr3">
+              <a href="/lessons/38">
+                <div class="md-show">
+                  <img class="lazyload" data-src="https://hackdesign.imgix.net/lessons/week38.png?ixlib=rails-2.1.4&dpr=2&w=128&fm=jpeg&fit=max&auto=format&alt=A%20hot%20air%20balloon%20on%20a%20sunny%20day&s=b190453d0cbfaa64e7268f8fc26199ca" width="128" >
+              </div>
+</a>            </div>
+            <div class="flex-auto prose">
+              <h3 class="serif mt0 mb2 semibold"><a class="red" href="/lessons/38">Animation, Direct Manipulation &amp; Feedback</a></h3>
+                <p class="med-gray">When we talk about Animation and Direct Manipulation in interfaces they can often seem like completely disconnected concepts. You might explain direct manipulation as a user sliding a slider; or animation by showing a list updating by shifting around...</p>
+                <div class="flex flex-center">
+                  <div class="flex-none mr1">
+                    <p class="m0"><a class="btn btn-outline shadow border-none" href="/lessons/38">Read lesson 38</a></p>
+              </div>
+                  <div class="flex-auto">
+                  </div>
+                  <div class="flex-none mr1">
+                <h5 class="m0 h5 med-gray regular">Ben Taylor</h5>
+              </div>
+                  <div class="flex-none">
+                  <img class="lazyload" data-src="https://hackdesign.imgix.net/curators/bentaylor@2x.jpg?ixlib=rails-2.1.4&dpr=2&w=40&h=40&fit=crop&fm=jpeg&auto=format&mask=ellipse&s=a6ebc2a9f71396803014079e2e6784e7" width="40" >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-center mb4">
+            <div class="flex-none mr3">
+              <a href="/lessons/39">
+                <div class="md-show">
+                  <img class="lazyload" data-src="https://hackdesign.imgix.net/lessons/week39.png?ixlib=rails-2.1.4&dpr=2&w=128&fm=jpeg&fit=max&auto=format&alt=A%20hot%20air%20balloon%20on%20a%20sunny%20day&s=ac060a27074d660ae39e9e732f9d4bdb" width="128" >
+              </div>
+</a>            </div>
+            <div class="flex-auto prose">
+              <h3 class="serif mt0 mb2 semibold"><a class="red" href="/lessons/39">The Human Element</a></h3>
+                <p class="med-gray">User interfaces consist of so much more than a series of mockups, typography choices or error states. The interactions that happen beyond the static are those that introduce life into your interface — enabling you to reward your users’ proficiency, increase positive emotions, and introduce new methods of interactivity that have permeated app design for years...</p>
+                <div class="flex flex-center">
+                  <div class="flex-none mr1">
+                    <p class="m0"><a class="btn btn-outline shadow border-none" href="/lessons/39">Read lesson 39</a></p>
+              </div>
+                  <div class="flex-auto">
+                  </div>
+                  <div class="flex-none mr1">
+                <h5 class="m0 h5 med-gray regular">Scott Hurff</h5>
+              </div>
+                  <div class="flex-none">
+                  <img class="lazyload" data-src="https://hackdesign.imgix.net/curators/scotthurff@2x.jpg?ixlib=rails-2.1.4&dpr=2&w=40&h=40&fit=crop&fm=jpeg&auto=format&mask=ellipse&s=066c922cfd2ec443d822a66350bab8a0" width="40" >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-center mb4">
+            <div class="flex-none mr3">
+              <a href="/lessons/40">
+                <div class="md-show">
+                  <img class="lazyload" data-src="https://hackdesign.imgix.net/lessons/week40.png?ixlib=rails-2.1.4&dpr=2&w=128&fm=jpeg&fit=max&auto=format&alt=A%20hot%20air%20balloon%20on%20a%20sunny%20day&s=f32782119d132109f5279c9a009349d2" width="128" >
+              </div>
+</a>            </div>
+            <div class="flex-auto prose">
+              <h3 class="serif mt0 mb2 semibold"><a class="red" href="/lessons/40">Essentials to tame a wild beast - Pushing prototypes with Quartz Composer</a></h3>
+                <p class="med-gray">Recent shifts in mobile design means we must also shift our thinking. The use of motion and animation plays an essential part in conveying the personality of your work. Think of your favorite apps and Im sure you can pick out an interaction coupled with animation that makes each unique as well as adding function...</p>
+                <div class="flex flex-center">
+                  <div class="flex-none mr1">
+                    <p class="m0"><a class="btn btn-outline shadow border-none" href="/lessons/40">Read lesson 40</a></p>
+              </div>
+                  <div class="flex-auto">
+                  </div>
+                  <div class="flex-none mr1">
+                <h5 class="m0 h5 med-gray regular">Dave O Brien</h5>
+              </div>
+                  <div class="flex-none">
+                  <img class="lazyload" data-src="https://hackdesign.imgix.net/curators/daveobrien@2x.jpg?ixlib=rails-2.1.4&dpr=2&w=40&h=40&fit=crop&fm=jpeg&auto=format&mask=ellipse&s=0f7ed19b8ef0378f507b6a6b7656e45d" width="40" >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-center mb4">
+            <div class="flex-none mr3">
+              <a href="/lessons/41">
+                <div class="md-show">
+                  <img class="lazyload" data-src="https://hackdesign.imgix.net/lessons/week41.png?ixlib=rails-2.1.4&dpr=2&w=128&fm=jpeg&fit=max&auto=format&alt=A%20hot%20air%20balloon%20on%20a%20sunny%20day&s=2c782a3867cdff8fa4862e6605da5ee4" width="128" >
+              </div>
+</a>            </div>
+            <div class="flex-auto prose">
+              <h3 class="serif mt0 mb2 semibold"><a class="red" href="/lessons/41">Prototyping Advanced Mobile Interactions with Framer</a></h3>
+                <p class="med-gray">As motion and animations become more and more important in UI design, designers have started searching for the best tools to help them add a layer of interactivity to their work. You might have heard about After Effects, Quartz Composer or Xcode before in this context...</p>
+                <div class="flex flex-center">
+                  <div class="flex-none mr1">
+                    <p class="m0"><a class="btn btn-outline shadow border-none" href="/lessons/41">Read lesson 41</a></p>
+              </div>
+                  <div class="flex-auto">
+                  </div>
+                  <div class="flex-none mr1">
+                <h5 class="m0 h5 med-gray regular">Cemre Güngör</h5>
+              </div>
+                  <div class="flex-none">
+                  <img class="lazyload" data-src="https://hackdesign.imgix.net/curators/cemregngr@2x.jpg?ixlib=rails-2.1.4&dpr=2&w=40&h=40&fit=crop&fm=jpeg&auto=format&mask=ellipse&s=a3db54ec7a64cbc4ea5fda6cd67be139" width="40" >
+                </div>
+              </div>
+            </div>
+          </div>
+        <div class="overflow-hidden mb4">
+        <h4 class="h5 regular m0 gray crossbars" id="advanced-user-experience"> Advanced user experience </h4>
+      </div>
+          <div class="flex flex-center mb4">
+            <div class="flex-none mr3">
+              <a href="/lessons/42">
+                <div class="md-show">
+                  <img class="lazyload" data-src="https://hackdesign.imgix.net/lessons/week42.png?ixlib=rails-2.1.4&dpr=2&w=128&fm=jpeg&fit=max&auto=format&alt=A%20hot%20air%20balloon%20on%20a%20sunny%20day&s=8dadfe326dbe3982f3d099a336542a12" width="128" >
+              </div>
+</a>            </div>
+            <div class="flex-auto prose">
+              <h3 class="serif mt0 mb2 semibold"><a class="red" href="/lessons/42">The All Encompassing User Experience</a></h3>
+                <p class="med-gray">One thing product designers and companies must try their best to excel in, is the art of creating a product that is built with empathy. In doing so, you have the ability to create a great user experience. UX is more than just visual and interaction design. It’s in the way you market, engage users, simplify the ease of use with your product, customer service and more...</p>
+                <div class="flex flex-center">
+                  <div class="flex-none mr1">
+                    <p class="m0"><a class="btn btn-outline shadow border-none" href="/lessons/42">Read lesson 42</a></p>
+              </div>
+                  <div class="flex-auto">
+                  </div>
+                  <div class="flex-none mr1">
+                <h5 class="m0 h5 med-gray regular">Cat Noone</h5>
+              </div>
+                  <div class="flex-none">
+                  <img class="lazyload" data-src="https://hackdesign.imgix.net/curators/catnoone@2x.jpg?ixlib=rails-2.1.4&dpr=2&w=40&h=40&fit=crop&fm=jpeg&auto=format&mask=ellipse&s=762f4bf6f9a4c609431f5786c91a25e4" width="40" >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-center mb4">
+            <div class="flex-none mr3">
+              <a href="/lessons/43">
+                <div class="md-show">
+                  <img class="lazyload" data-src="https://hackdesign.imgix.net/lessons/week43.png?ixlib=rails-2.1.4&dpr=2&w=128&fm=jpeg&fit=max&auto=format&alt=A%20hot%20air%20balloon%20on%20a%20sunny%20day&s=89cafeef175ae93b309e3c3e8e44a794" width="128" >
+              </div>
+</a>            </div>
+            <div class="flex-auto prose">
+              <h3 class="serif mt0 mb2 semibold"><a class="red" href="/lessons/43">Designing With Your Ears</a></h3>
+                <p class="med-gray">Design starts before you even draw your first sketch. As a designer, your goal is to impact people&#39;s life in a positive and meaningful way. But how to make sure your product will actually solve a real problem? How do you make sure your target audience will actually use it? Here are a few links that will help you build empathy for your user and teach you how to design with your ears. </p>
+                <div class="flex flex-center">
+                  <div class="flex-none mr1">
+                    <p class="m0"><a class="btn btn-outline shadow border-none" href="/lessons/43">Read lesson 43</a></p>
+              </div>
+                  <div class="flex-auto">
+                  </div>
+                  <div class="flex-none mr1">
+                <h5 class="m0 h5 med-gray regular">Arthur Bodolec</h5>
+              </div>
+                  <div class="flex-none">
+                  <img class="lazyload" data-src="https://hackdesign.imgix.net/curators/arthurbodolec@2x.jpg?ixlib=rails-2.1.4&dpr=2&w=40&h=40&fit=crop&fm=jpeg&auto=format&mask=ellipse&s=7d3de7052d2b79d833e3bcb3e7e1b4c6" width="40" >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-center mb4">
+            <div class="flex-none mr3">
+              <a href="/lessons/44">
+                <div class="md-show">
+                  <img class="lazyload" data-src="https://hackdesign.imgix.net/lessons/week44.png?ixlib=rails-2.1.4&dpr=2&w=128&fm=jpeg&fit=max&auto=format&alt=A%20hot%20air%20balloon%20on%20a%20sunny%20day&s=1d2dfd7ee2f2fe1d15c375eef804a09e" width="128" >
+              </div>
+</a>            </div>
+            <div class="flex-auto prose">
+              <h3 class="serif mt0 mb2 semibold"><a class="red" href="/lessons/44">Win The Internet With A/B Testing</a></h3>
+                <p class="med-gray">Designing websites and building products for people is an exciting job. You get to use creativity and problem solving skills to create, in some cases, world-changing solutions. The most exciting part of this, however, is being able to run user-research sessions and A/B tests to see how your customers actually use your product...</p>
+                <div class="flex flex-center">
+                  <div class="flex-none mr1">
+                    <p class="m0"><a class="btn btn-outline shadow border-none" href="/lessons/44">Read lesson 44</a></p>
+              </div>
+                  <div class="flex-auto">
+                  </div>
+                  <div class="flex-none mr1">
+                <h5 class="m0 h5 med-gray regular">Manik Rathee</h5>
+              </div>
+                  <div class="flex-none">
+                  <img class="lazyload" data-src="https://hackdesign.imgix.net/curators/manikrathee@2x.jpg?ixlib=rails-2.1.4&dpr=2&w=40&h=40&fit=crop&fm=jpeg&auto=format&mask=ellipse&s=3368d28cd103a4125264e67e1f8d5c8e" width="40" >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-center mb4">
+            <div class="flex-none mr3">
+              <a href="/lessons/45">
+                <div class="md-show">
+                  <img class="lazyload" data-src="https://hackdesign.imgix.net/lessons/week45.png?ixlib=rails-2.1.4&dpr=2&w=128&fm=jpeg&fit=max&auto=format&alt=A%20hot%20air%20balloon%20on%20a%20sunny%20day&s=d8802fe0cb611471894e66a5f39117c0" width="128" >
+              </div>
+</a>            </div>
+            <div class="flex-auto prose">
+              <h3 class="serif mt0 mb2 semibold"><a class="red" href="/lessons/45">Design Your Mobile App For Multiple Platforms</a></h3>
+                <p class="med-gray">These days it has become commonplace – if not necessary – for mobile apps to be designed across multiple platforms. Whether you’re starting from scratch or adapting an existing app to a new OS, the biggest challenge when designing for multiple platforms is balancing the consistency of branding and functionality with the conventions of individual platforms...</p>
+                <div class="flex flex-center">
+                  <div class="flex-none mr1">
+                    <p class="m0"><a class="btn btn-outline shadow border-none" href="/lessons/45">Read lesson 45</a></p>
+              </div>
+                  <div class="flex-auto">
+                  </div>
+                  <div class="flex-none mr1">
+                <h5 class="m0 h5 med-gray regular">Nikki Will</h5>
+              </div>
+                  <div class="flex-none">
+                  <img class="lazyload" data-src="https://hackdesign.imgix.net/curators/nikkiwill@2x.jpg?ixlib=rails-2.1.4&dpr=2&w=40&h=40&fit=crop&fm=jpeg&auto=format&mask=ellipse&s=357f5b38cba627d1b5d7be91a4820e7f" width="40" >
+                </div>
+              </div>
+            </div>
+          </div>
+        <div class="overflow-hidden mb4">
+        <h4 class="h5 regular m0 gray crossbars" id="context-and-next-steps"> Context and next steps </h4>
+      </div>
+          <div class="flex flex-center mb4">
+            <div class="flex-none mr3">
+              <a href="/lessons/46">
+                <div class="md-show">
+                  <img class="lazyload" data-src="https://hackdesign.imgix.net/lessons/week46.png?ixlib=rails-2.1.4&dpr=2&w=128&fm=jpeg&fit=max&auto=format&alt=A%20hot%20air%20balloon%20on%20a%20sunny%20day&s=78c80e544d202cb8fa8dea5f380156a0" width="128" >
+              </div>
+</a>            </div>
+            <div class="flex-auto prose">
+              <h3 class="serif mt0 mb2 semibold"><a class="red" href="/lessons/46">Kickstarting Your Design Career</a></h3>
+                <p class="med-gray">Formal design education is lacking in many areas, which means being proactive about your education in the beginning stages of your career will greatly benefit you when you step out into the real world. A solid body of work in your portfolio will get you noticed, but it&#39;s your soft skills, the aspects that are often pushed aside in favour of technical mastery, that will get you hired...</p>
+                <div class="flex flex-center">
+                  <div class="flex-none mr1">
+                    <p class="m0"><a class="btn btn-outline shadow border-none" href="/lessons/46">Read lesson 46</a></p>
+              </div>
+                  <div class="flex-auto">
+                  </div>
+                  <div class="flex-none mr1">
+                <h5 class="m0 h5 med-gray regular">Janna Hagan</h5>
+              </div>
+                  <div class="flex-none">
+                  <img class="lazyload" data-src="https://hackdesign.imgix.net/curators/jannahagan@2x.jpg?ixlib=rails-2.1.4&dpr=2&w=40&h=40&fit=crop&fm=jpeg&auto=format&mask=ellipse&s=1a3f2f8be78ffb13e7159fd555982782" width="40" >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-center mb4">
+            <div class="flex-none mr3">
+              <a href="/lessons/47">
+                <div class="md-show">
+                  <img class="lazyload" data-src="https://hackdesign.imgix.net/lessons/week47.png?ixlib=rails-2.1.4&dpr=2&w=128&fm=jpeg&fit=max&auto=format&alt=A%20hot%20air%20balloon%20on%20a%20sunny%20day&s=2e19ebdccfda7c9b3e9b949157673fdc" width="128" >
+              </div>
+</a>            </div>
+            <div class="flex-auto prose">
+              <h3 class="serif mt0 mb2 semibold"><a class="red" href="/lessons/47">How To Get Your First Design Job With No Experience</a></h3>
+                <p class="med-gray">Last week, we examined a few different paths designers can take in their careers. Developing your soft skills—and gaining confidence in them—is essential in transitioning to the professional world of design...</p>
+                <div class="flex flex-center">
+                  <div class="flex-none mr1">
+                    <p class="m0"><a class="btn btn-outline shadow border-none" href="/lessons/47">Read lesson 47</a></p>
+              </div>
+                  <div class="flex-auto">
+                  </div>
+                  <div class="flex-none mr1">
+                <h5 class="m0 h5 med-gray regular">Devon Ko</h5>
+              </div>
+                  <div class="flex-none">
+                  <img class="lazyload" data-src="https://hackdesign.imgix.net/user/avatar/88598/c929fa27-e80b-41fd-9329-7e1f2c40648f.jpeg?ixlib=rails-2.1.4&dpr=2&w=40&h=40&fit=crop&fm=jpeg&auto=format&mask=ellipse&s=3ae000fac78880ad11572e5116ad241d" width="40" >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-center mb4">
+            <div class="flex-none mr3">
+              <a href="/lessons/48">
+                <div class="md-show">
+                  <img class="lazyload" data-src="https://hackdesign.imgix.net/lessons/week48.png?ixlib=rails-2.1.4&dpr=2&w=128&fm=jpeg&fit=max&auto=format&alt=A%20hot%20air%20balloon%20on%20a%20sunny%20day&s=45d92056ba8a58a03c35343c6487b2c5" width="128" >
+              </div>
+</a>            </div>
+            <div class="flex-auto prose">
+              <h3 class="serif mt0 mb2 semibold"><a class="red" href="/lessons/48">Why Design?</a></h3>
+                <p class="med-gray">“Questions are places in your mind where answers fit. If you haven’t asked the question, the answer has nowhere to go. It hits your mind and bounces right off. You have to ask the question – you have to want to know – in order to open up the space for the answer to fit.” – Clayton Christensen
+
+When learning, you must question before you can receive an answer...</p>
+                <div class="flex flex-center">
+                  <div class="flex-none mr1">
+                    <p class="m0"><a class="btn btn-outline shadow border-none" href="/lessons/48">Read lesson 48</a></p>
+              </div>
+                  <div class="flex-auto">
+                  </div>
+                  <div class="flex-none mr1">
+                <h5 class="m0 h5 med-gray regular">Alex Baldwin</h5>
+              </div>
+                  <div class="flex-none">
+                  <img class="lazyload" data-src="https://hackdesign.imgix.net/user/avatar/4/file.jpeg?ixlib=rails-2.1.4&dpr=2&w=40&h=40&fit=crop&fm=jpeg&auto=format&mask=ellipse&s=b216b55fe23ce3402c5c3f9ac54cd7b3" width="40" >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-center mb4">
+            <div class="flex-none mr3">
+              <a href="/lessons/49">
+                <div class="md-show">
+                  <img class="lazyload" data-src="https://hackdesign.imgix.net/lessons/week49.png?ixlib=rails-2.1.4&dpr=2&w=128&fm=jpeg&fit=max&auto=format&alt=A%20hot%20air%20balloon%20on%20a%20sunny%20day&s=6b58a961fd65abea1cc5c52d8cdd0ab1" width="128" >
+              </div>
+</a>            </div>
+            <div class="flex-auto prose">
+              <h3 class="serif mt0 mb2 semibold"><a class="red" href="/lessons/49">Vim as a Design Tool</a></h3>
+                <p class="med-gray">For many designers, editing and writing text comprises a large chunk of our work. Whether it&#39;s writing down ideas, editing code, or comprising an email, text-editing makes up a non-trivial part of our day. With this in mind we&#39;ll explore how and why we could use Vim, a command-based text editor, to improve our design workflow.</p>
+                <div class="flex flex-center">
+                  <div class="flex-none mr1">
+                    <p class="m0"><a class="btn btn-outline shadow border-none" href="/lessons/49">Read lesson 49</a></p>
+              </div>
+                  <div class="flex-auto">
+                  </div>
+                  <div class="flex-none mr1">
+                <h5 class="m0 h5 med-gray regular">Adam Morse</h5>
+              </div>
+                  <div class="flex-none">
+                  <img class="lazyload" data-src="https://hackdesign.imgix.net/curators/adammorse@2x.jpg?ixlib=rails-2.1.4&dpr=2&w=40&h=40&fit=crop&fm=jpeg&auto=format&mask=ellipse&s=681a1b4d813aed6a1c3bb289626230ca" width="40" >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-center mb4">
+            <div class="flex-none mr3">
+              <a href="/lessons/50">
+                <div class="md-show">
+                  <img class="lazyload" data-src="https://hackdesign.imgix.net/lessons/week50.png?ixlib=rails-2.1.4&dpr=2&w=128&fm=jpeg&fit=max&auto=format&alt=A%20hot%20air%20balloon%20on%20a%20sunny%20day&s=4bd2f3ed69b1ee04e9788ce3f8a4be74" width="128" >
+              </div>
+</a>            </div>
+            <div class="flex-auto prose">
+              <h3 class="serif mt0 mb2 semibold"><a class="red" href="/lessons/50">Finale: A field guide to being better at design by being self aware</a></h3>
+                <p class="med-gray">Being great at design is as much about knowing the theory as it is about knowing your own areas of growth as a designer. As the Hack Design course comes to a close with this last lesson, I want to point to a few resources that will help you understand yourself better as a designer. These are questions that, as designers, we have all asked ourselves at some point of time...</p>
+                <div class="flex flex-center">
+                  <div class="flex-none mr1">
+                    <p class="m0"><a class="btn btn-outline shadow border-none" href="/lessons/50">Read lesson 50</a></p>
+              </div>
+                  <div class="flex-auto">
+                  </div>
+                  <div class="flex-none mr1">
+                <h5 class="m0 h5 med-gray regular">Tuhin Kumar</h5>
+              </div>
+                  <div class="flex-none">
+                  <img class="lazyload" data-src="https://hackdesign.imgix.net/curators/tuhinkumar@2x.jpg?ixlib=rails-2.1.4&dpr=2&w=40&h=40&fit=crop&fm=jpeg&auto=format&mask=ellipse&s=48b71f39f700539d3284bff404c321ac" width="40" >
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+
+  </div>
+</article>
+
+      <aside class="py4 container">
+      <div class="clearfix mxn3">
+        <div class="col-12 md-col-6 p3 mx-auto bg-light-gray rounded">
+          <h3 class="mt0 mb1 h4 slate">Join 262,931 others in learning design</h3>
+          <p class="mt0 mb2 h5 regular med-gray">Receive a design lesson each week, crafted by a design pro.</p>
+          <form id="footer_new_user" class="new_user" action="/users" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="YwryrNpwmaGZ7weNZX9JmzZBpgMMN5Wva49iGkTNtjn0Ypg//gn2X4dOePGa5/grVL5m5xrg+P+d4fRWiTjkIA==" />
+            <div class="flex shadow rounded">
+              <input placeholder="Email address" class="border-none flex-auto m0 field rounded-left btn-pad h5 regular" type="email" name="user[email]" id="user_email" />
+              <input type="submit" name="commit" value="Get started" class="btn rounded-right h5 white bg-green" data-disable-with="Get started" />
+            </div>
+</form>        </div>
+      </div>
+  </aside>
+
+<footer class="container">
+  <div class="flex border-top py2 border-top border-gray col-12">
+  <p class="flex-none mr2 med-gray">&copy; 2018</p>
+  <div class="flex-auto"></div>
+  <nav class="flex-none mxn2">
+    <a class="med-gray px2" href="/about">About</a>
+    <a class="med-gray px2" href="/cdn-cgi/l/email-protection#2e4d41405a4f4d5a6e464f4d454a4b5d47494000415c49115d5b4c444b4d5a13664b570b1c1e5a464b5c4b0b1c1e664f4d450b1c1e6a4b5d474940">Contact</a>
+    <a class="med-gray px2" href="/curators">Curators</a>
+    <a class="med-gray px2" href="/privacy">Legal</a>
+  </nav>
+</div>
+</footer>
+
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/d07b1474/cloudflare-static/email-decode.min.js"></script><script src="/assets/application-68edeedbb64b1ee9fe95fc49dc1173196aef0ff507b51cebab1e74a30e8f4ce7.js"></script>
+    <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='//www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-37398951-1');ga('send','pageview');
+    </script>
+  </body>
+</html>
