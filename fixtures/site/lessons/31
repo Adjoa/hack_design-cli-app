@@ -1,0 +1,294 @@
+<!doctype html>
+<html>
+  <head>
+    <link href="https://hackdesign.org:80/lessons/31" rel="canonical" />    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>It&amp;#39;s All Just Systems Design - Hack Design</title>
+    <meta name="google-site-verification" content="3St7QluPELiVsbygStx0b1gr8dbwjQ_OfdkZI_ffj-g">
+        <meta name="description" content="As someone who designs and codes, I find new similarities between visual design and programming every day. At Segment.io I work on all of our visual des...">
+  <meta property="twitter:card" content="summary">
+  <meta property="twitter:site" content="hackdesign">
+    <meta property="twitter:creator" content="ianstormtaylor">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="It&#39;s All Just Systems Design">
+  <meta property="og:image" content="https://hackdesign.org/assets/lessons/week31-d4359d027844ea4b4fda11efe88f1c35a6b7db54ee365af7846a984cc7f0a2a8.png">
+  <meta property="og:description" content="As someone who designs and codes, I find new similarities between visual design and programming every day. At Segment.io I work on all of our visual design, but also on our Javascript library and c...">
+  <meta property="og:url" content="https://hackdesign.org/lessons/31">
+
+    <meta property="fb:admins" content="1082730090">
+    <link href="https://unpkg.com/basscss@7.1.1/css/basscss.min.css" rel="stylesheet">
+    <link rel="stylesheet" media="all" href="/assets/application-78044084155daafaf1bb867b9e6adfd53b55a479c9ec74ef9fa73e8e4bdebfad.css" />
+    <script>
+      (function(d) {
+        var config = {
+          kitId: 'kyb5lym',
+          scriptTimeout: 3000,
+          async: true
+        },
+        h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+      })(document);
+    </script>
+    <!-- Hotjar Tracking Code for https://hackdesign.org -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:612701,hjsv:5};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/4.0.1/lazysizes.min.js"></script>
+    <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="hBmtam+H4SEn8IyGRPVzYXYrFVBX/KVbNCMGFEdfEvfhivt/IBc5IuUIlj2MeCPd3dFFAxiBld1yT5OzGEMAzg==" />
+  </head>
+  <body class="lessons show" data-spy="scroll" data-target="#navbar-example" >
+    <!--[if lt IE 8]>
+    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <header class="">
+  <div class="md-flex flex-center container">
+    <div class="flex-none">
+      <a href="/"><img width="200" alt="Hack Design" class="py2" src="/assets/logo-941fdc47b5760af9654de5b6ba12fba1f4073426b16b2ebbb519e13b6c5a9600.svg" /></a>
+    </div>
+    <div class="flex-auto">
+    </div>
+    <div class="flex-none">
+      <nav class="h5 sm-show">
+        <a class="gray mr3" href="/lessons">View all lessons</a>
+        <a class="gray mr3" href="/toolkit">Toolkit</a>
+          <a class="gray mr3" href="/sign_in">Sign In</a>
+      </nav>
+    </div>
+  </div>
+  <nav class="sm-hide h5 border-top border-bottom px2 py1">
+    <a class="gray mr3" href="/lessons">Lessons</a>
+    <a class="gray mr3" href="/toolkit">Toolkit</a>
+      <a class="gray mr3" href="/sign_in">Sign In</a>
+  </nav>
+</header>
+
+    <div id="flash" class="row">
+</div>
+
+    
+
+<article class="py3 container">
+  <div class="lg-col-9 mx-auto">
+    <header class="mb2">
+      <h1 class="m0 h2 slate serif regular mr4 dark-blue">It&#39;s All Just Systems Design</h1>
+    </header>
+  <div class="clearfix mxn2">
+    <div class="col col-12 md-col-8 px2">
+      <div class="flex flex-center mb3">
+        <div class="flex-none mr2">
+            <img width="40" src="https://hackdesign.imgix.net/curators/ianstormtaylor@2x.jpg?ixlib=rails-2.1.4&dpr=2&w=40&h=40&fit=crop&fm=jpeg&auto=format&mask=ellipse&s=1c89b7bde971f9be5e55f46d49f573c6" alt="Ianstormtaylor@2x.jpg?ixlib=rails 2.1" />
+        </div>
+        <div class="flex-none mr2">
+          <h2 class="m0 h5 regular dark-blue"> Ian Storm Taylor </h2>
+        </div>
+        <div class="flex-none">
+          <p class="m0 h5 med-gray">Lesson 31</p>
+        </div>
+      </div>
+
+      <div class="prose prose-intro underline-link mb4">
+        <p>As someone who designs and codes, I find new similarities between visual design and programming every day. At <a href="https://segment.io" target="_blank">Segment.io</a> I work on all of our visual design, but also on our <a href="https://github.com/segmentio/analytics.js" target="_blank">Javascript library</a> and components. I've found the same principles to apply to both fields, and I think it's crucial for more programmer and designers to realize that. Hopefully after today's lesson you'll realize that you've been designing interfaces all along!</p>
+
+<p>A well-designed visual interface has lots of the same features as a well-designed programming interface. Just like an API, a visual interface is designed to serve the user. They both strive to provide the user with the simplest solution that solves their problem. They both benefit from frequent refactoring to clean up debt. They're both made by combining many smaller components that do a <a href="http://csswizardry.com/2012/04/the-single-responsibility-principle-applied-to-css/" target="_blank">single thing well</a> into a larger product. </p>
+
+<p>Lots of interface designers already think about their interfaces like programmers think about APIs, they just might not realize it. If you remember only one thing, remember that "interface design" principles aren't limited to visual interfaces.</p>
+      </div>
+
+      <div class="mb4">
+        <ol class="m0 p0 list-style-none">
+            <li class="mb3">
+              <img class="hide left mr2" style="margin-top: 12px;" src="/assets/link_arrow-14256c940ab757198c8500bbd8a885fe4c91932e36ffc5a3d0026861d689c94c.svg" alt="Link arrow" />
+              <h3 class="h4 md-h3 serif mt0 mb1 semibold">
+                    <a target="_blank" class="red" href="http://bradfrostweb.com/blog/post/atomic-web-design/">Atomic Web Design</a>
+                </h3>
+                  <p class="prose m0 underline-link">Brad Frost informs us of a new way of approaching interface design, thinking of in terms of components, instead of the page-based model we've always used. It maps directly to the same idea of components, packagings, modules, or gems in programming.</p>
+            </li>
+            <li class="mb3">
+              <img class="hide left mr2" style="margin-top: 12px;" src="/assets/link_arrow-14256c940ab757198c8500bbd8a885fe4c91932e36ffc5a3d0026861d689c94c.svg" alt="Link arrow" />
+              <h3 class="h4 md-h3 serif mt0 mb1 semibold">
+                    <a target="_blank" class="red" href="http://37signals.com/svn/posts/2444-styling-for-change-with-rules-and-exceptions">Styling a Component</a>
+                </h3>
+                  <p class="prose m0 underline-link">Ryan Singer's article about component styling is a perfect example of how you need to think about frontend components as more than just pixel-perfect layouts. Just like designing an API, you need to think through the primary use cases and apply sensible defaults to your design, so that the user has less work to do on their end.
+<br /><br />
+In Ryan's case, he could achieve the same visual look with using either multiple margins or a single padding, but the single padding is a clear winner in terms of user experience for the developer because it makes for less brittle components.</p>
+            </li>
+            <li class="mb3">
+              <img class="hide left mr2" style="margin-top: 12px;" src="/assets/link_arrow-14256c940ab757198c8500bbd8a885fe4c91932e36ffc5a3d0026861d689c94c.svg" alt="Link arrow" />
+              <h3 class="h4 md-h3 serif mt0 mb1 semibold">
+                    <a target="_blank" class="red" href="http://mattgemmell.com/2012/05/24/api-design/">API Design</a>
+                </h3>
+                  <p class="prose m0 underline-link">In case it wasn't already obvious, the beginning of this excellent article by Matt Gemmell outlines why API design and interface design share so many similarities. An API is an application programming <strong>interface</strong> after all! And conversely, your visual interfaces can gain a lot from borrowing concepts from API design and programming.</p>
+            </li>
+            <li class="mb3">
+              <img class="hide left mr2" style="margin-top: 12px;" src="/assets/link_arrow-14256c940ab757198c8500bbd8a885fe4c91932e36ffc5a3d0026861d689c94c.svg" alt="Link arrow" />
+              <h3 class="h4 md-h3 serif mt0 mb1 semibold">
+                    <a target="_blank" class="red" href="http://ianstormtaylor.com/refactoring-githubs-design/">Refactoring GitHub&#39;s Design</a>
+                </h3>
+                  <p class="prose m0 underline-link">A good example of programming-thinking applied to design is the idea of refactoring, which designers are constantly doing while iterating on an interface. Just like in programming, your goal is to maintain functionality while rejigging the way you achieve that functionality. In programming, your public methods signatures stay the same, but their internals change. In visual design, the functionality of the product stays the same, but the visuals might change slightly to simplify the mental model for the user.
+<br /><br />
+If you take a second to think about refactoring your own interfaces, I'll bet a few optimizations spring to mind. The beautiful thing about thinking in terms of individual, reusable components while designing the visual parts of an interface is that it translates perfectly to the code you'll be writing to build it. When you find the right abstraction everything will just fall into place.</p>
+            </li>
+            <li class="mb3">
+              <img class="hide left mr2" style="margin-top: 12px;" src="/assets/link_arrow-14256c940ab757198c8500bbd8a885fe4c91932e36ffc5a3d0026861d689c94c.svg" alt="Link arrow" />
+              <h3 class="h4 md-h3 serif mt0 mb1 semibold">
+                    <a target="_blank" class="red" href="https://github.com/component/component">Component</a>
+                </h3>
+                  <p class="prose m0 underline-link">Thinking in terms of small components starts really paying dividends when you re-use their simple APIs across all of your different projects. That's where component(1) comes in, and I implore you to try it out. It makes it absolutely trivial to use components that others have written.
+<br /><br />
+There's already a huge library of Javascript components, but we're also starting to see visual UI elements being fleshed out as well. Things like <a href="https://github.com/component/counter" target="_blank">counters</a>, <a href="https://github.com/yields/alef" target="_blank">fonts</a>, <a href="https://github.com/segmentio/iphone-5-template" target="_blank">iPhone templates</a>, <a href="https://github.com/ramitos/dots" target="_blank">loading indicators</a>, <a href="https://github.com/component/tip" target="_blank">tooltips</a> and even <a href="https://github.com/yields/paper-stack" target="_blank">stacks of paper</a>! If you're feeling adventurous you can even start writing your own...</p>
+            </li>
+        </ol>
+      </div>
+
+        <label class="med-gray h5 mb2 block">Support Hack Design</label>
+        <div class="flex flex-center shadow rounded p2 mb3">
+          <div class="flex-none mr3">
+            <img alt="" class="" width="48" src="/assets/design-tools-2cebe17bf390db38213d28c13bdccc598093fb3d3291ad0474853d3bb175ddcf.svg" />
+          </div>
+          <div class="flex-auto">
+          <h5 class="h4 mt0 mb1 regular dark-blue">Looking to level up your design education?</h5>
+          <p class="mt0 mb2 med-gray">Get access to our Slack community when you support Hack Design. Ask for feedback from curators and preview new lessons.</p>
+            <a class="btn rounded h5 white bg-green" href="/patron">Become a patron</a>
+          </div>
+        </div>
+      <label class="med-gray h5 mb2 block">Instructor</label>
+      <div class="flex underline-link mb3">
+        <div class="flex-none mr3">
+            <img width="80" src="https://hackdesign.imgix.net/curators/ianstormtaylor@2x.jpg?ixlib=rails-2.1.4&dpr=2&w=80&h=80&fit=crop&fm=jpeg&auto=format&mask=ellipse&s=0d3ed5c227f3459320e7375beb26308f" alt="Ianstormtaylor@2x.jpg?ixlib=rails 2.1" />
+        </div>
+        <div class="flex-auto">
+          <h5 class="h3 mt0 mb1 regular dark-blue">Ian Storm Taylor</h5>
+          <h5 class="h4 mt0 mb1 med-gray regular">
+              Co-founder, 
+              <a target="_blank" href="http://segment.io">Segment.io</a>
+          </h5>
+          <p class="med-gray">I'm a designer+developer, and a co-founder of <a href="http://segment.io" target="_blank">Segment.io</a>, where I spend as much time writing Javascript as messing around in Photoshop. It's all just systems design, really. I <a href="http://ianstormtaylor.com/" target="_blank">write</a>, <a href="http://twitter.com/ianstormtaylor" target="_blank">tweet</a> and <a href="http://dribbble.com/ianstormtaylor" target="_blank">dribbble</a>.</p>
+        </div>
+      </div>
+
+
+        <label class="med-gray h5 mb2 block">Next lesson</label>
+        <div class="flex flex-center prose">
+          <div class="flex-none mr3">
+            <img width="80" src="https://hackdesign.imgix.net/lessons/week32.png?ixlib=rails-2.1.4&dpr=2&w=80&fm=jpeg&fit=max&auto=format&alt=A%20hot%20air%20balloon%20on%20a%20sunny%20day&s=689c8280021e1751c5259b4c2e21f0a2" alt="Week32.png?ixlib=rails 2.1" />
+          </div>
+          <div class="flex-auto">
+            <h3 class="serif mt0 mb2 semibold">
+              <a class="red" href="/lessons/32">Designing with Grids</a>
+            </h3>
+          </div>
+        </div>
+    </div>
+
+    <div class="col col-12 md-col-4 px2 md-show">
+      <figure class="m0">
+        <img width="280" src="https://hackdesign.imgix.net/lessons/week31.png?ixlib=rails-2.1.4&dpr=2&w=280&fm=jpeg&fit=max&auto=format&alt=A%20hot%20air%20balloon%20on%20a%20sunny%20day&s=6d2b56721542edd90a00cd2924bc9290" alt="Week31.png?ixlib=rails 2.1" />
+
+          <p class="center mt1 mb0 italic">
+            <a target="_blank" class="med-gray" href="http://lovelyascanbee.com">© Laura Bohill</a>
+          </p>
+      </figure>
+      <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?zoneid=1696&serve=CVYD42T&placement=hackdesignorg" id="_carbonads_js"></script>
+<style>
+  #carbonads a:link {
+    text-decoration: none!important;
+    color: #222!important;
+  }
+  .carbon-wrap {
+    margin-top: 36px;
+    float: left;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .carbon-img {
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+  }
+  .carbon-text {
+    float: left;
+    width: 50%;
+    padding-left: 16px;
+    box-sizing: border-box;
+    font-size: 12px;
+  }
+  .carbon-poweredby {
+    width: 100%;
+    font-size: 12px;
+    float: left;
+  }
+</style>
+
+    </div>
+</article>
+
+<aside class="fixed bottom-0 right-0 left-0 p2 bg-white-clear border-top border-gray flex flex-center">
+  <p class="m0 flex-none px2 md-show">
+    <a class="slate" href="/lessons">← View all lessons</a>
+  </p>
+  <div class="flex-auto"></div>
+  <a href="https://www.facebook.com/sharer.php?u=https://hackdesign.org/lessons/31" class="flex-none flex flex-center px3 slate" target="_blank">
+    <img src="https://icon.now.sh/facebook/24/38404F">
+    <p class="ml1 mb0">Share</p>
+  </a>
+  <a href="https://twitter.com/intent/tweet?url=https://hackdesign.org/lessons/31&text=It%27s+All+Just+Systems+Design&via=hackdesign" class="flex-none flex flex-center px3 slate" target="_blank">
+    <img src="https://icon.now.sh/twitter/24/38404F">
+    <p class="ml1 mb0">Tweet</p>
+  </a>
+  <div class="flex-auto"></div>
+    <p class="m0 flex-none px2 md-show ">
+      <a class="btn rounded h5 white bg-green" href="/">Subscribe</a>
+    </p>
+</aside>
+<style>
+  /* Extra padding for the share bar */
+  body { padding-bottom: 69px; }
+</style>
+
+
+      <aside class="py4 container">
+      <div class="clearfix mxn3">
+        <div class="col-12 md-col-6 p3 mx-auto bg-light-gray rounded">
+          <h3 class="mt0 mb1 h4 slate">Join 263,596 others in learning design</h3>
+          <p class="mt0 mb2 h5 regular med-gray">Receive a design lesson each week, crafted by a design pro.</p>
+          <form id="footer_new_user" class="new_user" action="/users" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="ej+BvvKonFspNzK7+Pq9th0OBiMmq2rT4jPhVsYhKtYfrNervThEWOvPKAAwd+0KtvRWcGnWWlWkX3TxmT047w==" />
+            <div class="flex shadow rounded">
+              <input placeholder="Email address" class="border-none flex-auto m0 field rounded-left btn-pad h5 regular" type="email" name="user[email]" id="user_email" />
+              <input type="submit" name="commit" value="Get started" class="btn rounded-right h5 white bg-green" data-disable-with="Get started" />
+            </div>
+</form>        </div>
+      </div>
+  </aside>
+
+<footer class="container">
+  <div class="flex border-top py2 border-top border-gray col-12">
+  <p class="flex-none mr2 med-gray">&copy; 2018</p>
+  <div class="flex-auto"></div>
+  <nav class="flex-none mxn2">
+    <a class="med-gray px2" href="/about">About</a>
+    <a class="med-gray px2" href="/cdn-cgi/l/email-protection#70131f1e04111304301811131b14150319171e5e1f02174f0305121a1513044d38150955424004181502155542403811131b55424034150319171e">Contact</a>
+    <a class="med-gray px2" href="/curators">Curators</a>
+    <a class="med-gray px2" href="/privacy">Legal</a>
+  </nav>
+</div>
+</footer>
+
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/d07b1474/cloudflare-static/email-decode.min.js"></script><script src="/assets/application-68edeedbb64b1ee9fe95fc49dc1173196aef0ff507b51cebab1e74a30e8f4ce7.js"></script>
+    <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='//www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-37398951-1');ga('send','pageview');
+    </script>
+  </body>
+</html>

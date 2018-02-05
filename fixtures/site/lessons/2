@@ -1,0 +1,295 @@
+<!doctype html>
+<html>
+  <head>
+    <link href="https://hackdesign.org:80/lessons/2" rel="canonical" />    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dive Into Typography - Hack Design</title>
+    <meta name="google-site-verification" content="3St7QluPELiVsbygStx0b1gr8dbwjQ_OfdkZI_ffj-g">
+        <meta name="description" content="In this lesson, we&#39;ll dive right in and learn a few quick – but really important – rules about typography. Before we start the course, let&#39;s define typo...">
+  <meta property="twitter:card" content="summary">
+  <meta property="twitter:site" content="hackdesign">
+    <meta property="twitter:creator" content="kerem">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Dive Into Typography">
+  <meta property="og:image" content="https://hackdesign.org/assets/lessons/week2-48272e59b9894afad614215295b4bd9a1bd58becb409d9dc0305dc579b2ea95d.png">
+  <meta property="og:description" content="In this lesson, we&#39;ll dive right in and learn a few quick – but really important – rules about typography. Before we start the course, let&#39;s define typography quickly. Typography can simply be desc...">
+  <meta property="og:url" content="https://hackdesign.org/lessons/2">
+
+    <meta property="fb:admins" content="1082730090">
+    <link href="https://unpkg.com/basscss@7.1.1/css/basscss.min.css" rel="stylesheet">
+    <link rel="stylesheet" media="all" href="/assets/application-78044084155daafaf1bb867b9e6adfd53b55a479c9ec74ef9fa73e8e4bdebfad.css" />
+    <script>
+      (function(d) {
+        var config = {
+          kitId: 'kyb5lym',
+          scriptTimeout: 3000,
+          async: true
+        },
+        h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+      })(document);
+    </script>
+    <!-- Hotjar Tracking Code for https://hackdesign.org -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:612701,hjsv:5};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/4.0.1/lazysizes.min.js"></script>
+    <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="9CUH4CXdV1T7u6bmeSb0JOyTd03+CVf+uVI7aS86Xd+ubeAnztvtkPBwVor7F7wP0QLvhL+nHbL2GxF472yhLw==" />
+  </head>
+  <body class="lessons show" data-spy="scroll" data-target="#navbar-example" >
+    <!--[if lt IE 8]>
+    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <header class="">
+  <div class="md-flex flex-center container">
+    <div class="flex-none">
+      <a href="/"><img width="200" alt="Hack Design" class="py2" src="/assets/logo-941fdc47b5760af9654de5b6ba12fba1f4073426b16b2ebbb519e13b6c5a9600.svg" /></a>
+    </div>
+    <div class="flex-auto">
+    </div>
+    <div class="flex-none">
+      <nav class="h5 sm-show">
+        <a class="gray mr3" href="/lessons">View all lessons</a>
+        <a class="gray mr3" href="/toolkit">Toolkit</a>
+          <a class="gray mr3" href="/sign_in">Sign In</a>
+      </nav>
+    </div>
+  </div>
+  <nav class="sm-hide h5 border-top border-bottom px2 py1">
+    <a class="gray mr3" href="/lessons">Lessons</a>
+    <a class="gray mr3" href="/toolkit">Toolkit</a>
+      <a class="gray mr3" href="/sign_in">Sign In</a>
+  </nav>
+</header>
+
+    <div id="flash" class="row">
+</div>
+
+    
+
+<article class="py3 container">
+  <div class="lg-col-9 mx-auto">
+    <header class="mb2">
+      <h1 class="m0 h2 slate serif regular mr4 dark-blue">Dive Into Typography</h1>
+    </header>
+  <div class="clearfix mxn2">
+    <div class="col col-12 md-col-8 px2">
+      <div class="flex flex-center mb3">
+        <div class="flex-none mr2">
+            <img width="40" src="https://hackdesign.imgix.net/curators/keremsuer@2x.jpg?ixlib=rails-2.1.4&dpr=2&w=40&h=40&fit=crop&fm=jpeg&auto=format&mask=ellipse&s=fe7b2e77ad4cd1d25754439d8a005e78" alt="Keremsuer@2x.jpg?ixlib=rails 2.1" />
+        </div>
+        <div class="flex-none mr2">
+          <h2 class="m0 h5 regular dark-blue"> Kerem Suer </h2>
+        </div>
+        <div class="flex-none">
+          <p class="m0 h5 med-gray">Lesson 2</p>
+        </div>
+      </div>
+
+      <div class="prose prose-intro underline-link mb4">
+        <p>In this lesson, we'll dive right in and learn a few quick – but really important – rules about typography. Before we start the course, let's define typography quickly. <strong>Typography can simply be described as the art of type</strong>. It's everything you can think of – like fonts, sizes, and readability.</p>
+
+<p>Next time while reading your favorite blog or newspaper, observe the fonts, line heights (the distance between each line), line lengths (how many letters per line), and font weights (bold, normal, light). CSS3 has enabled unprecedented control over fonts and text, so an understanding of the basic rules of typography will come in really handy in your work.</p>
+      </div>
+
+      <div class="mb4">
+        <ol class="m0 p0 list-style-none">
+            <li class="mb3">
+              <img class="hide left mr2" style="margin-top: 12px;" src="/assets/link_arrow-14256c940ab757198c8500bbd8a885fe4c91932e36ffc5a3d0026861d689c94c.svg" alt="Link arrow" />
+              <h3 class="h4 md-h3 serif mt0 mb1 semibold">
+                    <a target="_blank" class="red" href="http://freelancefolder.com/typography-essentials-a-getting-started-guide/">Typography Essentials – A Getting Started Guide</a>
+                </h3>
+                  <p class="prose m0 underline-link">Typography is all about observing the details of type. Next time you step outside, observe traffic signs, public transit signs, banners, logos, etc. and <b>remember</b> – each and every single one of them was designed by someone.</p>
+            </li>
+            <li class="mb3">
+              <img class="hide left mr2" style="margin-top: 12px;" src="/assets/link_arrow-14256c940ab757198c8500bbd8a885fe4c91932e36ffc5a3d0026861d689c94c.svg" alt="Link arrow" />
+              <h3 class="h4 md-h3 serif mt0 mb1 semibold">
+                    <a target="_blank" class="red" href="http://type.method.ac">KernType: The Kerning Game</a>
+                </h3>
+                  <p class="prose m0 underline-link">Seeing type as a designer is all about observation. Play the Kerning Game and score at least 70/100. </p>
+            </li>
+            <li class="mb3">
+              <img class="hide left mr2" style="margin-top: 12px;" src="/assets/link_arrow-14256c940ab757198c8500bbd8a885fe4c91932e36ffc5a3d0026861d689c94c.svg" alt="Link arrow" />
+              <h3 class="h4 md-h3 serif mt0 mb1 semibold">
+                    <a target="_blank" class="red" href="http://www.creativebloq.com/typography/better-web-typography-few-simple-steps-5132803">Better Web Typography In a Few Simple Steps</a>
+                </h3>
+                  <p class="prose m0 underline-link">Line breaks, correct quotes, dashes, and HTML entities. This is a great article to learn how to make web typography better in a few simple steps. Author Yves Peters points out very simple tips to make web typography more beautiful.</p>
+            </li>
+            <li class="mb3">
+              <img class="hide left mr2" style="margin-top: 12px;" src="/assets/link_arrow-14256c940ab757198c8500bbd8a885fe4c91932e36ffc5a3d0026861d689c94c.svg" alt="Link arrow" />
+              <h3 class="h4 md-h3 serif mt0 mb1 semibold">
+                    <a target="_blank" class="red" href="http://www.helveticafilm.com/watchnow.html">Helvetica - A Documentary About The Most Ubiquitous Typeface In The World</a>
+                </h3>
+                  <p class="prose m0 underline-link">Try to learn why this iconic typeface is so prevalent in our world, and how it grew to ubiquity. What does it represent, and why do designers love (or hate) to use it?
+<br><br>
+<strong>FULL MOVIE:</strong> The film is available anywhere in the world for $5.99 from the <a href="http://www.helveticafilm.com/watchnow.html">Helvetica website</a>. You can also find it from <a href="http://movies.netflix.com/WiMovie/Helvetica/70076125">Netflix</a>, <a href="http://www.amazon.com/Helvetica/dp/B002RIOGI0/">Amazon Prime</a>, and <a href="https://itunes.apple.com/us/movie/helvetica/id284740710">iTunes</a>.</p>
+            </li>
+            <li class="mb3">
+              <img class="hide left mr2" style="margin-top: 12px;" src="/assets/link_arrow-14256c940ab757198c8500bbd8a885fe4c91932e36ffc5a3d0026861d689c94c.svg" alt="Link arrow" />
+              <h3 class="h4 md-h3 serif mt0 mb1 semibold">
+                    <a target="_blank" class="red" href="http://shape.method.ac/">Shape Type: Letter Shaping Game</a>
+                </h3>
+                  <p class="prose m0 underline-link">This game is not as easy as the first one, so try to have fun and relax. If you score more than 60/100, high five!</p>
+            </li>
+            <li class="mb3">
+              <img class="hide left mr2" style="margin-top: 12px;" src="/assets/link_arrow-14256c940ab757198c8500bbd8a885fe4c91932e36ffc5a3d0026861d689c94c.svg" alt="Link arrow" />
+              <h3 class="h4 md-h3 serif mt0 mb1 semibold">
+                    <a target="_blank" class="red" href="https://web.archive.org/web/20161015175942/http://www.thinkingwithtype.com/">Bonus Material: &quot;Thinking With Type&quot;</a>
+                </h3>
+                  <p class="prose m0 underline-link">I wish they made us read this book when I was in school. This lovely short book by Ellen Lupton is such an insightful resource that talks about typography on print, and on screen. It's not a new book, but it's still one of my favorites.</p>
+            </li>
+        </ol>
+      </div>
+
+        <label class="med-gray h5 mb2 block">Support Hack Design</label>
+        <div class="flex flex-center shadow rounded p2 mb3">
+          <div class="flex-none mr3">
+            <img alt="" class="" width="48" src="/assets/design-tools-2cebe17bf390db38213d28c13bdccc598093fb3d3291ad0474853d3bb175ddcf.svg" />
+          </div>
+          <div class="flex-auto">
+          <h5 class="h4 mt0 mb1 regular dark-blue">Looking to level up your design education?</h5>
+          <p class="mt0 mb2 med-gray">Get access to our Slack community when you support Hack Design. Ask for feedback from curators and preview new lessons.</p>
+            <a class="btn rounded h5 white bg-green" href="/patron">Become a patron</a>
+          </div>
+        </div>
+      <label class="med-gray h5 mb2 block">Instructor</label>
+      <div class="flex underline-link mb3">
+        <div class="flex-none mr3">
+            <img width="80" src="https://hackdesign.imgix.net/curators/keremsuer@2x.jpg?ixlib=rails-2.1.4&dpr=2&w=80&h=80&fit=crop&fm=jpeg&auto=format&mask=ellipse&s=2309afcd59fff93e5d6bb7a8d31797a5" alt="Keremsuer@2x.jpg?ixlib=rails 2.1" />
+        </div>
+        <div class="flex-auto">
+          <h5 class="h3 mt0 mb1 regular dark-blue">Kerem Suer</h5>
+          <h5 class="h4 mt0 mb1 med-gray regular">
+              Designer, 
+              <a target="_blank" href="https://operator.com">Operator</a>
+          </h5>
+          <p class="med-gray">I'm a designer of digital products in my late 20’s who is little too into simplicity and pixel-perfection. I studied interactive visual imaging and photography in Missouri, and somehow ended up in foggy San Francisco designing things with unbelievably talented teams such as <a href="https://fitbit.com" target="_blank">Fitbit</a>, <a href="https://pinterest.com" target="_blank">Pinterest</a>, <a href="https://www.zendesk.com" target="_blank">Zendesk</a>, and <a href="https://www.onekingslane.com" target="_blank">One Kings Lane</a>.</p>
+        </div>
+      </div>
+
+
+        <label class="med-gray h5 mb2 block">Next lesson</label>
+        <div class="flex flex-center prose">
+          <div class="flex-none mr3">
+            <img width="80" src="https://hackdesign.imgix.net/lessons/week3.png?ixlib=rails-2.1.4&dpr=2&w=80&fm=jpeg&fit=max&auto=format&alt=A%20hot%20air%20balloon%20on%20a%20sunny%20day&s=30b87eccf75711ebb27a0b878f16a4d0" alt="Week3.png?ixlib=rails 2.1" />
+          </div>
+          <div class="flex-auto">
+            <h3 class="serif mt0 mb2 semibold">
+              <a class="red" href="/lessons/3">The Amazing New Mobile Web</a>
+            </h3>
+          </div>
+        </div>
+    </div>
+
+    <div class="col col-12 md-col-4 px2 md-show">
+      <figure class="m0">
+        <img width="280" src="https://hackdesign.imgix.net/lessons/week2.png?ixlib=rails-2.1.4&dpr=2&w=280&fm=jpeg&fit=max&auto=format&alt=A%20hot%20air%20balloon%20on%20a%20sunny%20day&s=8153a372129e1b0ba602e61560702f55" alt="Week2.png?ixlib=rails 2.1" />
+
+          <p class="center mt1 mb0 italic">
+            <a target="_blank" class="med-gray" href="http://larrybuch.com">© Larry Buchanan</a>
+          </p>
+      </figure>
+      <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?zoneid=1696&serve=CVYD42T&placement=hackdesignorg" id="_carbonads_js"></script>
+<style>
+  #carbonads a:link {
+    text-decoration: none!important;
+    color: #222!important;
+  }
+  .carbon-wrap {
+    margin-top: 36px;
+    float: left;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .carbon-img {
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+  }
+  .carbon-text {
+    float: left;
+    width: 50%;
+    padding-left: 16px;
+    box-sizing: border-box;
+    font-size: 12px;
+  }
+  .carbon-poweredby {
+    width: 100%;
+    font-size: 12px;
+    float: left;
+  }
+</style>
+
+    </div>
+</article>
+
+<aside class="fixed bottom-0 right-0 left-0 p2 bg-white-clear border-top border-gray flex flex-center">
+  <p class="m0 flex-none px2 md-show">
+    <a class="slate" href="/lessons">← View all lessons</a>
+  </p>
+  <div class="flex-auto"></div>
+  <a href="https://www.facebook.com/sharer.php?u=https://hackdesign.org/lessons/2" class="flex-none flex flex-center px3 slate" target="_blank">
+    <img src="https://icon.now.sh/facebook/24/38404F">
+    <p class="ml1 mb0">Share</p>
+  </a>
+  <a href="https://twitter.com/intent/tweet?url=https://hackdesign.org/lessons/2&text=Dive+Into+Typography&via=hackdesign" class="flex-none flex flex-center px3 slate" target="_blank">
+    <img src="https://icon.now.sh/twitter/24/38404F">
+    <p class="ml1 mb0">Tweet</p>
+  </a>
+  <div class="flex-auto"></div>
+    <p class="m0 flex-none px2 md-show ">
+      <a class="btn rounded h5 white bg-green" href="/">Subscribe</a>
+    </p>
+</aside>
+<style>
+  /* Extra padding for the share bar */
+  body { padding-bottom: 69px; }
+</style>
+
+
+      <aside class="py4 container">
+      <div class="clearfix mxn3">
+        <div class="col-12 md-col-6 p3 mx-auto bg-light-gray rounded">
+          <h3 class="mt0 mb1 h4 slate">Join 263,589 others in learning design</h3>
+          <p class="mt0 mb2 h5 regular med-gray">Receive a design lesson each week, crafted by a design pro.</p>
+          <form id="footer_new_user" class="new_user" action="/users" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="uJuR9+Cu3+Cvcqoxp45wZcfwO/G34nQ2joJ3oGJVufDi03YwC6hlJKS5Wl0lvzhO+mGjOPZMPnrBy12xogNFAA==" />
+            <div class="flex shadow rounded">
+              <input placeholder="Email address" class="border-none flex-auto m0 field rounded-left btn-pad h5 regular" type="email" name="user[email]" id="user_email" />
+              <input type="submit" name="commit" value="Get started" class="btn rounded-right h5 white bg-green" data-disable-with="Get started" />
+            </div>
+</form>        </div>
+      </div>
+  </aside>
+
+<footer class="container">
+  <div class="flex border-top py2 border-top border-gray col-12">
+  <p class="flex-none mr2 med-gray">&copy; 2018</p>
+  <div class="flex-auto"></div>
+  <nav class="flex-none mxn2">
+    <a class="med-gray px2" href="/about">About</a>
+    <a class="med-gray px2" href="/cdn-cgi/l/email-protection#c1a2aeafb5a0a2b581a9a0a2aaa5a4b2a8a6afefaeb3a6feb2b4a3aba4a2b5fc89a4b8e4f3f1b5a9a4b3a4e4f3f189a0a2aae4f3f185a4b2a8a6af">Contact</a>
+    <a class="med-gray px2" href="/curators">Curators</a>
+    <a class="med-gray px2" href="/privacy">Legal</a>
+  </nav>
+</div>
+</footer>
+
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/d07b1474/cloudflare-static/email-decode.min.js"></script><script src="/assets/application-68edeedbb64b1ee9fe95fc49dc1173196aef0ff507b51cebab1e74a30e8f4ce7.js"></script>
+    <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='//www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-37398951-1');ga('send','pageview');
+    </script>
+  </body>
+</html>

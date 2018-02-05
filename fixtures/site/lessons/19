@@ -1,0 +1,293 @@
+<!doctype html>
+<html>
+  <head>
+    <link href="https://hackdesign.org:80/lessons/19" rel="canonical" />    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Achieving Visual Hierarchy - Hack Design</title>
+    <meta name="google-site-verification" content="3St7QluPELiVsbygStx0b1gr8dbwjQ_OfdkZI_ffj-g">
+        <meta name="description" content="One of the key principles of design is visual hierarchy, which encompasses almost everything you’ve learned on Hack Design so far. Whether you’re dealin...">
+  <meta property="twitter:card" content="summary">
+  <meta property="twitter:site" content="hackdesign">
+    <meta property="twitter:creator" content="leez">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Achieving Visual Hierarchy">
+  <meta property="og:image" content="https://hackdesign.org/assets/lessons/week19-396b40a6bf8163d5df8a6a2817d9a62bc92cf669243395a6e2342aed9c805490.png">
+  <meta property="og:description" content="One of the key principles of design is visual hierarchy, which encompasses almost everything you’ve learned on Hack Design so far. Whether you’re dealing with screen or print media, you have conten...">
+  <meta property="og:url" content="https://hackdesign.org/lessons/19">
+
+    <meta property="fb:admins" content="1082730090">
+    <link href="https://unpkg.com/basscss@7.1.1/css/basscss.min.css" rel="stylesheet">
+    <link rel="stylesheet" media="all" href="/assets/application-78044084155daafaf1bb867b9e6adfd53b55a479c9ec74ef9fa73e8e4bdebfad.css" />
+    <script>
+      (function(d) {
+        var config = {
+          kitId: 'kyb5lym',
+          scriptTimeout: 3000,
+          async: true
+        },
+        h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+      })(document);
+    </script>
+    <!-- Hotjar Tracking Code for https://hackdesign.org -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:612701,hjsv:5};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/4.0.1/lazysizes.min.js"></script>
+    <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="3ZQAn3GYkGUd1NpuDF+y6uRj5EeZ8+/Dw5LaFIsU4L3KD25shftnHbaWaOkdy/mfucS0HK5+8yu7YRs/SY6WwA==" />
+  </head>
+  <body class="lessons show" data-spy="scroll" data-target="#navbar-example" >
+    <!--[if lt IE 8]>
+    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <header class="">
+  <div class="md-flex flex-center container">
+    <div class="flex-none">
+      <a href="/"><img width="200" alt="Hack Design" class="py2" src="/assets/logo-941fdc47b5760af9654de5b6ba12fba1f4073426b16b2ebbb519e13b6c5a9600.svg" /></a>
+    </div>
+    <div class="flex-auto">
+    </div>
+    <div class="flex-none">
+      <nav class="h5 sm-show">
+        <a class="gray mr3" href="/lessons">View all lessons</a>
+        <a class="gray mr3" href="/toolkit">Toolkit</a>
+          <a class="gray mr3" href="/sign_in">Sign In</a>
+      </nav>
+    </div>
+  </div>
+  <nav class="sm-hide h5 border-top border-bottom px2 py1">
+    <a class="gray mr3" href="/lessons">Lessons</a>
+    <a class="gray mr3" href="/toolkit">Toolkit</a>
+      <a class="gray mr3" href="/sign_in">Sign In</a>
+  </nav>
+</header>
+
+    <div id="flash" class="row">
+</div>
+
+    
+
+<article class="py3 container">
+  <div class="lg-col-9 mx-auto">
+    <header class="mb2">
+      <h1 class="m0 h2 slate serif regular mr4 dark-blue">Achieving Visual Hierarchy</h1>
+    </header>
+  <div class="clearfix mxn2">
+    <div class="col col-12 md-col-8 px2">
+      <div class="flex flex-center mb3">
+        <div class="flex-none mr2">
+            <img width="40" src="https://hackdesign.imgix.net/curators/lisestatelman@2x.jpg?ixlib=rails-2.1.4&dpr=2&w=40&h=40&fit=crop&fm=jpeg&auto=format&mask=ellipse&s=a5199b82f48163fb8971bc7d0ff0ed01" alt="Lisestatelman@2x.jpg?ixlib=rails 2.1" />
+        </div>
+        <div class="flex-none mr2">
+          <h2 class="m0 h5 regular dark-blue"> Lise Statelman </h2>
+        </div>
+        <div class="flex-none">
+          <p class="m0 h5 med-gray">Lesson 19</p>
+        </div>
+      </div>
+
+      <div class="prose prose-intro underline-link mb4">
+        <p>One of the key principles of design is visual hierarchy, which encompasses almost everything you’ve learned on Hack Design so far. Whether you’re dealing with screen or print media, you have content—words and images—that needs to be organized into a layout. Visual hierarchy is the organization and prioritization of content as a means to communicate a message.</p>
+
+<p>Designers need to make very intentional decisions when it comes to prioritizing content. Where do you want your audience to look first? What is the call-to-action that you need to draw attention to? Hierarchy guides the user from one element to the next, ideally in a flow that corresponds to the content’s message. Also keep in mind that if you give visual importance or weight to too many elements, everything becomes flat. It's like saying you have ten ‘favorite’ flavors of ice cream. Elements should not have to compete for our attention. Let the content shine and and make sure graphic elements don’t distract.</p>
+      </div>
+
+      <div class="mb4">
+        <ol class="m0 p0 list-style-none">
+            <li class="mb3">
+              <img class="hide left mr2" style="margin-top: 12px;" src="/assets/link_arrow-14256c940ab757198c8500bbd8a885fe4c91932e36ffc5a3d0026861d689c94c.svg" alt="Link arrow" />
+              <h3 class="h4 md-h3 serif mt0 mb1 semibold">
+                    <a target="_blank" class="red" href="http://blog.formedfunction.com/post/3029763425/on-visual-hierarchy">On Visual Hierarchy</a>
+                </h3>
+                  <p class="prose m0 underline-link">Read about the basics of visual hierarchy, then compare the 'poor example' with the 'better example' that the author illustrates for us. The text and images in each example are blurred out so you can focus on the layout in terms of hierarchy. You can achieve a similar effect by squinting at a layout.</p>
+            </li>
+            <li class="mb3">
+              <img class="hide left mr2" style="margin-top: 12px;" src="/assets/link_arrow-14256c940ab757198c8500bbd8a885fe4c91932e36ffc5a3d0026861d689c94c.svg" alt="Link arrow" />
+              <h3 class="h4 md-h3 serif mt0 mb1 semibold">
+                    <a target="_blank" class="red" href="http://webdesign.tutsplus.com/articles/design-theory/understanding-visual-hierarchy-in-web-design/">Understanding Visual Hierarchy in Web Design</a>
+                </h3>
+                  <p class="prose m0 underline-link">Read the article and think about the author's ‘hierarchist's toolbox,’ and add to the list of ways you can visually set things apart (scale, shape, weight, white space, texture, tone, etc). Hint: think of contrast or visual opposites.Then, visit some of the websites featured on <a href="http://land-book.com" target="_blank">land-book.com</a> and consciously think about where your eyes travel across the page. What are you drawn to first, then next, and so on? You'll also probably notice a similarity between these websites, but hey, it works!</p>
+            </li>
+            <li class="mb3">
+              <img class="hide left mr2" style="margin-top: 12px;" src="/assets/link_arrow-14256c940ab757198c8500bbd8a885fe4c91932e36ffc5a3d0026861d689c94c.svg" alt="Link arrow" />
+              <h3 class="h4 md-h3 serif mt0 mb1 semibold">
+                    <a target="_blank" class="red" href="http://www.smashingmagazine.com/2013/02/26/creating-visual-hierarchies-typography/">Hierarchy as Expressed Through Typography</a>
+                </h3>
+                  <p class="prose m0 underline-link">If you're dealing with organizing text-focused content, this article will be especially useful. Again, think of all the ways you can achieve hierarchy using type (size, weight, style, color, uppercase vs. lowercase). Even a sole font-family can come in dozens of weights and styles, like H&FJ's <a href="http://www.typography.com/fonts/font_styles.php?productLineID=100008" target="_blank">Gotham</a>.</p>
+            </li>
+            <li class="mb3">
+              <img class="hide left mr2" style="margin-top: 12px;" src="/assets/link_arrow-14256c940ab757198c8500bbd8a885fe4c91932e36ffc5a3d0026861d689c94c.svg" alt="Link arrow" />
+              <h3 class="h4 md-h3 serif mt0 mb1 semibold">
+                    <a target="_blank" class="red" href="http://www.vanseodesign.com/web-design/visual-hierarchy/">How Well Does Your Design Communicate?</a>
+                </h3>
+                  <p class="prose m0 underline-link">This is a great article that links to even more resources. Hint: the key takeaways are in the summary at the end.</p>
+            </li>
+            <li class="mb3">
+              <img class="hide left mr2" style="margin-top: 12px;" src="/assets/link_arrow-14256c940ab757198c8500bbd8a885fe4c91932e36ffc5a3d0026861d689c94c.svg" alt="Link arrow" />
+              <h3 class="h4 md-h3 serif mt0 mb1 semibold">
+                    <a target="_blank" class="red" href="http://alistapart.com/article/contrastandmeaning">Contrast and Meaning</a>
+                </h3>
+                  <p class="prose m0 underline-link">Written in 2007 but still very relevant. Read this article, especially the section titled, ‘Contrast’ and look at the visual examples (about Optimizr) that took the content from having no meaning to possessing a clear hierarchy of importance.</p>
+            </li>
+            <li class="mb3">
+              <img class="hide left mr2" style="margin-top: 12px;" src="/assets/link_arrow-14256c940ab757198c8500bbd8a885fe4c91932e36ffc5a3d0026861d689c94c.svg" alt="Link arrow" />
+              <h3 class="h4 md-h3 serif mt0 mb1 semibold">
+                    <a target="_blank" class="red" href="http://52weeksofux.com/post/443828775/visual-hierarchy">Bonus: Visual Hierarchy and Weight</a>
+                </h3>
+                  <p class="prose m0 underline-link">Revisit this article from Lesson 11, Part 2 for this so eloquently worded article on visual hierarchy. As author Joshua Porter said, <b>"…you use hierarchy to tell a story, to provide context that culminates in the action being taken."</b> (Check out those little illustrations too!)</p>
+            </li>
+        </ol>
+      </div>
+
+        <label class="med-gray h5 mb2 block">Support Hack Design</label>
+        <div class="flex flex-center shadow rounded p2 mb3">
+          <div class="flex-none mr3">
+            <img alt="" class="" width="48" src="/assets/design-tools-2cebe17bf390db38213d28c13bdccc598093fb3d3291ad0474853d3bb175ddcf.svg" />
+          </div>
+          <div class="flex-auto">
+          <h5 class="h4 mt0 mb1 regular dark-blue">Looking to level up your design education?</h5>
+          <p class="mt0 mb2 med-gray">Get access to our Slack community when you support Hack Design. Ask for feedback from curators and preview new lessons.</p>
+            <a class="btn rounded h5 white bg-green" href="/patron">Become a patron</a>
+          </div>
+        </div>
+      <label class="med-gray h5 mb2 block">Instructor</label>
+      <div class="flex underline-link mb3">
+        <div class="flex-none mr3">
+            <img width="80" src="https://hackdesign.imgix.net/curators/lisestatelman@2x.jpg?ixlib=rails-2.1.4&dpr=2&w=80&h=80&fit=crop&fm=jpeg&auto=format&mask=ellipse&s=40a561db4073c536a85e1d7d3ca19b50" alt="Lisestatelman@2x.jpg?ixlib=rails 2.1" />
+        </div>
+        <div class="flex-auto">
+          <h5 class="h3 mt0 mb1 regular dark-blue">Lise Statelman</h5>
+          <h5 class="h4 mt0 mb1 med-gray regular">
+              Visual Designer, 
+              <a target="_blank" href="https://www.lendup.com">LendUp</a>
+          </h5>
+          <p class="med-gray">I design at <a href="https://www.lendup.com/" target="_blank">LendUp</a> in San Francisco and previously led product design at <a href="http://kloudless.com" target="_blank">Kloudless</a>. I believe in designing for the customer and love inspiring delight into the user. I mentor at <a href="http://trydesignlab.com/" target="_blank">Designlab</a> and share my work on <a href="http://dribbble.com/lise" target="_blank">Dribbble</a>.</p>
+        </div>
+      </div>
+
+
+        <label class="med-gray h5 mb2 block">Next lesson</label>
+        <div class="flex flex-center prose">
+          <div class="flex-none mr3">
+            <img width="80" src="https://hackdesign.imgix.net/lessons/week20.png?ixlib=rails-2.1.4&dpr=2&w=80&fm=jpeg&fit=max&auto=format&alt=A%20hot%20air%20balloon%20on%20a%20sunny%20day&s=464ca2180fe8f62e742d5c111ddac7c9" alt="Week20.png?ixlib=rails 2.1" />
+          </div>
+          <div class="flex-auto">
+            <h3 class="serif mt0 mb2 semibold">
+              <a class="red" href="/lessons/20">Deciding What&#39;s Good: Design Principles</a>
+            </h3>
+          </div>
+        </div>
+    </div>
+
+    <div class="col col-12 md-col-4 px2 md-show">
+      <figure class="m0">
+        <img width="280" src="https://hackdesign.imgix.net/lessons/week19.png?ixlib=rails-2.1.4&dpr=2&w=280&fm=jpeg&fit=max&auto=format&alt=A%20hot%20air%20balloon%20on%20a%20sunny%20day&s=a4044944d09f4ec06f7f09141ea77080" alt="Week19.png?ixlib=rails 2.1" />
+
+          <p class="center mt1 mb0 italic">
+            <a target="_blank" class="med-gray" href="http://larrybuch.com">© Larry Buchanan</a>
+          </p>
+      </figure>
+      <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?zoneid=1696&serve=CVYD42T&placement=hackdesignorg" id="_carbonads_js"></script>
+<style>
+  #carbonads a:link {
+    text-decoration: none!important;
+    color: #222!important;
+  }
+  .carbon-wrap {
+    margin-top: 36px;
+    float: left;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .carbon-img {
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+  }
+  .carbon-text {
+    float: left;
+    width: 50%;
+    padding-left: 16px;
+    box-sizing: border-box;
+    font-size: 12px;
+  }
+  .carbon-poweredby {
+    width: 100%;
+    font-size: 12px;
+    float: left;
+  }
+</style>
+
+    </div>
+</article>
+
+<aside class="fixed bottom-0 right-0 left-0 p2 bg-white-clear border-top border-gray flex flex-center">
+  <p class="m0 flex-none px2 md-show">
+    <a class="slate" href="/lessons">← View all lessons</a>
+  </p>
+  <div class="flex-auto"></div>
+  <a href="https://www.facebook.com/sharer.php?u=https://hackdesign.org/lessons/19" class="flex-none flex flex-center px3 slate" target="_blank">
+    <img src="https://icon.now.sh/facebook/24/38404F">
+    <p class="ml1 mb0">Share</p>
+  </a>
+  <a href="https://twitter.com/intent/tweet?url=https://hackdesign.org/lessons/19&text=Achieving+Visual+Hierarchy&via=hackdesign" class="flex-none flex flex-center px3 slate" target="_blank">
+    <img src="https://icon.now.sh/twitter/24/38404F">
+    <p class="ml1 mb0">Tweet</p>
+  </a>
+  <div class="flex-auto"></div>
+    <p class="m0 flex-none px2 md-show ">
+      <a class="btn rounded h5 white bg-green" href="/">Subscribe</a>
+    </p>
+</aside>
+<style>
+  /* Extra padding for the share bar */
+  body { padding-bottom: 69px; }
+</style>
+
+
+      <aside class="py4 container">
+      <div class="clearfix mxn3">
+        <div class="col-12 md-col-6 p3 mx-auto bg-light-gray rounded">
+          <h3 class="mt0 mb1 h4 slate">Join 263,596 others in learning design</h3>
+          <p class="mt0 mb2 h5 regular med-gray">Receive a design lesson each week, crafted by a design pro.</p>
+          <form id="footer_new_user" class="new_user" action="/users" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="zgH0TBaGfh0ONyBAJP9u9uKZXe+F8ZVw9lGbkfoB/s7Zmpq/4uWJZaV1ksc1ayWDvz4NtLJ8iZiOolq6OJuIsw==" />
+            <div class="flex shadow rounded">
+              <input placeholder="Email address" class="border-none flex-auto m0 field rounded-left btn-pad h5 regular" type="email" name="user[email]" id="user_email" />
+              <input type="submit" name="commit" value="Get started" class="btn rounded-right h5 white bg-green" data-disable-with="Get started" />
+            </div>
+</form>        </div>
+      </div>
+  </aside>
+
+<footer class="container">
+  <div class="flex border-top py2 border-top border-gray col-12">
+  <p class="flex-none mr2 med-gray">&copy; 2018</p>
+  <div class="flex-auto"></div>
+  <nav class="flex-none mxn2">
+    <a class="med-gray px2" href="/about">About</a>
+    <a class="med-gray px2" href="/cdn-cgi/l/email-protection#b3d0dcddc7d2d0c7f3dbd2d0d8d7d6c0dad4dd9ddcc1d48cc0c6d1d9d6d0c78efbd6ca968183c7dbd6c1d6968183fbd2d0d8968183f7d6c0dad4dd">Contact</a>
+    <a class="med-gray px2" href="/curators">Curators</a>
+    <a class="med-gray px2" href="/privacy">Legal</a>
+  </nav>
+</div>
+</footer>
+
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/d07b1474/cloudflare-static/email-decode.min.js"></script><script src="/assets/application-68edeedbb64b1ee9fe95fc49dc1173196aef0ff507b51cebab1e74a30e8f4ce7.js"></script>
+    <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='//www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-37398951-1');ga('send','pageview');
+    </script>
+  </body>
+</html>

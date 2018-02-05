@@ -1,0 +1,297 @@
+<!doctype html>
+<html>
+  <head>
+    <link href="https://hackdesign.org:80/lessons/21" rel="canonical" />    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Designing your first iPhone App - Hack Design</title>
+    <meta name="google-site-verification" content="3St7QluPELiVsbygStx0b1gr8dbwjQ_OfdkZI_ffj-g">
+        <meta name="description" content="It&#39;s undeniable that mobile devices have become a huge part of modern society. Similar to what the web did, iOS has revolutionized what digital products...">
+  <meta property="twitter:card" content="summary">
+  <meta property="twitter:site" content="hackdesign">
+    <meta property="twitter:creator" content="brianbenitez">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Designing your first iPhone App">
+  <meta property="og:image" content="https://hackdesign.org/assets/lessons/week21-c1dfca43e5f46fb4c9ac1ffad29258b15cbf7b3490fa25b2c4936bfaf211878d.png">
+  <meta property="og:description" content="It&#39;s undeniable that mobile devices have become a huge part of modern society. Similar to what the web did, iOS has revolutionized what digital products can be by giving them a home. The huge diffe...">
+  <meta property="og:url" content="https://hackdesign.org/lessons/21">
+
+    <meta property="fb:admins" content="1082730090">
+    <link href="https://unpkg.com/basscss@7.1.1/css/basscss.min.css" rel="stylesheet">
+    <link rel="stylesheet" media="all" href="/assets/application-78044084155daafaf1bb867b9e6adfd53b55a479c9ec74ef9fa73e8e4bdebfad.css" />
+    <script>
+      (function(d) {
+        var config = {
+          kitId: 'kyb5lym',
+          scriptTimeout: 3000,
+          async: true
+        },
+        h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+      })(document);
+    </script>
+    <!-- Hotjar Tracking Code for https://hackdesign.org -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:612701,hjsv:5};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/4.0.1/lazysizes.min.js"></script>
+    <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="fog+4kk/wsFzK/Xg+xfwxn/6WKNT6BadOo4T1z61VqdS65ZWhzuDxGvGes0mckpICFj0quJIjkCApBUzBJawDQ==" />
+  </head>
+  <body class="lessons show" data-spy="scroll" data-target="#navbar-example" >
+    <!--[if lt IE 8]>
+    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <header class="">
+  <div class="md-flex flex-center container">
+    <div class="flex-none">
+      <a href="/"><img width="200" alt="Hack Design" class="py2" src="/assets/logo-941fdc47b5760af9654de5b6ba12fba1f4073426b16b2ebbb519e13b6c5a9600.svg" /></a>
+    </div>
+    <div class="flex-auto">
+    </div>
+    <div class="flex-none">
+      <nav class="h5 sm-show">
+        <a class="gray mr3" href="/lessons">View all lessons</a>
+        <a class="gray mr3" href="/toolkit">Toolkit</a>
+          <a class="gray mr3" href="/sign_in">Sign In</a>
+      </nav>
+    </div>
+  </div>
+  <nav class="sm-hide h5 border-top border-bottom px2 py1">
+    <a class="gray mr3" href="/lessons">Lessons</a>
+    <a class="gray mr3" href="/toolkit">Toolkit</a>
+      <a class="gray mr3" href="/sign_in">Sign In</a>
+  </nav>
+</header>
+
+    <div id="flash" class="row">
+</div>
+
+    
+
+<article class="py3 container">
+  <div class="lg-col-9 mx-auto">
+    <header class="mb2">
+      <h1 class="m0 h2 slate serif regular mr4 dark-blue">Designing your first iPhone App</h1>
+    </header>
+  <div class="clearfix mxn2">
+    <div class="col col-12 md-col-8 px2">
+      <div class="flex flex-center mb3">
+        <div class="flex-none mr2">
+            <img width="40" src="https://hackdesign.imgix.net/curators/brianbenitez@2x.jpg?ixlib=rails-2.1.4&dpr=2&w=40&h=40&fit=crop&fm=jpeg&auto=format&mask=ellipse&s=79f977505873f512239525a9789a0bfb" alt="Brianbenitez@2x.jpg?ixlib=rails 2.1" />
+        </div>
+        <div class="flex-none mr2">
+          <h2 class="m0 h5 regular dark-blue"> Brian Benitez </h2>
+        </div>
+        <div class="flex-none">
+          <p class="m0 h5 med-gray">Lesson 21</p>
+        </div>
+      </div>
+
+      <div class="prose prose-intro underline-link mb4">
+        <p>It's undeniable that mobile devices have become a huge part of modern society. Similar to what the web did, iOS has revolutionized what digital products can be by giving them a home. The huge difference, however, are the two foundations. iOS is much different than the web in that it's able to provide a native home with a tightly controlled experience for it's applications. That's something the web can't do while catering to tons of browsers, OSs, and computing devices.</p>
+
+<p>This is an exploration into iOS—and should begin familiarize you with the standards and constraints of the platform. It's probably much more different than you expected.</p>
+      </div>
+
+      <div class="mb4">
+        <ol class="m0 p0 list-style-none">
+            <li class="mb3">
+              <img class="hide left mr2" style="margin-top: 12px;" src="/assets/link_arrow-14256c940ab757198c8500bbd8a885fe4c91932e36ffc5a3d0026861d689c94c.svg" alt="Link arrow" />
+              <h3 class="h4 md-h3 serif mt0 mb1 semibold">
+                    <a target="_blank" class="red" href="https://medium.com/design-ux/16ba59e72dae">From Web to Native: A Journey in Interface Design </a>
+                </h3>
+                  <p class="prose m0 underline-link">Interface designer Cole Peters shares his journey transitioning from a web designer to a native mobile designer. This article highlights some of the main differences in the two. Take a minute and explain some of the key differences that you've just learned to a coworker or friend.</p>
+            </li>
+            <li class="mb3">
+              <img class="hide left mr2" style="margin-top: 12px;" src="/assets/link_arrow-14256c940ab757198c8500bbd8a885fe4c91932e36ffc5a3d0026861d689c94c.svg" alt="Link arrow" />
+              <h3 class="h4 md-h3 serif mt0 mb1 semibold">
+                    <a target="_blank" class="red" href="http://taybenlor.com/2013/05/21/designing-for-ios.html">Starters Guide to iOS Design</a>
+                </h3>
+                  <p class="prose m0 underline-link">A new article that I wish was around before I ever got into iOS design. This is a great, new resource that covers some of the base technical constraints of the operating system. First, read the article—then, without cheating, get a blank piece of paper and write down the pixel resolution of an iPhone 3GS, iPhone 4, and iPhone 5 in portrait orientation. Also, what does "pixel fitting" mean?
+</p>
+            </li>
+            <li class="mb3">
+              <img class="hide left mr2" style="margin-top: 12px;" src="/assets/link_arrow-14256c940ab757198c8500bbd8a885fe4c91932e36ffc5a3d0026861d689c94c.svg" alt="Link arrow" />
+              <h3 class="h4 md-h3 serif mt0 mb1 semibold">
+                    <a target="_blank" class="red" href="http://bjango.com/articles/appdesignworkflow/">My App Design Workflow</a>
+                </h3>
+                  <p class="prose m0 underline-link">Okay, now we're about ready to roll our sleeves up and start designing! But first, let's take a look at iOS design-legend Marc Edwards' blog Bjango, for a peek at what his app design workflow looks like. This is one of the most useful articles regarding iOS-specific design techniques that I've ever come across. Note that the first thing Marc suggests in this article is to start lo-fi @1x, then scale up. Make short a list of a few techniques learned in this article that you'd like to practice in your work flow (try to choose at least 3).</p>
+            </li>
+            <li class="mb3">
+              <img class="hide left mr2" style="margin-top: 12px;" src="/assets/link_arrow-14256c940ab757198c8500bbd8a885fe4c91932e36ffc5a3d0026861d689c94c.svg" alt="Link arrow" />
+              <h3 class="h4 md-h3 serif mt0 mb1 semibold">
+                    <a target="_blank" class="red" href="http://www.teehanlax.com/blog/5-things-to-know-when-designing-for-ios/">5 Things to Know When Designing for iOS</a>
+                </h3>
+                  <p class="prose m0 underline-link">Another leader in the mobile design space, Teehan+Lax, has put together a list of five essential points regarding to iOS design. Jot down these five points with a few small notes for each. Leave the note on or by your desk, somewhere you where you can easily reference it.</p>
+            </li>
+            <li class="mb3">
+              <img class="hide left mr2" style="margin-top: 12px;" src="/assets/link_arrow-14256c940ab757198c8500bbd8a885fe4c91932e36ffc5a3d0026861d689c94c.svg" alt="Link arrow" />
+              <h3 class="h4 md-h3 serif mt0 mb1 semibold">
+                    <a target="_blank" class="red" href="http://facebook.design/ios10">iOS GUI PSD by Teehan+Lax</a>
+                </h3>
+                  <p class="prose m0 underline-link">Download this PSD and save it. There's no need to recreate default iOS elements that you want to have in your design.
+Use this UI Kit to represent (and reference) standard iOS elements in your design — this will save you a lot of time in your workflow. </p>
+            </li>
+            <li class="mb3">
+              <img class="hide left mr2" style="margin-top: 12px;" src="/assets/link_arrow-14256c940ab757198c8500bbd8a885fe4c91932e36ffc5a3d0026861d689c94c.svg" alt="Link arrow" />
+              <h3 class="h4 md-h3 serif mt0 mb1 semibold">
+                    <a target="_blank" class="red" href="http://psd.tutsplus.com/tutorials/interface-tutorials/iphone-music-player-app/">How to Design an iPhone Music Player App Interface With Photoshop CS6</a>
+                </h3>
+                  <p class="prose m0 underline-link">We're finally here! The fun part! Now using what you've learned from the articles you've just read, see how you can improve on some the techniques suggested in this tutorial. Note when you've done something different than the tutorial suggested and explain to a friend why you did it. (Oh, and use some different colors for the UI than what's suggested in the tutorial. It's fun to experiment—try a few, if you'd like!)
+<br /><br />
+Did you take the time to complete this lesson? Share your end-result with me! I'd love to see what you've come up with! <a href="http://twitter.com/brianbenitez" target="_blank">Tweet it to me</a>!</p>
+            </li>
+        </ol>
+      </div>
+
+        <label class="med-gray h5 mb2 block">Support Hack Design</label>
+        <div class="flex flex-center shadow rounded p2 mb3">
+          <div class="flex-none mr3">
+            <img alt="" class="" width="48" src="/assets/design-tools-2cebe17bf390db38213d28c13bdccc598093fb3d3291ad0474853d3bb175ddcf.svg" />
+          </div>
+          <div class="flex-auto">
+          <h5 class="h4 mt0 mb1 regular dark-blue">Looking to level up your design education?</h5>
+          <p class="mt0 mb2 med-gray">Get access to our Slack community when you support Hack Design. Ask for feedback from curators and preview new lessons.</p>
+            <a class="btn rounded h5 white bg-green" href="/patron">Become a patron</a>
+          </div>
+        </div>
+      <label class="med-gray h5 mb2 block">Instructor</label>
+      <div class="flex underline-link mb3">
+        <div class="flex-none mr3">
+            <img width="80" src="https://hackdesign.imgix.net/curators/brianbenitez@2x.jpg?ixlib=rails-2.1.4&dpr=2&w=80&h=80&fit=crop&fm=jpeg&auto=format&mask=ellipse&s=dfcb973c24bac4331cc03b772cbf0b02" alt="Brianbenitez@2x.jpg?ixlib=rails 2.1" />
+        </div>
+        <div class="flex-auto">
+          <h5 class="h3 mt0 mb1 regular dark-blue">Brian Benitez</h5>
+          <h5 class="h4 mt0 mb1 med-gray regular">
+              Designer, 
+              <a target="_blank" href="https://www.weebly.com">Weebly</a>
+          </h5>
+          <p class="med-gray">I'm a designer at <a href="https://www.weebly.com" target="_blank">Weebly</a> with a passion for both technology and simplicity. Currently living and working in San Francisco, CA. Previously: <a href="http://disqus.com/" target="_blank">Disqus</a>, <a href="http://sourcebits.com/" target="_blank">Sourcebits</a>, and <a href="http://mutualmobile.com/" target="_blank">Mutual Mobile</a>. Check out some of my recent work on <a href="http://dribbble.com/benitez" target="_blank">Dribbble</a>.</p>
+        </div>
+      </div>
+
+
+        <label class="med-gray h5 mb2 block">Next lesson</label>
+        <div class="flex flex-center prose">
+          <div class="flex-none mr3">
+            <img width="80" src="https://hackdesign.imgix.net/lessons/week22.png?ixlib=rails-2.1.4&dpr=2&w=80&fm=jpeg&fit=max&auto=format&alt=A%20hot%20air%20balloon%20on%20a%20sunny%20day&s=d301085d046333ce31ca313c0da8196c" alt="Week22.png?ixlib=rails 2.1" />
+          </div>
+          <div class="flex-auto">
+            <h3 class="serif mt0 mb2 semibold">
+              <a class="red" href="/lessons/22">Designing for Mobile Web</a>
+            </h3>
+          </div>
+        </div>
+    </div>
+
+    <div class="col col-12 md-col-4 px2 md-show">
+      <figure class="m0">
+        <img width="280" src="https://hackdesign.imgix.net/lessons/week21.png?ixlib=rails-2.1.4&dpr=2&w=280&fm=jpeg&fit=max&auto=format&alt=A%20hot%20air%20balloon%20on%20a%20sunny%20day&s=341008989af7ea8ece731b635cb52fca" alt="Week21.png?ixlib=rails 2.1" />
+
+          <p class="center mt1 mb0 italic">
+            <a target="_blank" class="med-gray" href="http://larrybuch.com">© Larry Buchanan</a>
+          </p>
+      </figure>
+      <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?zoneid=1696&serve=CVYD42T&placement=hackdesignorg" id="_carbonads_js"></script>
+<style>
+  #carbonads a:link {
+    text-decoration: none!important;
+    color: #222!important;
+  }
+  .carbon-wrap {
+    margin-top: 36px;
+    float: left;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .carbon-img {
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+  }
+  .carbon-text {
+    float: left;
+    width: 50%;
+    padding-left: 16px;
+    box-sizing: border-box;
+    font-size: 12px;
+  }
+  .carbon-poweredby {
+    width: 100%;
+    font-size: 12px;
+    float: left;
+  }
+</style>
+
+    </div>
+</article>
+
+<aside class="fixed bottom-0 right-0 left-0 p2 bg-white-clear border-top border-gray flex flex-center">
+  <p class="m0 flex-none px2 md-show">
+    <a class="slate" href="/lessons">← View all lessons</a>
+  </p>
+  <div class="flex-auto"></div>
+  <a href="https://www.facebook.com/sharer.php?u=https://hackdesign.org/lessons/21" class="flex-none flex flex-center px3 slate" target="_blank">
+    <img src="https://icon.now.sh/facebook/24/38404F">
+    <p class="ml1 mb0">Share</p>
+  </a>
+  <a href="https://twitter.com/intent/tweet?url=https://hackdesign.org/lessons/21&text=Designing+your+first+iPhone+App&via=hackdesign" class="flex-none flex flex-center px3 slate" target="_blank">
+    <img src="https://icon.now.sh/twitter/24/38404F">
+    <p class="ml1 mb0">Tweet</p>
+  </a>
+  <div class="flex-auto"></div>
+    <p class="m0 flex-none px2 md-show ">
+      <a class="btn rounded h5 white bg-green" href="/">Subscribe</a>
+    </p>
+</aside>
+<style>
+  /* Extra padding for the share bar */
+  body { padding-bottom: 69px; }
+</style>
+
+
+      <aside class="py4 container">
+      <div class="clearfix mxn3">
+        <div class="col-12 md-col-6 p3 mx-auto bg-light-gray rounded">
+          <h3 class="mt0 mb1 h4 slate">Join 263,596 others in learning design</h3>
+          <p class="mt0 mb2 h5 regular med-gray">Receive a design lesson each week, crafted by a design pro.</p>
+          <form id="footer_new_user" class="new_user" action="/users" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="qWab8uUOXszo6McZQL/XONy8vWRlEFNziDj+snvqmd6FBTNGKwofyfAFSDSd2m22qx4RbdSwy64yEvhWQcl/dA==" />
+            <div class="flex shadow rounded">
+              <input placeholder="Email address" class="border-none flex-auto m0 field rounded-left btn-pad h5 regular" type="email" name="user[email]" id="user_email" />
+              <input type="submit" name="commit" value="Get started" class="btn rounded-right h5 white bg-green" data-disable-with="Get started" />
+            </div>
+</form>        </div>
+      </div>
+  </aside>
+
+<footer class="container">
+  <div class="flex border-top py2 border-top border-gray col-12">
+  <p class="flex-none mr2 med-gray">&copy; 2018</p>
+  <div class="flex-auto"></div>
+  <nav class="flex-none mxn2">
+    <a class="med-gray px2" href="/about">About</a>
+    <a class="med-gray px2" href="/cdn-cgi/l/email-protection#b4d7dbdac0d5d7c0f4dcd5d7dfd0d1c7ddd3da9adbc6d38bc7c1d6ded1d7c089fcd1cd918684c0dcd1c6d1918684fcd5d7df918684f0d1c7ddd3da">Contact</a>
+    <a class="med-gray px2" href="/curators">Curators</a>
+    <a class="med-gray px2" href="/privacy">Legal</a>
+  </nav>
+</div>
+</footer>
+
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/d07b1474/cloudflare-static/email-decode.min.js"></script><script src="/assets/application-68edeedbb64b1ee9fe95fc49dc1173196aef0ff507b51cebab1e74a30e8f4ce7.js"></script>
+    <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='//www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-37398951-1');ga('send','pageview');
+    </script>
+  </body>
+</html>

@@ -1,0 +1,290 @@
+<!doctype html>
+<html>
+  <head>
+    <link href="https://hackdesign.org:80/lessons/38" rel="canonical" />    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Animation, Direct Manipulation &amp;amp; Feedback - Hack Design</title>
+    <meta name="google-site-verification" content="3St7QluPELiVsbygStx0b1gr8dbwjQ_OfdkZI_ffj-g">
+        <meta name="description" content="When we talk about Animation and Direct Manipulation in interfaces they can often seem like completely disconnected concepts. You might explain direct m...">
+  <meta property="twitter:card" content="summary">
+  <meta property="twitter:site" content="hackdesign">
+    <meta property="twitter:creator" content="taybenlor">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Animation, Direct Manipulation &amp; Feedback">
+  <meta property="og:image" content="https://hackdesign.org/assets/lessons/week38-372b3b5ca7c621f6d0dab115d523753de1965cacb6045b60b170ad52ce9c61c7.png">
+  <meta property="og:description" content="When we talk about Animation and Direct Manipulation in interfaces they can often seem like completely disconnected concepts. You might explain direct manipulation as a user sliding a slider; or an...">
+  <meta property="og:url" content="https://hackdesign.org/lessons/38">
+
+    <meta property="fb:admins" content="1082730090">
+    <link href="https://unpkg.com/basscss@7.1.1/css/basscss.min.css" rel="stylesheet">
+    <link rel="stylesheet" media="all" href="/assets/application-78044084155daafaf1bb867b9e6adfd53b55a479c9ec74ef9fa73e8e4bdebfad.css" />
+    <script>
+      (function(d) {
+        var config = {
+          kitId: 'kyb5lym',
+          scriptTimeout: 3000,
+          async: true
+        },
+        h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+      })(document);
+    </script>
+    <!-- Hotjar Tracking Code for https://hackdesign.org -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:612701,hjsv:5};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/4.0.1/lazysizes.min.js"></script>
+    <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="KyBP2tuisHK9Via+TOcLKPrkYBlFJ4v5buRftJmcaXzjBOomOBostfW8onSEhB9ZeQySN0x5kAmb6/VaL0e4xA==" />
+  </head>
+  <body class="lessons show" data-spy="scroll" data-target="#navbar-example" >
+    <!--[if lt IE 8]>
+    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <header class="">
+  <div class="md-flex flex-center container">
+    <div class="flex-none">
+      <a href="/"><img width="200" alt="Hack Design" class="py2" src="/assets/logo-941fdc47b5760af9654de5b6ba12fba1f4073426b16b2ebbb519e13b6c5a9600.svg" /></a>
+    </div>
+    <div class="flex-auto">
+    </div>
+    <div class="flex-none">
+      <nav class="h5 sm-show">
+        <a class="gray mr3" href="/lessons">View all lessons</a>
+        <a class="gray mr3" href="/toolkit">Toolkit</a>
+          <a class="gray mr3" href="/sign_in">Sign In</a>
+      </nav>
+    </div>
+  </div>
+  <nav class="sm-hide h5 border-top border-bottom px2 py1">
+    <a class="gray mr3" href="/lessons">Lessons</a>
+    <a class="gray mr3" href="/toolkit">Toolkit</a>
+      <a class="gray mr3" href="/sign_in">Sign In</a>
+  </nav>
+</header>
+
+    <div id="flash" class="row">
+</div>
+
+    
+
+<article class="py3 container">
+  <div class="lg-col-9 mx-auto">
+    <header class="mb2">
+      <h1 class="m0 h2 slate serif regular mr4 dark-blue">Animation, Direct Manipulation &amp; Feedback</h1>
+    </header>
+  <div class="clearfix mxn2">
+    <div class="col col-12 md-col-8 px2">
+      <div class="flex flex-center mb3">
+        <div class="flex-none mr2">
+            <img width="40" src="https://hackdesign.imgix.net/curators/bentaylor@2x.jpg?ixlib=rails-2.1.4&dpr=2&w=40&h=40&fit=crop&fm=jpeg&auto=format&mask=ellipse&s=a6ebc2a9f71396803014079e2e6784e7" alt="Bentaylor@2x.jpg?ixlib=rails 2.1" />
+        </div>
+        <div class="flex-none mr2">
+          <h2 class="m0 h5 regular dark-blue"> Ben Taylor </h2>
+        </div>
+        <div class="flex-none">
+          <p class="m0 h5 med-gray">Lesson 38</p>
+        </div>
+      </div>
+
+      <div class="prose prose-intro underline-link mb4">
+        <p>When we talk about Animation and Direct Manipulation in interfaces they can often seem like completely disconnected concepts. You might explain direct manipulation as a user sliding a slider; or animation by showing a list updating by shifting around. However both of these concepts are examples of good feedback, one happens as the user moves their mouse the other as a result of a change in the system. It's important that user interfaces give prompt and understandable feedback to the user based on their actions and the actions of the system.</p>
+      </div>
+
+      <div class="mb4">
+        <ol class="m0 p0 list-style-none">
+            <li class="mb3">
+              <img class="hide left mr2" style="margin-top: 12px;" src="/assets/link_arrow-14256c940ab757198c8500bbd8a885fe4c91932e36ffc5a3d0026861d689c94c.svg" alt="Link arrow" />
+              <h3 class="h4 md-h3 serif mt0 mb1 semibold">
+                    <a target="_blank" class="red" href="http://whydoeseverythingsuck.com/2008/01/psychology-of-user-interface-part-ii.html">The Psychology of User Interface Part II</a>
+                </h3>
+                  <p class="prose m0 underline-link">Read this introduction to Direct Manipulation and think about the various interfaces you have used and designed. Even the ones in front of you. Which parts of the interface have unfortunate "Action-at-a-distance" results and which show good feedback based on direct manipulation?</p>
+            </li>
+            <li class="mb3">
+              <img class="hide left mr2" style="margin-top: 12px;" src="/assets/link_arrow-14256c940ab757198c8500bbd8a885fe4c91932e36ffc5a3d0026861d689c94c.svg" alt="Link arrow" />
+              <h3 class="h4 md-h3 serif mt0 mb1 semibold">
+                    <a target="_blank" class="red" href="http://worrydream.com/#!/DrawingDynamicVisualizationsTalk">Drawing Dynamic Visualizations</a>
+                </h3>
+                  <p class="prose m0 underline-link">Watch the first few minutes of this video (or the whole thing, it's really great!) where Bret Victor demonstrates an interface which uses direct manipulation to draw dynamic visualizations. Studying Bret's interfaces is a fantastic way to see the true power of direct manipulation in new and exciting settings.</p>
+            </li>
+            <li class="mb3">
+              <img class="hide left mr2" style="margin-top: 12px;" src="/assets/link_arrow-14256c940ab757198c8500bbd8a885fe4c91932e36ffc5a3d0026861d689c94c.svg" alt="Link arrow" />
+              <h3 class="h4 md-h3 serif mt0 mb1 semibold">
+                    <a target="_blank" class="red" href="http://designinginterfaces.com/patterns/animated-transition/">Animated Transitions</a>
+                </h3>
+                  <p class="prose m0 underline-link">Read this excerpt from "Designing Interfaces" on transitioning between large state changes. Then think about how this works on mobile devices (e.g. iPhone side-scrolling navigation) and in desktop environments (e.g. minimizing windows). Now imagine the same interfaces without those transitions. Hopefully you can see how the transition between states is important for conceptualizing the change and for understanding how to undo it.</p>
+            </li>
+            <li class="mb3">
+              <img class="hide left mr2" style="margin-top: 12px;" src="/assets/link_arrow-14256c940ab757198c8500bbd8a885fe4c91932e36ffc5a3d0026861d689c94c.svg" alt="Link arrow" />
+              <h3 class="h4 md-h3 serif mt0 mb1 semibold">
+                    <a target="_blank" class="red" href="http://www.nngroup.com/articles/too-fast-ux/">When the UI is too Fast</a>
+                </h3>
+                  <p class="prose m0 underline-link">Read this article and think about how these problems could be solved through animation. Transitions between states are much more obvious to users than an immediate change. Think about how many times you yourself have selected the wrong item in a list that keeps on changing.</p>
+            </li>
+            <li class="mb3">
+              <img class="hide left mr2" style="margin-top: 12px;" src="/assets/link_arrow-14256c940ab757198c8500bbd8a885fe4c91932e36ffc5a3d0026861d689c94c.svg" alt="Link arrow" />
+              <h3 class="h4 md-h3 serif mt0 mb1 semibold">
+                    <a target="_blank" class="red" href="http://www.youtube.com/watch?v=GGAtBvKsJAI&amp;list=PLfJyFOhaAwGEldQCzWQW59opylTxzdlUu">Building Facebook Home with Quartz Composer</a>
+                </h3>
+                  <p class="prose m0 underline-link">Quartz Composer is an incredibly powerful tool for professionally designing complex animated interaction designs. This fantastic video tutorial shows how you can recreate the Facebook Home interface using Quartz Composer. Watch through the various tutorial parts and make your own version of Facebook Home.</p>
+            </li>
+            <li class="mb3">
+              <img class="hide left mr2" style="margin-top: 12px;" src="/assets/link_arrow-14256c940ab757198c8500bbd8a885fe4c91932e36ffc5a3d0026861d689c94c.svg" alt="Link arrow" />
+              <h3 class="h4 md-h3 serif mt0 mb1 semibold">
+                    <a target="_blank" class="red" href="http://ui-animations.tumblr.com/">Bonus: Where to get inspiration for Animations &amp; Transitions</a>
+                </h3>
+                  <p class="prose m0 underline-link">The best way to come up with fresh animation ideas is to know the landscape <b>really</b> well. So browse through all the different pieces of inspiration here and soak in the animation magic.</p>
+            </li>
+        </ol>
+      </div>
+
+        <label class="med-gray h5 mb2 block">Support Hack Design</label>
+        <div class="flex flex-center shadow rounded p2 mb3">
+          <div class="flex-none mr3">
+            <img alt="" class="" width="48" src="/assets/design-tools-2cebe17bf390db38213d28c13bdccc598093fb3d3291ad0474853d3bb175ddcf.svg" />
+          </div>
+          <div class="flex-auto">
+          <h5 class="h4 mt0 mb1 regular dark-blue">Looking to level up your design education?</h5>
+          <p class="mt0 mb2 med-gray">Get access to our Slack community when you support Hack Design. Ask for feedback from curators and preview new lessons.</p>
+            <a class="btn rounded h5 white bg-green" href="/patron">Become a patron</a>
+          </div>
+        </div>
+      <label class="med-gray h5 mb2 block">Instructor</label>
+      <div class="flex underline-link mb3">
+        <div class="flex-none mr3">
+            <img width="80" src="https://hackdesign.imgix.net/curators/bentaylor@2x.jpg?ixlib=rails-2.1.4&dpr=2&w=80&h=80&fit=crop&fm=jpeg&auto=format&mask=ellipse&s=70ca5003501b3b5c0b586a67b42a00e2" alt="Bentaylor@2x.jpg?ixlib=rails 2.1" />
+        </div>
+        <div class="flex-auto">
+          <h5 class="h3 mt0 mb1 regular dark-blue">Ben Taylor</h5>
+          <h5 class="h4 mt0 mb1 med-gray regular">
+              Designer
+          </h5>
+          <p class="med-gray">I'm a Software Developer and Interaction Designer. I have no idea what I'm doing.</p>
+        </div>
+      </div>
+
+
+        <label class="med-gray h5 mb2 block">Next lesson</label>
+        <div class="flex flex-center prose">
+          <div class="flex-none mr3">
+            <img width="80" src="https://hackdesign.imgix.net/lessons/week39.png?ixlib=rails-2.1.4&dpr=2&w=80&fm=jpeg&fit=max&auto=format&alt=A%20hot%20air%20balloon%20on%20a%20sunny%20day&s=d60388bd6db1001ec212468a72c26d63" alt="Week39.png?ixlib=rails 2.1" />
+          </div>
+          <div class="flex-auto">
+            <h3 class="serif mt0 mb2 semibold">
+              <a class="red" href="/lessons/39">The Human Element</a>
+            </h3>
+          </div>
+        </div>
+    </div>
+
+    <div class="col col-12 md-col-4 px2 md-show">
+      <figure class="m0">
+        <img width="280" src="https://hackdesign.imgix.net/lessons/week38.png?ixlib=rails-2.1.4&dpr=2&w=280&fm=jpeg&fit=max&auto=format&alt=A%20hot%20air%20balloon%20on%20a%20sunny%20day&s=69961edcda7266ccce3a66eff700b382" alt="Week38.png?ixlib=rails 2.1" />
+
+          <p class="center mt1 mb0 italic">
+            <a target="_blank" class="med-gray" href="http://lovelyascanbee.com">© Laura Bohill</a>
+          </p>
+      </figure>
+      <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?zoneid=1696&serve=CVYD42T&placement=hackdesignorg" id="_carbonads_js"></script>
+<style>
+  #carbonads a:link {
+    text-decoration: none!important;
+    color: #222!important;
+  }
+  .carbon-wrap {
+    margin-top: 36px;
+    float: left;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .carbon-img {
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+  }
+  .carbon-text {
+    float: left;
+    width: 50%;
+    padding-left: 16px;
+    box-sizing: border-box;
+    font-size: 12px;
+  }
+  .carbon-poweredby {
+    width: 100%;
+    font-size: 12px;
+    float: left;
+  }
+</style>
+
+    </div>
+</article>
+
+<aside class="fixed bottom-0 right-0 left-0 p2 bg-white-clear border-top border-gray flex flex-center">
+  <p class="m0 flex-none px2 md-show">
+    <a class="slate" href="/lessons">← View all lessons</a>
+  </p>
+  <div class="flex-auto"></div>
+  <a href="https://www.facebook.com/sharer.php?u=https://hackdesign.org/lessons/38" class="flex-none flex flex-center px3 slate" target="_blank">
+    <img src="https://icon.now.sh/facebook/24/38404F">
+    <p class="ml1 mb0">Share</p>
+  </a>
+  <a href="https://twitter.com/intent/tweet?url=https://hackdesign.org/lessons/38&text=Animation%2C+Direct+Manipulation+%26+Feedback&via=hackdesign" class="flex-none flex flex-center px3 slate" target="_blank">
+    <img src="https://icon.now.sh/twitter/24/38404F">
+    <p class="ml1 mb0">Tweet</p>
+  </a>
+  <div class="flex-auto"></div>
+    <p class="m0 flex-none px2 md-show ">
+      <a class="btn rounded h5 white bg-green" href="/">Subscribe</a>
+    </p>
+</aside>
+<style>
+  /* Extra padding for the share bar */
+  body { padding-bottom: 69px; }
+</style>
+
+
+      <aside class="py4 container">
+      <div class="clearfix mxn3">
+        <div class="col-12 md-col-6 p3 mx-auto bg-light-gray rounded">
+          <h3 class="mt0 mb1 h4 slate">Join 263,596 others in learning design</h3>
+          <p class="mt0 mb2 h5 regular med-gray">Receive a design lesson each week, crafted by a design pro.</p>
+          <form id="footer_new_user" class="new_user" action="/users" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="EOQNO9JVSOKHjJQY++InWL42nX3AScfU/JovGazswtjYwKjHMe3UJc9mENIzgTMpPd5vU8kX3CQJlYX3GjcTYA==" />
+            <div class="flex shadow rounded">
+              <input placeholder="Email address" class="border-none flex-auto m0 field rounded-left btn-pad h5 regular" type="email" name="user[email]" id="user_email" />
+              <input type="submit" name="commit" value="Get started" class="btn rounded-right h5 white bg-green" data-disable-with="Get started" />
+            </div>
+</form>        </div>
+      </div>
+  </aside>
+
+<footer class="container">
+  <div class="flex border-top py2 border-top border-gray col-12">
+  <p class="flex-none mr2 med-gray">&copy; 2018</p>
+  <div class="flex-auto"></div>
+  <nav class="flex-none mxn2">
+    <a class="med-gray px2" href="/about">About</a>
+    <a class="med-gray px2" href="/cdn-cgi/l/email-protection#8fece0e1fbeeecfbcfe7eeece4ebeafce6e8e1a1e0fde8b0fcfaede5eaecfbb2c7eaf6aabdbffbe7eafdeaaabdbfc7eeece4aabdbfcbeafce6e8e1">Contact</a>
+    <a class="med-gray px2" href="/curators">Curators</a>
+    <a class="med-gray px2" href="/privacy">Legal</a>
+  </nav>
+</div>
+</footer>
+
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/d07b1474/cloudflare-static/email-decode.min.js"></script><script src="/assets/application-68edeedbb64b1ee9fe95fc49dc1173196aef0ff507b51cebab1e74a30e8f4ce7.js"></script>
+    <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='//www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-37398951-1');ga('send','pageview');
+    </script>
+  </body>
+</html>
