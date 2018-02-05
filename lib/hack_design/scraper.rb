@@ -21,15 +21,25 @@ class Scraper
     self.lessons.each_with_index do |lesson, index|
       lesson_url = base_url + lesson[:id].to_s
       doc = Nokogiri::HTML(open(lesson_url))
-      #instructor = doc.css('div.mr2 h2').text.strip
-      #introduction = doc.css('div.mr2 h2').text.strip
-      #exercises =
-      # doc.css('div.mb4 ol').each do |exercise|
-      #  url = exercise.css('a').attribute('href').text
-      #  title = exercise.css('li a').text.strip
-      #  description = exercise.css('li p').text.strip
-      #  puts ""
-      # end
+
+      instructor = doc.css('div.mr2 h2').text.strip
+      introduction = doc.css('div.prose-intro').text.strip
+      exercises = []
+
+      doc.css('div.mb4 ol li').each do |exercise|
+        title = exercise.css('h3 a').text.strip; puts "#{title}"
+        description = exercise.css('p').text.strip; puts "#{description}"
+        url = exercise.css('h3 a').attribute('href').text; puts "#{url}"
+        # binding.pry
+        exercises << {url:url, title: title, description: description}
+      end
+
+      lesson[:instructor] = instructor
+      lesson[:introduction] = introduction
+      lesson[:exercises] = exercises
+
     end
+    # binding.pry
   end
+
 end
