@@ -20,4 +20,6 @@ class Lesson
       end
     end
 
+    def add_lesson_attributes(attributes_hash)
+    end
 end
