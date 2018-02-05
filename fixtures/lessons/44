@@ -1,0 +1,297 @@
+<!doctype html>
+<html>
+  <head>
+    <link href="https://hackdesign.org:80/lessons/44" rel="canonical" />    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Win The Internet With A/B Testing - Hack Design</title>
+    <meta name="google-site-verification" content="3St7QluPELiVsbygStx0b1gr8dbwjQ_OfdkZI_ffj-g">
+        <meta name="description" content="Designing websites and building products for people is an exciting job. You get to use creativity and problem solving skills to create, in some cases, w...">
+  <meta property="twitter:card" content="summary">
+  <meta property="twitter:site" content="hackdesign">
+    <meta property="twitter:creator" content="manikrathee">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Win The Internet With A/B Testing">
+  <meta property="og:image" content="https://hackdesign.org/assets/lessons/week44-955aaa7c5a57026727d7af1bfb72d7dbccb5bfcac2e4a9bb3878e679b42b40f8.png">
+  <meta property="og:description" content="Designing websites and building products for people is an exciting job. You get to use creativity and problem solving skills to create, in some cases, world-changing solutions. The most exciting pa...">
+  <meta property="og:url" content="https://hackdesign.org/lessons/44">
+
+    <meta property="fb:admins" content="1082730090">
+    <link href="https://unpkg.com/basscss@7.1.1/css/basscss.min.css" rel="stylesheet">
+    <link rel="stylesheet" media="all" href="/assets/application-78044084155daafaf1bb867b9e6adfd53b55a479c9ec74ef9fa73e8e4bdebfad.css" />
+    <script>
+      (function(d) {
+        var config = {
+          kitId: 'kyb5lym',
+          scriptTimeout: 3000,
+          async: true
+        },
+        h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+      })(document);
+    </script>
+    <!-- Hotjar Tracking Code for https://hackdesign.org -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:612701,hjsv:5};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/4.0.1/lazysizes.min.js"></script>
+    <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="YIdPux307mbRU2Fe4MXv6TkoCWZqy1H55UFypl0SqBtyU/NjGk1sGdyi5DY3fJSGnIkWUNiAq4hgF6DJMyaoEw==" />
+  </head>
+  <body class="lessons show" data-spy="scroll" data-target="#navbar-example" >
+    <!--[if lt IE 8]>
+    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <header class="">
+  <div class="md-flex flex-center container">
+    <div class="flex-none">
+      <a href="/"><img width="200" alt="Hack Design" class="py2" src="/assets/logo-941fdc47b5760af9654de5b6ba12fba1f4073426b16b2ebbb519e13b6c5a9600.svg" /></a>
+    </div>
+    <div class="flex-auto">
+    </div>
+    <div class="flex-none">
+      <nav class="h5 sm-show">
+        <a class="gray mr3" href="/lessons">View all lessons</a>
+        <a class="gray mr3" href="/toolkit">Toolkit</a>
+          <a class="gray mr3" href="/sign_in">Sign In</a>
+      </nav>
+    </div>
+  </div>
+  <nav class="sm-hide h5 border-top border-bottom px2 py1">
+    <a class="gray mr3" href="/lessons">Lessons</a>
+    <a class="gray mr3" href="/toolkit">Toolkit</a>
+      <a class="gray mr3" href="/sign_in">Sign In</a>
+  </nav>
+</header>
+
+    <div id="flash" class="row">
+</div>
+
+    
+
+<article class="py3 container">
+  <div class="lg-col-9 mx-auto">
+    <header class="mb2">
+      <h1 class="m0 h2 slate serif regular mr4 dark-blue">Win The Internet With A/B Testing</h1>
+    </header>
+  <div class="clearfix mxn2">
+    <div class="col col-12 md-col-8 px2">
+      <div class="flex flex-center mb3">
+        <div class="flex-none mr2">
+            <img width="40" src="https://hackdesign.imgix.net/curators/manikrathee@2x.jpg?ixlib=rails-2.1.4&dpr=2&w=40&h=40&fit=crop&fm=jpeg&auto=format&mask=ellipse&s=3368d28cd103a4125264e67e1f8d5c8e" alt="Manikrathee@2x.jpg?ixlib=rails 2.1" />
+        </div>
+        <div class="flex-none mr2">
+          <h2 class="m0 h5 regular dark-blue"> Manik Rathee </h2>
+        </div>
+        <div class="flex-none">
+          <p class="m0 h5 med-gray">Lesson 44</p>
+        </div>
+      </div>
+
+      <div class="prose prose-intro underline-link mb4">
+        <p>Designing websites and building products for people is an exciting job. You get to use creativity and problem solving skills to create, in some cases, world-changing solutions. The most exciting part of this, however, is being able to run user-research sessions and A/B tests to see how your customers actually use your product. In most cases, results from these tests are incredibly eye-opening and the learning opportunities are endless.</p>
+
+<p>This lesson should give you an understanding of what A/B testing and Optimization are, why you should apply them to your work and how to properly conduct A/B and multi-variate tests.</p>
+      </div>
+
+      <div class="mb4">
+        <ol class="m0 p0 list-style-none">
+            <li class="mb3">
+              <img class="hide left mr2" style="margin-top: 12px;" src="/assets/link_arrow-14256c940ab757198c8500bbd8a885fe4c91932e36ffc5a3d0026861d689c94c.svg" alt="Link arrow" />
+              <h3 class="h4 md-h3 serif mt0 mb1 semibold">
+                    <a target="_blank" class="red" href="http://usabilitygeek.com/introduction-a-b-testing/ ">An Introduction To A/B Testing</a>
+                </h3>
+                  <p class="prose m0 underline-link">Our first item for this lesson is a quick and simple one. This post is designed to give you a very high view of what testing is and why you should consider doing it. Before moving on to our next item, take some time and research these two testing platforms: <a href="http://visualwebsiteoptimizer.com/" target="_blank">Visual Website Optimizer</a> and <a href="https://www.optimizely.com/" target="_blank">Optimizely</a>, and find a third option of your choosing. Once you look into them, you should create an account on your preferred platform and get familiar with their features and tools.</p>
+            </li>
+            <li class="mb3">
+              <img class="hide left mr2" style="margin-top: 12px;" src="/assets/link_arrow-14256c940ab757198c8500bbd8a885fe4c91932e36ffc5a3d0026861d689c94c.svg" alt="Link arrow" />
+              <h3 class="h4 md-h3 serif mt0 mb1 semibold">
+                    <a target="_blank" class="red" href="http://kylerush.net/blog/optimization-at-the-obama-campaign-ab-testing/ ">Optimization at the Obama campaign</a>
+                </h3>
+                  <p class="prose m0 underline-link">In this article, Kyle mentions quite a few important notes about testing. Be sure to explore the tools he mentions, as well as the different types of tests that were run: structural changes, copy changes, color & aesthetic tests, etc. After reading through this case study, you should take a product or website that you have built and try to compile 2-3 different a/b tests that you would consider running. For each, list out the following things: 
+<br /><br />
+<b>First:</b> What is your hypothesis for this test? (IE: “Changing the layout of this sidebar will increase clicks to the ‘Related Articles’ button).  
+<br /><br />
+<b>Second:</b> What type of analytics events can you create to measure changes? (IE: An event that fires when a user clicks any link in the sidebar. This could show what percentage of clicks in the sidebar are being lost to other elements in each layout).  
+<br /><br />
+<b>Third:</b> What outside variables could affect this test? (IE: Changing the sidebar layout also happened to make more ads visible on the page, which could affect the data for the test)</p>
+            </li>
+            <li class="mb3">
+              <img class="hide left mr2" style="margin-top: 12px;" src="/assets/link_arrow-14256c940ab757198c8500bbd8a885fe4c91932e36ffc5a3d0026861d689c94c.svg" alt="Link arrow" />
+              <h3 class="h4 md-h3 serif mt0 mb1 semibold">
+                    <a target="_blank" class="red" href="http://blog.optimizely.com/2012/11/28/testing-your-messages-framing-for-increased-conversions/ ">Testing Your Messages: Framing for Increased Conversions</a>
+                </h3>
+                  <p class="prose m0 underline-link">This article is a deep dive into the endless ways you can change & test copy. After reading this, take a headline that exists on a project that you created and <b>write 3 sets of variations</b> that could become with a test. Make sure to refer back to the article and ask yourself the right questions about how you’re ‘framing the value proposition.’ This exercise will help you think about your copy and it’s iterations in a brand new light. Changing a few words or the perspective of the sentence can completely change how people perceive and interact with your product.</p>
+            </li>
+            <li class="mb3">
+              <img class="hide left mr2" style="margin-top: 12px;" src="/assets/link_arrow-14256c940ab757198c8500bbd8a885fe4c91932e36ffc5a3d0026861d689c94c.svg" alt="Link arrow" />
+              <h3 class="h4 md-h3 serif mt0 mb1 semibold">
+                    <a target="_blank" class="red" href="http://www.cennydd.co.uk/2009/statistical-significance-other-ab-test-pitfalls/ ">Statistical Significance &amp; Other A/B Test Pitfalls</a>
+                </h3>
+                  <p class="prose m0 underline-link">Statistical significance is critical to your optimization success. It is far too easy to judge results from a test too early or incorrectly. Understanding and being able to judge statistical significance on your own tests is an essential skill for anyone trying to optimize their product. During early stages of testing, use a <a href="http://www.usereffect.com/split-test-calculator" target="_blank">Statistical Significance Calculator</a> to help judge your data’s validity. You can also use this <a href="http://visualwebsiteoptimizer.com/ab-split-test-duration/" target="_blank">duration calculator</a> to help you assess how long your test should run.</p>
+            </li>
+            <li class="mb3">
+              <img class="hide left mr2" style="margin-top: 12px;" src="/assets/link_arrow-14256c940ab757198c8500bbd8a885fe4c91932e36ffc5a3d0026861d689c94c.svg" alt="Link arrow" />
+              <h3 class="h4 md-h3 serif mt0 mb1 semibold">
+                    <a target="_blank" class="red" href="http://www.smashingmagazine.com/2010/08/26/in-defense-of-a-b-testing/ ">In Defense Of A/B Testing</a>
+                </h3>
+                  <p class="prose m0 underline-link">You should now have a good grasp of what A/B testing is, you can start diving deeper into the theory of testing. Along with the lucrative successes from testing, there are also quite a few pitfalls that come with it. Knowing about these pitfalls ahead of time will let you consciously avoid them as you prepare your hypothesis, craft your tests and analyze your data. At this point, you’ll also want to understand what <a href="http://www.smashingmagazine.com/2010/11/24/multivariate-testing-in-action-five-simple-steps-to-increase-conversion-rates/" target="_blank">multivariate testing</a> is and when you should be using this instead of A/B testing. 
+<br /><br />
+<h3>Wrap-up</h3>
+Now that you’ve completed this lesson, you should be all set to start testing your products. You have your platform of choice from #1, a set of test options and relevant hypothesis from #2, a set of copy tests from #3, and tools to properly manage and analyze your data form #4. Lastly, #5 should have given you the understanding of difficulties with A/B testing, along with the alternative: Multivariate tests. 
+<br /><br />
+So, what are you waiting for? The data is out there just waiting for you to gather it. </p>
+            </li>
+        </ol>
+      </div>
+
+        <label class="med-gray h5 mb2 block">Support Hack Design</label>
+        <div class="flex flex-center shadow rounded p2 mb3">
+          <div class="flex-none mr3">
+            <img alt="" class="" width="48" src="/assets/design-tools-2cebe17bf390db38213d28c13bdccc598093fb3d3291ad0474853d3bb175ddcf.svg" />
+          </div>
+          <div class="flex-auto">
+          <h5 class="h4 mt0 mb1 regular dark-blue">Looking to level up your design education?</h5>
+          <p class="mt0 mb2 med-gray">Get access to our Slack community when you support Hack Design. Ask for feedback from curators and preview new lessons.</p>
+            <a class="btn rounded h5 white bg-green" href="/patron">Become a patron</a>
+          </div>
+        </div>
+      <label class="med-gray h5 mb2 block">Instructor</label>
+      <div class="flex underline-link mb3">
+        <div class="flex-none mr3">
+            <img width="80" src="https://hackdesign.imgix.net/curators/manikrathee@2x.jpg?ixlib=rails-2.1.4&dpr=2&w=80&h=80&fit=crop&fm=jpeg&auto=format&mask=ellipse&s=612a4c1e6caec2aa6e961661853bb7c9" alt="Manikrathee@2x.jpg?ixlib=rails 2.1" />
+        </div>
+        <div class="flex-auto">
+          <h5 class="h3 mt0 mb1 regular dark-blue">Manik Rathee</h5>
+          <h5 class="h4 mt0 mb1 med-gray regular">
+              Designer, 
+              <a target="_blank" href="http://www.google.com">Google</a>
+          </h5>
+          <p class="med-gray">I'm a designer. Currently building thoughtful things at Google. Previously, I was a UX Engineer for <a href="http://www.manikrathee.com/barack-obama-contribute.html" target="_blank">President Barack Obama</a>. I'm on <a href="https://twitter.com/manikrathee" target="_blank">twitter</a> pretty often and I write about design, development and photography on <a href="http://blog.manikrathee.com/" target="_blank">my blog</a>.</p>
+        </div>
+      </div>
+
+
+        <label class="med-gray h5 mb2 block">Next lesson</label>
+        <div class="flex flex-center prose">
+          <div class="flex-none mr3">
+            <img width="80" src="https://hackdesign.imgix.net/lessons/week45.png?ixlib=rails-2.1.4&dpr=2&w=80&fm=jpeg&fit=max&auto=format&alt=A%20hot%20air%20balloon%20on%20a%20sunny%20day&s=d374fb80d47bfaa40026d76a8de5d7bc" alt="Week45.png?ixlib=rails 2.1" />
+          </div>
+          <div class="flex-auto">
+            <h3 class="serif mt0 mb2 semibold">
+              <a class="red" href="/lessons/45">Design Your Mobile App For Multiple Platforms</a>
+            </h3>
+          </div>
+        </div>
+    </div>
+
+    <div class="col col-12 md-col-4 px2 md-show">
+      <figure class="m0">
+        <img width="280" src="https://hackdesign.imgix.net/lessons/week44.png?ixlib=rails-2.1.4&dpr=2&w=280&fm=jpeg&fit=max&auto=format&alt=A%20hot%20air%20balloon%20on%20a%20sunny%20day&s=e92bc5fad0d2189e05fed13a57c09184" alt="Week44.png?ixlib=rails 2.1" />
+
+          <p class="center mt1 mb0 italic">
+            <a target="_blank" class="med-gray" href="http://lovelyascanbee.com">© Laura Bohill</a>
+          </p>
+      </figure>
+      <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?zoneid=1696&serve=CVYD42T&placement=hackdesignorg" id="_carbonads_js"></script>
+<style>
+  #carbonads a:link {
+    text-decoration: none!important;
+    color: #222!important;
+  }
+  .carbon-wrap {
+    margin-top: 36px;
+    float: left;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .carbon-img {
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+  }
+  .carbon-text {
+    float: left;
+    width: 50%;
+    padding-left: 16px;
+    box-sizing: border-box;
+    font-size: 12px;
+  }
+  .carbon-poweredby {
+    width: 100%;
+    font-size: 12px;
+    float: left;
+  }
+</style>
+
+    </div>
+</article>
+
+<aside class="fixed bottom-0 right-0 left-0 p2 bg-white-clear border-top border-gray flex flex-center">
+  <p class="m0 flex-none px2 md-show">
+    <a class="slate" href="/lessons">← View all lessons</a>
+  </p>
+  <div class="flex-auto"></div>
+  <a href="https://www.facebook.com/sharer.php?u=https://hackdesign.org/lessons/44" class="flex-none flex flex-center px3 slate" target="_blank">
+    <img src="https://icon.now.sh/facebook/24/38404F">
+    <p class="ml1 mb0">Share</p>
+  </a>
+  <a href="https://twitter.com/intent/tweet?url=https://hackdesign.org/lessons/44&text=Win+The+Internet+With+A%2FB+Testing&via=hackdesign" class="flex-none flex flex-center px3 slate" target="_blank">
+    <img src="https://icon.now.sh/twitter/24/38404F">
+    <p class="ml1 mb0">Tweet</p>
+  </a>
+  <div class="flex-auto"></div>
+    <p class="m0 flex-none px2 md-show ">
+      <a class="btn rounded h5 white bg-green" href="/">Subscribe</a>
+    </p>
+</aside>
+<style>
+  /* Extra padding for the share bar */
+  body { padding-bottom: 69px; }
+</style>
+
+
+      <aside class="py4 container">
+      <div class="clearfix mxn3">
+        <div class="col-12 md-col-6 p3 mx-auto bg-light-gray rounded">
+          <h3 class="mt0 mb1 h4 slate">Join 263,596 others in learning design</h3>
+          <p class="mt0 mb2 h5 regular med-gray">Receive a design lesson each week, crafted by a design pro.</p>
+          <form id="footer_new_user" class="new_user" action="/users" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="CQ20foZlyo5jbBmUK/WV4JF/SBpj7QFHYy15OfT6B9Yb2QimgdxI8W6dnPz8TO6PNN5XLNGm+zbme6tWms4H3g==" />
+            <div class="flex shadow rounded">
+              <input placeholder="Email address" class="border-none flex-auto m0 field rounded-left btn-pad h5 regular" type="email" name="user[email]" id="user_email" />
+              <input type="submit" name="commit" value="Get started" class="btn rounded-right h5 white bg-green" data-disable-with="Get started" />
+            </div>
+</form>        </div>
+      </div>
+  </aside>
+
+<footer class="container">
+  <div class="flex border-top py2 border-top border-gray col-12">
+  <p class="flex-none mr2 med-gray">&copy; 2018</p>
+  <div class="flex-auto"></div>
+  <nav class="flex-none mxn2">
+    <a class="med-gray px2" href="/about">About</a>
+    <a class="med-gray px2" href="/cdn-cgi/l/email-protection#81e2eeeff5e0e2f5c1e9e0e2eae5e4f2e8e6efafeef3e6bef2f4e3ebe4e2f5bcc9e4f8a4b3b1f5e9e4f3e4a4b3b1c9e0e2eaa4b3b1c5e4f2e8e6ef">Contact</a>
+    <a class="med-gray px2" href="/curators">Curators</a>
+    <a class="med-gray px2" href="/privacy">Legal</a>
+  </nav>
+</div>
+</footer>
+
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/d07b1474/cloudflare-static/email-decode.min.js"></script><script src="/assets/application-68edeedbb64b1ee9fe95fc49dc1173196aef0ff507b51cebab1e74a30e8f4ce7.js"></script>
+    <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='//www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-37398951-1');ga('send','pageview');
+    </script>
+  </body>
+</html>
