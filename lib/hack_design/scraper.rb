@@ -2,8 +2,9 @@ require 'nokogiri'
 require 'open-uri'
 
 class Scraper
-  def self.scrape_index_page(index_url)
-    doc = Nokogiri::HTML(open(index_url))
+  def self.scrape_lessons_page(lessons_url)
+    html = File.read("./fixtures/site/lessons.html")
+    doc = Nokogiri::HTML(open(lessons_url))
     binding.pry
 
     lessons = []
