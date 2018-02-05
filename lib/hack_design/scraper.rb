@@ -2,23 +2,19 @@ require 'nokogiri'
 require 'open-uri'
 
 class Scraper
-  @@lessons = []
-
-  def self.lessons
-    @@lessons
-  end
-
   def self.scrape_lessons_page
+    lessons_array = []
     doc = Nokogiri::HTML(open('./fixtures/site/lessons.html'))
     doc.css('div.prose').each_with_index do |lesson, index|
       title = lesson.css('h3').text
-      self.lessons << {id: index,  title: title}
+      base_url = './fixtures/site/lessons/'
+      url =  base_url + index.to_s
+      lessons_array << { title: title, url: url }
     end
+    lessons_array
   end
 
-  def self.scrape_lesson(lesson_id)
-    base_url = './fixtures/site/lessons/'
-    lesson_url = base_url + lesson_id.to_s
+  def self.scrape_lesson(lesson_url)
     doc = Nokogiri::HTML(open(lesson_url))
 
     instructor = doc.css('div.mr2 h2').text.strip
