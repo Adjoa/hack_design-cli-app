@@ -3,13 +3,12 @@ require 'open-uri'
 
 class Scraper
   def self.scrape_lessons_page
-    html = File.read("./fixtures/site/lessons.html")
-    doc = Nokogiri::HTML(open(html))
-    binding.pry
-
+    doc = Nokogiri::HTML(open('./fixtures/site/lessons.html'))
     lessons = []
-    doc.css('div.flex-center.mb4').each_with_index do |lesson, index|
-        lessons << {id: index,  title:lesson.text}
+    doc.css('div.prose').each_with_index do |lesson, index|
+      title = lesson.css('h3').text
+      lessons << {id: index,  title: title}
     end
+    binding.pry
   end
 end
