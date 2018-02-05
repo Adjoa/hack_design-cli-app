@@ -3,9 +3,10 @@ class Lesson
 
     attr_accessor :url, :title, :instructor, :introduction, :exercises
 
-    def initialize(title)
+    def initialize(title, url)
+        @url = url
         @title = title
-        @exercises = []
+
         self.class.all << self
     end
 
