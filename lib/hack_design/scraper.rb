@@ -11,4 +11,7 @@ class Scraper
     end
     binding.pry
   end
+
+  def self.scrape_lesson
+  end
 end
