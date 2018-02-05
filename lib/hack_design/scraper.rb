@@ -26,20 +26,17 @@ class Scraper
       introduction = doc.css('div.prose-intro').text.strip
       exercises = []
 
-      doc.css('div.mb4 ol li').each do |exercise|
-        title = exercise.css('h3 a').text.strip; puts "#{title}"
-        description = exercise.css('p').text.strip; puts "#{description}"
-        url = exercise.css('h3 a').attribute('href').text; puts "#{url}"
-        # binding.pry
-        exercises << {url:url, title: title, description: description}
+      doc.css('div.mb4 ol li.mb3').each do |exercise|
+        title = exercise.css('h3 a.red').text.strip
+        description = exercise.css('p').text.strip
+        url = exercise.css('h3 a.red').attribute('href').text
+        exercises << {title: title, description: description, url:url}
       end
 
       lesson[:instructor] = instructor
       lesson[:introduction] = introduction
       lesson[:exercises] = exercises
-
     end
-    # binding.pry
   end
 
 end
