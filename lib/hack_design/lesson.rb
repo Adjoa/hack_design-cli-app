@@ -14,4 +14,10 @@ class Lesson
         @@all
     end
 
+    def self.create_from_collection(lessons_array)
+      lessons_array.each do |lesson|
+        self.new(lesson)
+      end
+    end
+
 end
