@@ -16,27 +16,27 @@ class Scraper
     end
   end
 
-  def self.scrape_lesson
+  def self.scrape_lesson(lesson_id)
     base_url = './fixtures/site/lessons/'
-    self.lessons.each_with_index do |lesson, index|
-      lesson_url = base_url + lesson[:id].to_s
-      doc = Nokogiri::HTML(open(lesson_url))
+    lesson_url = base_url + lesson_id.to_s
+    doc = Nokogiri::HTML(open(lesson_url))
 
-      instructor = doc.css('div.mr2 h2').text.strip
-      introduction = doc.css('div.prose-intro').text.strip
-      exercises = []
+    instructor = doc.css('div.mr2 h2').text.strip
+    introduction = doc.css('div.prose-intro').text.strip
+    exercises = []
 
-      doc.css('div.mb4 ol li.mb3').each do |exercise|
-        title = exercise.css('h3 a.red').text.strip
-        description = exercise.css('p').text.strip
-        url = exercise.css('h3 a.red').attribute('href').text
-        exercises << {title: title, description: description, url:url}
-      end
-
-      lesson[:instructor] = instructor
-      lesson[:introduction] = introduction
-      lesson[:exercises] = exercises
+    doc.css('div.mb4 ol li.mb3').each do |exercise|
+      title = exercise.css('h3 a.red').text.strip
+      description = exercise.css('p').text.strip
+      url = exercise.css('h3 a.red').attribute('href').text
+      exercises << {title: title, description: description, url:url}
     end
+
+    lesson = {}
+    lesson[:instructor] = instructor
+    lesson[:introduction] = introduction
+    lesson[:exercises] = exercises
+    lesson
   end
 
 end
