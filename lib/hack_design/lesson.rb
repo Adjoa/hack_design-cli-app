@@ -16,7 +16,7 @@ class Lesson
 
     def self.create_from_collection(lessons_array)
       lessons_array.each do |lesson|
-        self.new(lesson)
+        self.new(lesson[:title], lesson[:url])
       end
     end
 
