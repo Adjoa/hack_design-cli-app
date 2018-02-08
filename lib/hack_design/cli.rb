@@ -10,9 +10,9 @@ module HackDesign
         end
 
         def main_menu
+            list_lessons
             puts "Enter a number (0-50) to choose a lesson."
             puts "Enter 'q' to quit."
-            list_lessons
             puts ""
             selection = gets.strip
             case(selection)
@@ -41,9 +41,8 @@ module HackDesign
         end
 
         def list_lessons
-          Lesson.all.each do |lesson|
-            binding.pry
-           puts "#{lesson.title}"
+          Lesson.all.each_with_index do |lesson, lesson_number|
+           puts "#{lesson_number} #{lesson.title}"
           end
         end
     end
