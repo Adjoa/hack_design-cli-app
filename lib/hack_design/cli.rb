@@ -6,7 +6,7 @@ module HackDesign
         end
 
         def main_menu
-            puts "Enter a number (1-50) to choose a lesson."
+            puts "Enter a number (0-50) to choose a lesson."
             puts "Enter 'q' to quit."
             list_lessons
             puts ""
