@@ -20,10 +20,8 @@ class Lesson
       end
     end
 
-    def add_lesson_attributes(lesson_attr)
+    def add_attributes(lesson_attr)
       self.tap do |lesson|
-        lesson.url = lesson_attr[:url]
-        lesson.title = lesson_attr[:title]
         lesson.instructor = lesson_attr[:instructor]
         lesson.introduction = lesson_attr[:introduction]
         lesson.exercises = lesson_attr[:exercises]
