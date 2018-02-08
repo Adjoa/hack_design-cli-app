@@ -16,16 +16,17 @@ module HackDesign
             puts ""
             selection = gets.strip
             case(selection)
-            when selection.to_i.between(0, 50)
-              lesson_number = selection.to_i
-              display_lesson(lesson_number)
+            # when selection.to_i.between?(0, 50)
+            when '49'
+              puts "here"
+              display_lesson(selection.to_i)
             when 'q'
                 puts "Same time tomorrow, okay? Goodbye!"
                 exit
             else
                 puts "You have not selected a valid option."
                 puts ""
-                main_menu
+                # main_menu
             end
         end
 
@@ -44,6 +45,21 @@ module HackDesign
         def list_lessons
           Lesson.all.each_with_index do |lesson, lesson_number|
            puts "#{lesson_number} #{lesson.title}"
+          end
+        end
+
+        def display_lesson(lesson_number)
+          lesson = Lesson.all[lesson_number]
+          puts "#{lesson.title}"
+          puts "#{lesson.instructor}"
+          puts ""
+          puts "#{lesson.introduction}"
+          puts ""
+          puts "Exercises for this lesson: "
+          lesson.exercises.each do |exercise|
+            puts"#{exercise[:title]}"
+            puts "#{exercise[:description]}"
+            puts "#{exercise[:url]]}"
           end
         end
     end
