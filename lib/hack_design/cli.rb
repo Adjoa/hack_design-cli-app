@@ -42,7 +42,6 @@ module HackDesign
         end
 
         def lesson_nav(current_lesson)
-          puts "This is lesson #{current_lesson.to_s}"
           puts "[p]revious lesson \t [n]ext lesson \t [a]ll lessons \t [q]uit:__"
 
           nav_selection = gets.strip

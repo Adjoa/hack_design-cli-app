@@ -28,15 +28,16 @@ class Lesson
       end
     end
 
-    def list_lessons
-      Lesson.all.each_with_index do |lesson, lesson_number|
+    def self.list_lessons
+      self.all.each_with_index do |lesson, lesson_number|
        puts "#{lesson_number} #{lesson.title}"
       end
     end
 
-    def display_lesson(lesson_number)
-      lesson = Lesson.all[lesson_number]
-      puts "#{lesson.title}"
+    def self.display_lesson(lesson_number)
+      lesson = self.all[lesson_number]
+      puts ""
+      puts "Lesson #{lesson_number}. #{lesson.title}"
       puts "#{lesson.instructor}"
       puts ""
       puts "#{lesson.introduction}"
