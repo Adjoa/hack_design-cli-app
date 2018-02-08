@@ -3,7 +3,9 @@ module HackDesign
         def start
             puts "Setting up...."
             build_lessons
-            puts "=== Hack Design CLI ==="
+            puts "Just a second more..."
+            add_lesson_attributes
+            puts "=== Welcome to the Hack Design CLI! ==="
             main_menu
         end
 
@@ -29,6 +31,13 @@ module HackDesign
         def build_lessons
           lessons_array = Scraper.scrape_lessons_page
           Lesson.create_from_collection(lessons_array)
+        end
+
+        def add_attributes_to_lessons
+          Lesson.all.each do |lesson|
+            lesson_attributes = Scraper.scrape_lesson(lesson[:url])
+            lesson.add_lesson_attributes(lesson_attributes)
+          end
         end
 
         def list_lessons
