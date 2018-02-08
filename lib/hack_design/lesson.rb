@@ -27,4 +27,26 @@ class Lesson
         lesson.exercises = lesson_attr[:exercises]
       end
     end
+
+    def list_lessons
+      Lesson.all.each_with_index do |lesson, lesson_number|
+       puts "#{lesson_number} #{lesson.title}"
+      end
+    end
+
+    def display_lesson(lesson_number)
+      lesson = Lesson.all[lesson_number]
+      puts "#{lesson.title}"
+      puts "#{lesson.instructor}"
+      puts ""
+      puts "#{lesson.introduction}"
+      puts ""
+      puts "Exercises for this lesson: "
+      lesson.exercises.each do |exercise|
+        puts"#{exercise[:title]}"
+        puts "#{exercise[:description]}"
+        puts "#{exercise[:url]}"
+        puts ""
+      end
+    end
 end

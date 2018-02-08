@@ -9,7 +9,7 @@ module HackDesign
         end
 
         def main_menu
-            list_lessons
+            Lesson.list_lessons
             puts "Enter a number (0-50) to choose a lesson."
             puts "Enter 'q' to quit."
             puts ""
@@ -17,13 +17,12 @@ module HackDesign
 
             case(selection)
             when '0'..'50'
-              display_lesson(selection.to_i)
+              Lesson.display_lesson(selection.to_i)
               lesson_nav(selection.to_i)
             when 'q'
                 puts "Same time tomorrow, okay? Goodbye!"
                 exit
             else
-                lesson_number = selection.to_i
                 puts "You have not selected a valid option."
                 puts ""
                 main_menu
@@ -42,28 +41,6 @@ module HackDesign
           end
         end
 
-        def list_lessons
-          Lesson.all.each_with_index do |lesson, lesson_number|
-           puts "#{lesson_number} #{lesson.title}"
-          end
-        end
-
-        def display_lesson(lesson_number)
-          lesson = Lesson.all[lesson_number]
-          puts "#{lesson.title}"
-          puts "#{lesson.instructor}"
-          puts ""
-          puts "#{lesson.introduction}"
-          puts ""
-          puts "Exercises for this lesson: "
-          lesson.exercises.each do |exercise|
-            puts"#{exercise[:title]}"
-            puts "#{exercise[:description]}"
-            puts "#{exercise[:url]}"
-            puts ""
-          end
-        end
-
         def lesson_nav(current_lesson)
           puts "This is lesson #{current_lesson.to_s}"
           puts "[p]revious lesson \t [n]ext lesson \t [a]ll lessons \t [q]uit:__"
@@ -71,17 +48,11 @@ module HackDesign
           nav_selection = gets.strip
           case(nav_selection)
           when 'p'
-            current_lesson -= 1
-            current_lesson < 0 ? current_lesson = 50 : nil
-            display_lesson(current_lesson)
+            prev_lesson(current_lesson)
             lesson_nav(current_lesson)
-
           when 'n'
-            current_lesson += 1
-            current_lesson > 50 ? current_lesson = 0 : nil
-            display_lesson(current_lesson)
+            next_lesson(current_lesson)
             lesson_nav(current_lesson)
-
           when 'a'
             main_menu
           when 'q'
@@ -92,6 +63,18 @@ module HackDesign
               puts ""
               main_menu
           end
+        end
+
+        def prev_lesson(current_lesson)
+          current_lesson -= 1
+          current_lesson < 0 ? current_lesson = 50 : nil
+          Lesson.display_lesson(current_lesson)
+        end
+
+        def next_lesson(current_lesson)
+          current_lesson += 1
+          current_lesson > 50 ? current_lesson = 0 : nil
+          Lesson.display_lesson(current_lesson)
         end
     end
 end
