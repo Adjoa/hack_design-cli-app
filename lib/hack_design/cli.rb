@@ -1,6 +1,8 @@
 module HackDesign
     class CLI
         def start
+            puts "Setting up...."
+            build_lessons
             puts "=== Hack Design CLI ==="
             main_menu
         end
@@ -22,6 +24,11 @@ module HackDesign
                 puts ""
                 main_menu
             end
+        end
+
+        def build_lessons
+          lessons_array = Scraper.scrape_lessons_page
+          Lesson.create_from_collection(lessons_array)
         end
 
         def list_lessons
