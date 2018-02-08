@@ -18,6 +18,7 @@ module HackDesign
             case(selection)
             when '0'..'50'
               display_lesson(selection.to_i)
+              lesson_nav(selection.to_i)
             when 'q'
                 puts "Same time tomorrow, okay? Goodbye!"
                 exit
@@ -60,6 +61,36 @@ module HackDesign
             puts "#{exercise[:description]}"
             puts "#{exercise[:url]}"
             puts ""
+          end
+        end
+
+        def lesson_nav(current_lesson)
+          puts "This is lesson #{current_lesson.to_s}"
+          puts "[p]revious lesson \t [n]ext lesson \t [a]ll lessons \t [q]uit:__"
+
+          nav_selection = gets.strip
+          case(nav_selection)
+          when 'p'
+            current_lesson -= 1
+            current_lesson < 0 ? current_lesson = 50 : nil
+            display_lesson(current_lesson)
+            lesson_nav(current_lesson)
+
+          when 'n'
+            current_lesson += 1
+            current_lesson > 50 ? current_lesson = 0 : nil
+            display_lesson(current_lesson)
+            lesson_nav(current_lesson)
+
+          when 'a'
+            main_menu
+          when 'q'
+            puts "Same time tomorrow, okay? Goodbye!"
+            exit
+          else
+              puts "You have not selected a valid option."
+              puts ""
+              main_menu
           end
         end
     end
