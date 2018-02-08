@@ -16,8 +16,9 @@ module HackDesign
             puts ""
             selection = gets.strip
             case(selection)
-            # When selection.to_i is a number from 1 to 50
-            # Accept a lesson number and display that lesson
+            when selection.to_i.between(0, 50)
+              lesson_number = selection.to_i
+              display_lesson(lesson_number)
             when 'q'
                 puts "Same time tomorrow, okay? Goodbye!"
                 exit
