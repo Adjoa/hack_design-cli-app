@@ -3,7 +3,6 @@ module HackDesign
         def start
             puts "Setting up...."
             build_lessons
-            puts "Just a second more..."
             add_attributes_to_lessons
             puts "=== Welcome to the Hack Design CLI! ==="
             main_menu
@@ -15,18 +14,18 @@ module HackDesign
             puts "Enter 'q' to quit."
             puts ""
             selection = gets.strip
+
             case(selection)
-            # when selection.to_i.between?(0, 50)
-            when '49'
-              puts "here"
+            when '0'..'50'
               display_lesson(selection.to_i)
             when 'q'
                 puts "Same time tomorrow, okay? Goodbye!"
                 exit
             else
+                lesson_number = selection.to_i
                 puts "You have not selected a valid option."
                 puts ""
-                # main_menu
+                main_menu
             end
         end
 
@@ -59,7 +58,8 @@ module HackDesign
           lesson.exercises.each do |exercise|
             puts"#{exercise[:title]}"
             puts "#{exercise[:description]}"
-            puts "#{exercise[:url]]}"
+            puts "#{exercise[:url]}"
+            puts ""
           end
         end
     end
