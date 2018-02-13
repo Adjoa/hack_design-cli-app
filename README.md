@@ -2,17 +2,20 @@
 
 Hi there!
 
-Thanks for checking out this gem. Constructed purely for educational purposes, you can use it to access Hack Design lessons right from your command line. All credit for the amazing content of each lesson belongs to the amazing people at [Hack Design](https://hackdesign.org/curators). Sign up for their [newsletter](https://hackdesign.org/)!
+Thanks for checking out this command line interface. Constructed purely for educational purposes, you can use it to access Hack Design lessons right from your command line. These lessons are packed with resources to help hackers like you learn critical elements of design, and start applying it to your work. All credit for the awesome content in each lesson belongs to the amazing people at [Hack Design](https://hackdesign.org/curators). Sign up for their [newsletter](https://hackdesign.org/)!
 
 ## Installation
 
 Like so:
-
-    $ gem install hack_design
+    $ git clone https://github.com/Adjoa/hack_design-cli-app
+    $ cd hack_design-cli-app
+    $ rake build
+    $ gem install pkg/hack_design-0.1.0.gem
 
 ## Usage
 
-Run `hack-design` to peruse available lessons.
+From within `hack_design-cli-app/` run,
+    $ hack-design
 
 ## Development
 
