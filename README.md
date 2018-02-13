@@ -7,6 +7,7 @@ Thanks for checking out this command line interface. Constructed purely for educ
 ## Installation
 
 Like so:
+
     $ git clone https://github.com/Adjoa/hack_design-cli-app
     $ cd hack_design-cli-app
     $ rake build
@@ -15,6 +16,7 @@ Like so:
 ## Usage
 
 From within `hack_design-cli-app/` run,
+
     $ hack-design
 
 ## Development
