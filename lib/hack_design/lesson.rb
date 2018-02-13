@@ -37,14 +37,14 @@ class Lesson
     def self.display_lesson(lesson_number)
       lesson = self.all[lesson_number]
       puts ""
-      puts "Lesson #{lesson_number}. #{lesson.title}"
-      puts "#{lesson.instructor}"
+      puts "Lesson #{lesson_number}. #{lesson.title}".colorize(:light_blue)
+      puts "#{lesson.instructor}".colorize(:light_blue)
       puts ""
       puts "#{lesson.introduction}"
       puts ""
-      puts "Exercises for this lesson: "
+      puts "Exercises".colorize(:light_blue)
       lesson.exercises.each do |exercise|
-        puts"#{exercise[:title]}"
+        puts"#{exercise[:title]}".colorize(:light_blue)
         puts "#{exercise[:description]}"
         puts "#{exercise[:url]}"
         puts ""
