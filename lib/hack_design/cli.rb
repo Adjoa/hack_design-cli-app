@@ -4,7 +4,7 @@ module HackDesign
             puts "Setting up...."
             build_lessons
             add_attributes_to_lessons
-            puts "=== Welcome to the Hack Design CLI! ==="
+            puts "=== Welcome to the Hack Design CLI! ===".colorize(:light_blue)
             main_menu
         end
 
