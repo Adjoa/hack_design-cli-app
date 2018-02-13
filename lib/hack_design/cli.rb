@@ -41,6 +41,29 @@ module HackDesign
           end
         end
 
+        def self.list_lessons
+          self.all.each_with_index do |lesson, lesson_number|
+           puts "#{lesson_number}.".colorize(:light_blue) + " #{lesson.title}"
+          end
+        end
+
+        def self.display_lesson(lesson_number)
+          lesson = self.all[lesson_number]
+          puts ""
+          puts "Lesson #{lesson_number}. #{lesson.title}".colorize(:light_blue)
+          puts "#{lesson.instructor}".colorize(:light_blue)
+          puts ""
+          puts "#{lesson.introduction}"
+          puts ""
+          puts "Exercises".colorize(:light_blue)
+          lesson.exercises.each do |exercise|
+            puts"#{exercise[:title]}".colorize(:light_blue)
+            puts "#{exercise[:description]}"
+            puts "#{exercise[:url]}"
+            puts ""
+          end
+        end
+
         def lesson_nav(current_lesson)
           puts "[p]revious lesson \t [n]ext lesson \t [a]ll lessons \t [q]uit:__"
 
