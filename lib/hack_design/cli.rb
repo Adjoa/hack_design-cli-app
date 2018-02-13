@@ -9,7 +9,7 @@ module HackDesign
         end
 
         def main_menu
-            Lesson.list_lessons
+            list_lessons
             puts "Enter a number (0-50) to choose a lesson."
             puts "Enter 'q' to quit."
             puts ""
@@ -17,7 +17,7 @@ module HackDesign
 
             case(selection)
             when '0'..'50'
-              Lesson.display_lesson(selection.to_i)
+              display_lesson(selection.to_i)
               lesson_nav(selection.to_i)
             when 'q'
                 puts "Same time tomorrow, okay? Goodbye!"
@@ -41,14 +41,14 @@ module HackDesign
           end
         end
 
-        def self.list_lessons
-          self.all.each_with_index do |lesson, lesson_number|
+        def list_lessons
+          Lesson.all.each_with_index do |lesson, lesson_number|
            puts "#{lesson_number}.".colorize(:light_blue) + " #{lesson.title}"
           end
         end
 
-        def self.display_lesson(lesson_number)
-          lesson = self.all[lesson_number]
+        def display_lesson(lesson_number)
+          lesson = Lesson.all[lesson_number]
           puts ""
           puts "Lesson #{lesson_number}. #{lesson.title}".colorize(:light_blue)
           puts "#{lesson.instructor}".colorize(:light_blue)
@@ -90,14 +90,14 @@ module HackDesign
         def prev_lesson(current_lesson)
           previous = current_lesson - 1
           previous < 0 ? previous = 50 : nil
-          Lesson.display_lesson(previous)
+          display_lesson(previous)
           previous
         end
 
         def next_lesson(current_lesson)
           xnext = current_lesson + 1
           xnext > 50 ? xnext = 0 : nil
-          Lesson.display_lesson(xnext)
+          display_lesson(xnext)
           xnext
         end
     end
