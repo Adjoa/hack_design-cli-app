@@ -47,11 +47,11 @@ module HackDesign
           nav_selection = gets.strip
           case(nav_selection)
           when 'p'
-            prev_lesson(current_lesson)
-            lesson_nav(current_lesson)
+            l = prev_lesson(current_lesson)
+            lesson_nav(l)
           when 'n'
-            next_lesson(current_lesson)
-            lesson_nav(current_lesson)
+            l = next_lesson(current_lesson)
+            lesson_nav(l)
           when 'a'
             main_menu
           when 'q'
@@ -65,15 +65,17 @@ module HackDesign
         end
 
         def prev_lesson(current_lesson)
-          current_lesson -= 1
-          current_lesson < 0 ? current_lesson = 50 : nil
-          Lesson.display_lesson(current_lesson)
+          previous = current_lesson - 1
+          previous < 0 ? previous = 50 : nil
+          Lesson.display_lesson(previous)
+          previous
         end
 
         def next_lesson(current_lesson)
-          current_lesson += 1
-          current_lesson > 50 ? current_lesson = 0 : nil
-          Lesson.display_lesson(current_lesson)
+          xnext = current_lesson + 1
+          xnext > 50 ? xnext = 0 : nil
+          Lesson.display_lesson(xnext)
+          xnext
         end
     end
 end
