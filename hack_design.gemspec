@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = %q{Hack Design Lessons}
   spec.description   = %q{A Ruby gem for accessing Hack Design lessons right from your command line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.homepage      = "https://github.com/Adjoa/hack_design-cli-app"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
@@ -35,5 +35,6 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rspec", "~> 3.0"
   spec.add_development_dependency "pry", "~> 0.11.3"
   spec.add_development_dependency "nokogiri", "~> 1.8.1"
+  spec.add_development_dependency "colorize", "~> 0.8.1"
 
 end
