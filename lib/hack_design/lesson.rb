@@ -30,7 +30,7 @@ class Lesson
 
     def self.list_lessons
       self.all.each_with_index do |lesson, lesson_number|
-       puts "#{lesson_number} #{lesson.title}"
+       puts "#{lesson_number}.".colorize(:light_blue) + " #{lesson.title}"
       end
     end
 
