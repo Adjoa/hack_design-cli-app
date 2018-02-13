@@ -1,28 +1,18 @@
 # HackDesign
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/hack_design`. To experiment with that code, run `bin/console` for an interactive prompt.
+Hi there!
 
-TODO: Delete this and the text above, and describe your gem
+Thanks for checking out this gem. Constructed purely for educational purposes, you can use it to access Hack Design lessons right from your command line. All credit for the amazing content of each lesson belongs to the amazing people at [Hack Design](https://hackdesign.org/curators). Sign up for their [newsletter](https://hackdesign.org/)!
 
 ## Installation
 
-Add this line to your application's Gemfile:
-
-```ruby
-gem 'hack_design'
-```
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
+Like so:
 
     $ gem install hack_design
 
 ## Usage
 
-TODO: Write usage instructions here
+Run `hack-design` to peruse available lessons.
 
 ## Development
 
@@ -32,7 +22,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/Adjoa/hack_design.
+Bug reports and pull requests are welcome on GitHub at https://github.com/Adjoa/hack_design-cli-app.
 
 ## License
 
