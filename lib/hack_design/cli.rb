@@ -59,7 +59,7 @@ module HackDesign
           lesson.exercises.each do |exercise|
             puts"#{exercise[:title]}".colorize(:light_blue)
             puts "#{exercise[:description]}"
-            puts "#{exercise[:url]}"
+            puts "#{exercise[:url]}".colorize(:light_blue)
             puts ""
           end
         end
