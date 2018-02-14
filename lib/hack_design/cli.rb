@@ -2,15 +2,19 @@ module HackDesign
     class CLI
         def start
             puts "Setting up...."
+            puts ""
             build_lessons
             add_attributes_to_lessons
-            puts "=== Welcome to the Hack Design CLI! ===".colorize(:light_blue)
+            puts "===== Welcome to the Hack Design CLI! =====".colorize(:light_blue)
+            puts ""
             main_menu
         end
 
         def main_menu
             list_lessons
-            puts "Enter a number (0-50) to choose a lesson."
+            puts ""
+            puts "===============" + " HOW TO USE THIS INTERFACE ".colorize(:light_blue) + "==============="
+            puts "Enter a number (0-50) to choose a lesson from the list above."
             puts "Enter 'q' to quit."
             puts ""
             selection = gets.strip
@@ -57,9 +61,9 @@ module HackDesign
           puts ""
           puts "Exercises".colorize(:light_blue)
           lesson.exercises.each do |exercise|
-            puts"#{exercise[:title]}".colorize(:light_blue)
-            puts "#{exercise[:description]}"
+            puts "#{exercise[:title]}".colorize(:light_blue)
             puts "#{exercise[:url]}".colorize(:light_blue)
+            puts "#{exercise[:description]}"
             puts ""
           end
         end
