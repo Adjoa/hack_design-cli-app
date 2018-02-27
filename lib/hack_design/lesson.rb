@@ -7,7 +7,7 @@ class Lesson
         @url = url
         @title = title
 
-        self.class.all << self
+        @@all << self
     end
 
     def self.all
